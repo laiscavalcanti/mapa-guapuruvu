@@ -4,7 +4,7 @@ import Main from '.'
 describe('<Main />', () =>{
     it('should render the heading', () => {
         const { container } = render(<Main />)
-        expect(screen.getByRole('heading', {name: /react avançado/i})
+        expect(screen.getByRole('heading', {name: /Mapa de Guapuruvu/i})
         ).toBeInTheDocument()
     })
 })
