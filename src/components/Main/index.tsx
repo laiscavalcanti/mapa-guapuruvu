@@ -1,7 +1,7 @@
 
 
 const Main = () => <main>
-    <h1>React Avançado</h1>
+    <h1>Mapa de Guapuruvu</h1>
 </main>
 
 export default Main
