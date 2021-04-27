@@ -1,7 +1,10 @@
+import * as S from './styles'
 
 const NavBar = () => {
     return (
-       <li>Guapuruvus</li>
+      <S.Wrapper>
+          <S.Logo src="/img/logo.png" alt="Logo - Imagem que descreve a marca Mapa de Guapuruvu" />
+      </S.Wrapper>
     )
 
 }
