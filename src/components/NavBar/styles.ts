@@ -7,6 +7,7 @@ export const Wrapper = styled.nav`
 
 export const Logo = styled.img`
     display: block;
+    background-color: #222;
     width: 350px;
     height: 100px;
 `
