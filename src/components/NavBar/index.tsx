@@ -8,10 +8,9 @@ const NavBar = () => {
         src="/img/logo.png"
         alt="Logo - Imagem que descreve a marca Mapa de Guapuruvu"
       />
-      {links.map((link) => (
-        <li>
-          {link.label}
-          <a href={link.link}></a>
+      {links.map((link, i) => (
+        <li key={i}>
+          <a href={link.link}>{link.label}</a>
         </li>
       ))}
     </S.Wrapper>
