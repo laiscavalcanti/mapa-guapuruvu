@@ -10,9 +10,12 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/img/icon.png" />
         <link rel="appele-touch-icon" href="/img/icon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-          crossOrigin="" />
+          crossOrigin=""
+        />
         <meta name="theme-color" content="#ffbf00" />
         <meta
           name="description"
