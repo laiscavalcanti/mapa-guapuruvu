@@ -1,4 +1,5 @@
 import client from 'graphql/Client'
+import { GetPagesQuery } from 'graphql/generated/graphql'
 import { GET_PAGES, GET_PAGE_BY_SLUG } from 'graphql/queries'
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
@@ -18,7 +19,7 @@ export default function Page({ heading, body}: PageTemplateProps) {
 
 
 export async function getStaticPaths(){ // criando o caminho das páginas
-    const { pages } = await client.request(GET_PAGES, {first: 3}) //fazendo a requisição para as 3 primeiras pages
+    const { pages } = await client.request<GetPagesQuery>(GET_PAGES, {first: 3}) //fazendo a requisição para as 3 primeiras pages
 
     const paths = pages.map(({ slug }) => ({ // o map para buscar as páginas
         params: { slug }
