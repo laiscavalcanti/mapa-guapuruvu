@@ -1,5 +1,8 @@
+import Image from 'next/image'
 import { CloseOutline } from "@styled-icons/evaicons-outline"
 import LinkWrapper from "components/LinkWrapper"
+
+//import * as S from 'styles'
 
 type ImageProps = {
   url: string
@@ -27,7 +30,7 @@ export default function PlacesTemplate({ place }: PlaceTemplateProps) {
       <h1>{place.name}</h1>
       <div dangerouslySetInnerHTML={{ __html: place.description.html }} />
       {place.gallery.map((images, index) => (
-        <img key={`proto-${index}`} src={images.url} alt={place.name} />
+        <Image width={1000} height={600} quality={75}  key={`proto-${index}`} src={images.url} alt={place.name} />
       ))}
     </>
   )
