@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import { CloseOutline } from "@styled-icons/evaicons-outline"
-import LinkWrapper from "components/LinkWrapper"
+import { CloseOutline } from '@styled-icons/evaicons-outline'
+import LinkWrapper from 'components/LinkWrapper'
+import { useRouter } from 'next/router'
 
 //import * as S from 'styles'
 
@@ -22,15 +23,24 @@ export type PlaceTemplateProps = {
 }
 
 export default function PlacesTemplate({ place }: PlaceTemplateProps) {
+  const router = useRouter()
+  if (router.isFallback) return null
   return (
     <>
-    <LinkWrapper href="/">
+      <LinkWrapper href="/">
         <CloseOutline size={32} aria-label="voltar para a página inicial" />
-    </LinkWrapper>
+      </LinkWrapper>
       <h1>{place.name}</h1>
-      <div dangerouslySetInnerHTML={{ __html: place.description.html }} />
+      <div dangerouslySetInnerHTML={{ __html: place.description?.html || ''}} />
       {place.gallery.map((images, index) => (
-        <Image width={1000} height={600} quality={75}  key={`proto-${index}`} src={images.url} alt={place.name} />
+        <Image
+          width={1000}
+          height={600}
+          quality={75}
+          key={`proto-${index}`}
+          src={images.url}
+          alt={place.name}
+        />
       ))}
     </>
   )
