@@ -10,5 +10,9 @@ export const links = [
   {
     label: 'Linkania',
     link: '/sobre'
+  },
+  {
+    label: 'Pesquisas',
+    link: '/sobre'
   }
 ]

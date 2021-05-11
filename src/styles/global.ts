@@ -9,7 +9,9 @@ const GlobalStyles = createGlobalStyle`
 
         --container: 100rem;
 
-        --small: 1.5rem;
+        --minimal: 1rem;
+        --smallest: 1.5rem;
+        --small: 2rem;
         --medium: 3rem;
         --large: 5rem;
     }

@@ -3,17 +3,17 @@ import { links } from './content'
 
 const NavBar = () => {
   return (
-    <S.Wrapper>
+    <S.NavWrapper>
       <S.Logo
         src="/img/logo.png"
         alt="Logo - Imagem que descreve a marca Mapa de Guapuruvu"
       />
       {links.map((link, i) => (
-        <li key={i}>
+        <S.Link key={i}>
           <a href={link.link}>{link.label}</a>
-        </li>
+        </S.Link>
       ))}
-    </S.Wrapper>
+    </S.NavWrapper>
   )
 }
 

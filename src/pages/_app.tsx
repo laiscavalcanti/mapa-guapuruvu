@@ -3,6 +3,9 @@ import Head from 'next/head'
 import GlobalStyles from 'styles/global'
 import NextNProgress from 'nextjs-progressbar'
 
+import { DefaultSeo } from 'next-seo'
+import SEO from '../../next-seo-config'
+
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -23,6 +26,7 @@ function App({ Component, pageProps }: AppProps) {
           content="Um site mapa dos Guapuruvus da cidade de Ponto Alegre - Brasil"
         />
       </Head>
+      <DefaultSeo {...SEO} />
       <GlobalStyles />
       <NextNProgress 
         color="tomato"
