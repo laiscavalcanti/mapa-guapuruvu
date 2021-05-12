@@ -1,18 +1,22 @@
+
 import * as S from './styles'
 import { links } from './content'
 
-const NavBar = () => {
+export type typeisOpen = {
+  isOpen: boolean
+}
+
+
+const NavBar = ({ isOpen}: typeisOpen) => {
+
   return (
-    <S.NavWrapper>
-      <S.Logo
-        src="/img/logo.png"
-        alt="Logo - Imagem que descreve a marca Mapa de Guapuruvu"
-      />
-      {links.map((link, i) => (
-        <S.Link key={i}>
-          <a href={link.link}>{link.label}</a>
-        </S.Link>
-      ))}
+    <S.NavWrapper isOpen={isOpen}>
+   
+        {links.map((link, i) => (
+          <S.ListLink key={i}>
+            <S.Link href={link.link}>{link.label}</S.Link>
+          </S.ListLink>
+        ))}
     </S.NavWrapper>
   )
 }

@@ -32,6 +32,8 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         list-style: none;
         background: var(--background);
+        font-family: 'Cairo', sans-serif;
+      
     }
 
     body {
