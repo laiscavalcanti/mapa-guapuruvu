@@ -5,20 +5,20 @@ import {typeisOpen} from './index'
 export const NavWrapper = styled.nav`
   display: flex;
   flex-direction:column;
-  transition: 0.3s all ease;
-  background: #EFFFFA;
+  position: absolute;
+  text-align: right;
+  padding: var(--small);
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  margin: 2rem 0rem 0 3rem;
+  background: var(--white);
   font-size: var(--small);
   font-weight: bold;
-  margin: var(--minimal);
-  transform: ${({ isOpen }: typeisOpen) => isOpen ? 'translateX(0)' : 'translateX(-100%)'};
-  position: absolute;
-  text-align: left;
-  padding: 2rem;
-  z-index: 1110;
-  top: 0;
-  left: -20px;
+  transition: 0.3s all ease;
+  border-radius: 5px;
+  transform: ${({ isOpen }: typeisOpen) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
 `
-
 export const ListLink = styled.li`
   display: flex;
   justify-content: space-around;

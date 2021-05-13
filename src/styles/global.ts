@@ -33,7 +33,7 @@ const GlobalStyles = createGlobalStyle`
         list-style: none;
         background: var(--background);
         font-family: 'Cairo', sans-serif;
-      
+        overflow-x: hidden;
     }
 
     body {
