@@ -1,24 +1,20 @@
 import React from 'react'
-import { NavContainer } from './style'
 import dynamic from 'next/dynamic'
 
 import { MapProps } from 'components/Map'
-import NavBar from 'components/NavBar'
-import Burger from 'components/Burger'
+
+import Header from 'components/Header'
 
 const Map = dynamic(() => import('components/Map'), { ssr: false })
 
-export default function HomeTemplate({ places }: MapProps) {
-  const [isOpen, setOpen] = React.useState(false) // state para componente fechar e abrir
-  //
+export default function HomeTemplate({places}: MapProps) {
+ 
+  
   return (
     <>
-      <NavContainer>
-        <Burger isOpen={isOpen} setOpen={setOpen} />
-        <NavBar isOpen={isOpen} setOpen={setOpen} />
-      </NavContainer>
-
+      <Header/>
       <Map places={places} />
     </>
+
   )
 }

@@ -5,31 +5,26 @@ const Radius = styled.div`
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
-  position: absolute;
   z-index: 2001;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   top: 15%;
   right: 2rem;
-  padding: 0;
-  background-color: var(--white);
-  margin: 4rem;
-  overflow-x: hidden;
+  margin: 2rem 2rem 0 1rem;
+  background-color: tomato;
+ 
 `
 const StyledBurger = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
   width: 2rem;
   height: 2rem;
   top: 15%;
   left: 1rem;
-
-  padding: 0;
+  margin: 1.5rem 1.5rem 0 0;
   z-index: 2000;
-  margin-top: 0.5rem;
   background-color: transparent;
   border: none;
   cursor: pointer;

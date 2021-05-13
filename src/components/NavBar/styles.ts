@@ -7,12 +7,12 @@ export const NavWrapper = styled.nav`
   flex-direction:column;
   position: absolute;
   text-align: right;
-  padding: var(--small);
+  padding: var(--medium);
+  margin: 0rem 0 0 2rem;
   z-index: 2000;
   top: 0;
   right: 0;
-  margin: 2rem 0rem 0 3rem;
-  background: var(--white);
+  background: lightpink;
   font-size: var(--small);
   font-weight: bold;
   transition: 0.3s all ease;
