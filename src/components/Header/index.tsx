@@ -8,12 +8,14 @@ const Header = () => {
   const [isOpen, setOpen] = React.useState(false) // state para componente fechar e abrir
   return (
     <S.HeaderWrapper>
+      <S.LogoWrapper>
       <ImageWrapper
-        src="/logo.png"
+        src="/img/logo.png"
         alt="logo que remete a árvore guapuruvu"
-        width={500}
-        height={500}
+        width={300}
+        height={80}
       />
+      </S.LogoWrapper>
       <Burger isOpen={isOpen} setOpen={setOpen} />
       <NavBar isOpen={isOpen} setOpen={setOpen} />
     </S.HeaderWrapper>
