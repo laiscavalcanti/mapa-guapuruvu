@@ -5,6 +5,6 @@ export const HeaderWrapper = styled.header`
     justify-content:space-between;
     height: 9rem;
  
-    background-color: #f2f2f2;
+    background-color: #222;
     color: #f2f;
 `
