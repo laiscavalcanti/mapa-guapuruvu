@@ -12,8 +12,8 @@ const Header = () => {
       <ImageWrapper
         src="/img/logo.png"
         alt="logo que remete a árvore guapuruvu"
-        width={300}
-        height={80}
+        width={350}
+        height={75}
       />
       </S.LogoWrapper>
       <Burger isOpen={isOpen} setOpen={setOpen} />

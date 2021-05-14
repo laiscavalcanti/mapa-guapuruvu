@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const HeaderWrapper = styled.header` 
     display: flex;
     justify-content:space-between;
-    height: 10rem;
-    padding: 1.5rem;
+    height: 11rem;
+    padding: 1rem;
     background-color: #222;
     color: #f2f;
 `
