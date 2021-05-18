@@ -5,6 +5,6 @@ export const SectionFormWrapper = styled.section`
     width: 100%;
     background-color: #e4d901;
 `
-export const ButtonForm = styled.button`
+export const Button = styled.button`
     border: none;
 `

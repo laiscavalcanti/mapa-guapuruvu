@@ -12,7 +12,6 @@ const LinkWrapper = ({ href, children }: LinkWrapperProps) => (
             {children}
         </Link>
     </S.Wrapper>
-
 )
 
 export default LinkWrapper

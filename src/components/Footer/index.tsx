@@ -1,4 +1,5 @@
 import ImageWrapper from 'components/ImageWrapper'
+import SocialLinks from 'components/SocialLinks'
 import { links } from '../NavBar/content'
 import * as S from './style'
 
@@ -6,19 +7,22 @@ const Footer = () => {
   return (
     <>
       <S.FooterWrapper>
-        <S.Title>organizações:</S.Title>
         <S.ListOrganizations>
+        <S.Title>organizações:</S.Title>
             <p>UFRGS</p>
             <p>Aldir Blac</p>
             <p>Prefeitura de Porto Alegre</p>
         </S.ListOrganizations>
-        <S.ListLink>
+        <S.ListOrganizations>
+        <S.ListLinks>
         {links.map((link, i) => (
         <S.ListLink key={i}>
-          <a href={link.link}>{link.label}</a>
+          <S.Link href={link.link}>{link.label}</S.Link>
         </S.ListLink>
       ))}
-        </S.ListLink>
+        </S.ListLinks>
+        <SocialLinks />
+        </S.ListOrganizations>
       </S.FooterWrapper>
     </>
   )

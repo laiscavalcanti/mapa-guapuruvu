@@ -6,11 +6,10 @@ export const HeaderWrapper = styled.header`
     height: 11rem;
     padding: 1rem;
     background-color: #222;
-    color: #f2f;
+    color: #e4d901;
 `
 export const LogoWrapper = styled.div`
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+    justify-content: flex-start;
+
 `

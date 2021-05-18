@@ -1,43 +1,28 @@
-import ImageWrapper from 'components/ImageWrapper'
+
+import Link from 'next/link'
 import * as S from './style'
 
 const SectionInfo = () => {
   return (
-    <S.ContainerText>
-      <S.SectionFormWrapper>
-        <S.Container>
+    <>
+      <S.ContainerText>
+        <S.Text className="post-text">
+              Projeto de mapa colaborativo em Porto Alegre e região que localiza as
+          schizolobium parahyba ou guapuruvu. Arvóre das famílias fabáceas, 
+          reconhecida pela sua folhagem amarela. Suas sementes se dispersam pelo
+          ar de forma anemocoria em uma cápsula-asa. A Guapuruvu vive em média 60 anos e cresce
+          cerca de 3m por ano
+        </S.Text>
+        <S.SectionInfo>
           <S.Text2>
-            projeto de <S.Highlight>mapa colaborativo</S.Highlight>
+            Você viu um <S.Highlight>guapuruvu</S.Highlight>?
           </S.Text2>
           <S.Text3>
-            em{' '}
-            <S.ItalicBold>porto alegre e região</S.ItalicBold>
-            {' '}
-            que localiza as{' '}
+            Nos envie seus dados <S.Highlight2><Link href="/formulario"> AQUI</Link></S.Highlight2>
           </S.Text3>
-          <S.Text1><S.Highlight2>schizolobium parahyba</S.Highlight2> ou guapuruvu</S.Text1>
-          <S.Text4>arvóre das famílias fabáceas</S.Text4>
-        </S.Container>
-
-        <S.Text5>reconhecida pela sua <S.ItalicBold>folhagem amarela</S.ItalicBold></S.Text5>
-
-        <S.Text6>
-          suas sementes se <S.Highlight3>dispersam pelo ar</S.Highlight3> de forma anemocoria em uma
-          cápsula-asa
-        </S.Text6>
-
-        <S.Text7>vive em média 60 anos</S.Text7>
-        <S.Text8>cresce cerca de 3m por ano</S.Text8>
-      </S.SectionFormWrapper>
-      <S.Image>
-        <ImageWrapper
-          src="/img/Ativo-10.png"
-          alt="Imagem que descreve uma guapuruvu amarela"
-          width={500}
-          height={800}
-        />
-      </S.Image>
-    </S.ContainerText>
+        </S.SectionInfo>
+      </S.ContainerText>
+    </>
   )
 }
 

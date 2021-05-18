@@ -17,23 +17,24 @@ export const SocialLinksList = styled.nav`
   `}*/
 `
 export const SocialLinksItem = styled.li`
-  margin: 0.8rem 0.5rem 0.8rem 0.5rem;
+  margin: 0.8rem 0rem 0.8rem 1rem;
   /*${media.lessThan("large")`
     margin: 0.7rem;
   `}*/
 `
 export const SocialLinksLink = styled.a`
-  color: var(--sameColorWhite);
+  color: var(--black);
   transition: color 0.5s;
   transition: transform 0.2s;
+  
   &:hover {
-    color: var(--color);
+    color: #228b22;
   }
 `
 export const IconWrapper = styled.div`
   fill: #bbb;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   /*${media.lessThan("large")`
     width: 21px;
     height: 21px;

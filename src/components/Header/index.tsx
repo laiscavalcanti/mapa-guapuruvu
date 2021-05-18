@@ -10,8 +10,8 @@ const Header = () => {
     <S.HeaderWrapper>
       <S.LogoWrapper>
       <ImageWrapper
-        src="/img/logo.png"
-        alt="logo que remete a árvore guapuruvu"
+        src="/logo.png"
+        alt="Logo"
         width={350}
         height={75}
       />

@@ -1,7 +1,7 @@
 import Icons from "./Icons"
 import links from "./content"
 
-import * as S from "./styled"
+import * as S from "./style"
 
 const SocialLinks = () =>(
 <>
