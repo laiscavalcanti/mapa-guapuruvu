@@ -2,7 +2,8 @@ import * as S from './styles'
 import { links } from './content'
 
 export type typeisOpen = {
-  isOpen: boolean
+  isOpen: boolean,
+  setOpen: any
 }
 
 const NavBar = ({ isOpen }: typeisOpen) => {
