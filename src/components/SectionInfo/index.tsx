@@ -11,16 +11,15 @@ const SectionInfo = () => {
           </S.Text2>
           <S.Text3>
             em{' '}
-            <i>
-              <b>porto alegre e região</b>
-            </i>{' '}
+            <S.ItalicBold>porto alegre e região</S.ItalicBold>
+            {' '}
             que localiza as{' '}
           </S.Text3>
           <S.Text1><S.Highlight2>schizolobium parahyba</S.Highlight2> ou guapuruvu</S.Text1>
           <S.Text4>arvóre das famílias fabáceas</S.Text4>
         </S.Container>
 
-        <S.Text5>reconhecida pela sua <i><b>folhagem amarela</b></i></S.Text5>
+        <S.Text5>reconhecida pela sua <S.ItalicBold>folhagem amarela</S.ItalicBold></S.Text5>
 
         <S.Text6>
           suas sementes se <S.Highlight3>dispersam pelo ar</S.Highlight3> de forma anemocoria em uma

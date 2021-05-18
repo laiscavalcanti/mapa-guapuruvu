@@ -20,17 +20,29 @@ export const SectionFormWrapper = styled.section`
 export const Container = styled.div`
   width: 85%;
 `
+export const ItalicBold = styled.span`
+  font-weight: 600;
+  font-style: italic;
+  &::selection{
+      color: #228b22;
+      background-color: var(--black);
+    }
+` 
 export const Highlight = styled.span`
-  box-shadow: inset 0 -0.07em 0 #729e01;
+  box-shadow: inset 0 -0.07em 0 #228b22;
   transition: box-shadow 0.2s ease-out, color 0.2s ease-out;
-  cursor: pointer;
   &:hover {
-    box-shadow: inset 0 -1.05em 0 #729e01;
+    box-shadow: inset 0 -1.05em 0 #228b22;
     color: #222;
   }
+  &::selection{
+      color: #228b22;
+      background-color: var(--black);
+    }
+  
 `
 export const Highlight2 = styled.span`
-  background: linear-gradient(to right top, #729e01, #a56700, #ad1e27, #860057, #191970);
+  background-image: linear-gradient(to right top, #228b22, #44a323, #64bb21, #85d31c, #a8eb12);
   background-size: 200% 200%;
   background-clip: text;
   animation: rainbow 2s ease-in-out infinite;
@@ -41,7 +53,11 @@ export const Highlight2 = styled.span`
   cursor: text;
     &:hover {
         color: #e4d901;
-        box-shadow: inset 0 -0.3em 0 #729e01;
+        box-shadow: inset 0 -0.3em 0 #228b22;
+    }
+    &::selection{
+      color: #228b22;
+      background-color: var(--black);
     }
 `
 export const Highlight3 = styled.span`
@@ -58,6 +74,10 @@ export const Highlight3 = styled.span`
         color: #e4d901;
         background-image: linear-gradient(to right top, #228b22, #44a323, #64bb21, #85d31c, #a8eb12);
     }
+    &::selection{
+      color: #228b22;
+      background-color: var(--black);
+    }
 `
 
 export const Text1 = styled.h1`
@@ -65,30 +85,50 @@ export const Text1 = styled.h1`
   font-size: 2.3rem;
   padding: 1.5rem 0rem 1rem 0rem;
   letter-spacing: 3px;
+  &::selection{
+      color: #228b22;
+    }
 `
 export const Text2 = styled.p`
   font-family: 'Rubik', sans-serif;
   font-size: 4.2rem;
   padding: 1.5rem 0rem 2rem 4rem;
+  &::selection{
+      color: #228b22;
+      background-color: var(--black);
+    }
 `
 export const Text3 = styled.p`
   font-family: 'Cairo', sans-serif;
   font-size: 2.8rem;
   padding: 1.5rem 0rem 1rem 0rem;
+  &::selection{
+      color: #228b22;
+    }
 `
 export const Text4 = styled.p`
   font-family: 'Roboto Mono', monospace;
   font-size: 3.5rem;
   padding: 1.5rem 0rem 1rem 0rem;
+  &::selection{
+      color: #228b22;
+
+    }
 `
 export const Text5 = styled.p`
   font-family: 'Arvo', serif;
   font-size: 3rem;
   padding: 1.5rem 0 1rem 0;
+  &::selection{
+      color: #228b22;
+    }
 `
 export const Text6 = styled.p`
   font-size: 2.5rem;
   padding: 1.5rem 0 1.5rem 5rem;
+  &::selection{
+      color: #228b22;
+    }
 `
 export const Text7 =  styled.p`
   display: flex;
@@ -97,6 +137,9 @@ export const Text7 =  styled.p`
   font-size: 2.4rem;
   padding: 1.5rem 0 1.5rem 0rem;
   font-weight: 600;
+  &::selection{
+      color: #228b22;
+    }
 `
 export const Text8 = styled.p`
   display: flex;
@@ -104,5 +147,8 @@ export const Text8 = styled.p`
   font-family: 'Arvo', serif;
   font-size: 3rem;
   padding: 1.5rem 4rem 1.5rem 0rem;
+  &::selection{
+      color: #228b22;
+    }
 
 `
