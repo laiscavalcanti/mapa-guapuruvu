@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyles = createGlobalStyle`
     :root{
         --highlight: #006400;
-        --background: #e4d901;
+        --background: #8bae63;
         --white: #eeeeee;
         --black: #222 ;
 
@@ -41,7 +41,6 @@ const GlobalStyles = createGlobalStyle`
     }
 
     p{
-        font-size: 2rem;
         line-height: var(--medium);
     }
 

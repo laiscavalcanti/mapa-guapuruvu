@@ -9,12 +9,14 @@ export const Content = styled.section`
     height: 100vh;
     max-width: var(--container);
     margin: auto;
+    font-family: 'Ubuntu', sans-serif;
 `
 export const Heading = styled.h1`
-    font-size: var(--large);
+    font-size: var(--medium);
     margin-bottom: var(--large);
 `
 
 export const Body = styled.div`
     color: var(--black);
+    font-family: 'Ubuntu', sans-serif;
 `

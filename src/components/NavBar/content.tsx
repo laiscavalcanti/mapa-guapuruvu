@@ -5,7 +5,7 @@ export const links = [
   },
   {
     label: 'Formulário',
-    link: '/sobre'
+    link: '/formulario'
   },
   {
     label: 'Linkania',

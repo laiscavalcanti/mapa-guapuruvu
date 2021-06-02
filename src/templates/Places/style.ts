@@ -5,20 +5,22 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.section`
-  max-width: var(--container);
-  padding-bottom: var(--large);
+  max-width: 60%;
+  padding: var(--small) var(--large) var(--small) var(--large);
   margin: auto;
 `
 
 export const Heading = styled.h1`
-  font-size: var(--large);
+  font-size: var(--medium);
   margin-bottom: var(--medium);
 `
 
 export const Body = styled.div`
   margin-bottom: var(--large);
+ 
   p {
     margin-bottom: var(--medium);
+    font-size: var(--small);
   }
 `
 

@@ -12,7 +12,7 @@ const Radius = styled.div`
   top: 15%;
   right: 2rem;
   margin: 2rem 2rem 0 1rem;
-  background-color: #e4d901;
+  background-color: var(--background);
  
 `
 const StyledBurger = styled.button`
