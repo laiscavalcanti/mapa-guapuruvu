@@ -37,7 +37,7 @@ const StyledBurger = styled.button`
     width: 2rem;
     height: 0.25rem;
     background: ${({ isOpen }: { isOpen: boolean }) =>
-      isOpen ? '#0D0C1D' : '#005000'};
+      isOpen ? '#0D0C1D' : '#222'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

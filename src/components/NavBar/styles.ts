@@ -24,10 +24,9 @@ export const ListLink = styled.li`
   justify-content: space-around;
   margin: 4rem 1.5rem 2rem 1.5rem;
 `
-
 export const Link = styled.a`
 position: relative;
-
+color: var(--black);
   &::after {
     position: absolute;
     content: '';
@@ -35,14 +34,15 @@ position: relative;
     left: 0;
     width: 100%;
     height: 3px;
-    background: #005000;
+    background: var(--highlight);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.5s;
   }
 
   &:hover {
-    color: #228b22
+    color: var(--black);
+    opacity: .9;
   }
 
   &:hover::after {
