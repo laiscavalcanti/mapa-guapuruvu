@@ -6,7 +6,7 @@ import { MapProps } from 'components/Map'
 import Header from 'components/Header'
 import SectionInfo from 'components/SectionInfo'
 import Footer from 'components/Footer'
-import Icongraphic from 'components/Iconographic'
+import Steps from 'components/Steps'
 
 const Map = dynamic(() => import('components/Map'), { ssr: false })
 
@@ -18,7 +18,7 @@ export default function HomeTemplate({places}: MapProps) {
       <Header/>
       <Map places={places} />
       <SectionInfo />
-      <Icongraphic />
+      <Steps />
       <Footer />
     </>
 

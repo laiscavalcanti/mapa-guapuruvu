@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const IcongraphicWrapper = styled.div`
+export const StepsWrapper = styled.div`
   width: 100%;
   height: 40rem;
   display: flex;
@@ -17,6 +17,7 @@ export const Line = styled.span`
 export const Icon = styled.section`
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 .5rem 0 .5rem;
 `
 export const TextArea = styled.div`

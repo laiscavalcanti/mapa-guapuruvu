@@ -5,9 +5,9 @@ import photo from './animations/photo.json'
 import email from './animations/email.json'
 import takePhoto from './animations/take-photo.json'
 
-const Icongraphic = () => {
+const Steps = () => {
   return (
-    <S.IcongraphicWrapper>
+    <S.StepsWrapper>
       <S.Number>1</S.Number>
       <S.TextArea>
         <S.Title>encontre um Guapuruvu</S.Title>
@@ -34,16 +34,16 @@ const Icongraphic = () => {
       </S.TextArea>
       <S.Icon>
         <Lottie
-          width="150px"
-          height="150px"
+          width="170px"
+          height="170px"
           className="lottie-container basic"
           config={{ animationData: photo, loop: true, autoplay: true }}
         />
       </S.Icon>
 
       <S.Line />
-      <S.TextArea>
       <S.Number>3</S.Number>
+      <S.TextArea>
         <S.Title>nos envie as informações</S.Title>
         <S.Text>
           tamanho, colocaração, idade - essas informações serão enviadas através
@@ -59,9 +59,8 @@ const Icongraphic = () => {
           config={{ animationData: email, loop: true, autoplay: true }}
         />
       </S.Icon>
-    </S.IcongraphicWrapper>
+    </S.StepsWrapper>
   )
 }
 
-
-export default Icongraphic
+export default Steps
