@@ -4,9 +4,9 @@ import { GET_PLACES, GET_PLACE_BY_SLUG } from 'graphql/queries'
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
 //import AboutTemplate from 'templates/About'
-import PlacesTemplate, { PlaceTemplateProps} from 'templates/Places'
+import PlacesTemplate, { PlacesTemplateProps} from 'templates/Places'
 
-export default function Place({ place }: PlaceTemplateProps) {
+export default function Place({ place }: PlacesTemplateProps) {
   const router = useRouter()
 
   // para gerar as demais páginas que não são as 3 primeiras definidas no

@@ -14,6 +14,10 @@ export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
 `
+export const Fields = styled.p`
+  font-size: var(--small);
+  font-weight: bold;
+`
 
 export const Body = styled.div`
   margin-bottom: var(--large);

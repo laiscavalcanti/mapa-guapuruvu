@@ -17,6 +17,12 @@ export type PlacesTemplateProps = {
   place: {
     slug: string
     name: string
+    location_numeric: string
+    adress: string
+    tag: string
+    state: string
+    age: string
+    period: string
     description?: {
       html: string
       text: string
@@ -62,7 +68,12 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
       <S.Wrapper>
         <S.Container>
           <S.Heading>{place.name}</S.Heading>
-
+          <S.Fields>{place.location_numeric}</S.Fields>
+          <S.Fields>{place.adress}</S.Fields>
+          <S.Fields>{place.tag}</S.Fields>
+          <S.Fields>{place.state}</S.Fields>
+          <S.Fields>{place.period}</S.Fields>
+          <S.Fields> opa{place.age}</S.Fields>
           <S.Body
             dangerouslySetInnerHTML={{ __html: place.description?.html || '' }}
           />

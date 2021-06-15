@@ -29,6 +29,12 @@ export const GET_PLACES = gql`
       id
       slug
       name
+      location_numeric
+      adress
+      tag
+      state
+      age
+      period
       location {
         longitude
         latitude
@@ -50,6 +56,12 @@ query getPlaceBySlug($slug: String){
     id
     slug
     name
+    location_numeric
+    adress
+    tag
+    state
+    age
+    period
     location{
       longitude
       latitude
