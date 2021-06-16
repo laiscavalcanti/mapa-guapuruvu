@@ -1,7 +1,6 @@
-const Formulario = () => {
+const Form = () => {
   return (
      <>
-     <h1>Formulário</h1>
     <iframe
      src="https://docs.google.com/forms/d/e/1FAIpQLSfysY5zFwQM6hyUfI_Q1E9lbi5uYdcahPKHWjY9BoihMo9eRQ/viewform"
       width="1000"
@@ -14,4 +13,4 @@ const Formulario = () => {
   )
 }
 
-export default Formulario
+export default Form

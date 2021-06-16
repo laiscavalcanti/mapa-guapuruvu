@@ -68,12 +68,33 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
       <S.Wrapper>
         <S.Container>
           <S.Heading>{place.name}</S.Heading>
-          <S.Fields>{place.location_numeric}</S.Fields>
-          <S.Fields>{place.adress}</S.Fields>
-          <S.Fields>{place.tag}</S.Fields>
-          <S.Fields>{place.state}</S.Fields>
-          <S.Fields>{place.period}</S.Fields>
-          <S.Fields> opa{place.age}</S.Fields>
+          <S.ListField>
+            <S.FieldWrapper>
+              <S.Field>Coordenadas:</S.Field>
+              <S.Value>{place.location_numeric}</S.Value>
+            </S.FieldWrapper>
+            <S.FieldWrapper>
+              <S.Field>Endereço:</S.Field>
+              <S.Value>{place.adress}</S.Value>
+            </S.FieldWrapper>
+            <S.FieldWrapper>
+              <S.Field>Área:</S.Field>
+              <S.Value>{place.tag}</S.Value>
+            </S.FieldWrapper>
+            <S.FieldWrapper>
+              <S.Field>Estado:</S.Field>
+              <S.Value>{place.state}</S.Value>
+            </S.FieldWrapper>
+            <S.FieldWrapper>
+              <S.Field>Período: </S.Field>
+              <S.Value>{place.period}</S.Value>
+            </S.FieldWrapper>
+            <S.FieldWrapper>
+              <S.Field>Idade: </S.Field>
+              <S.Value> {place.age}</S.Value>
+            </S.FieldWrapper>
+          </S.ListField>
+
           <S.Body
             dangerouslySetInnerHTML={{ __html: place.description?.html || '' }}
           />
@@ -89,9 +110,7 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
                   height={image.height}
                   quality={75}
                 />
-                <S.Caption>
-                 
-                </S.Caption>
+                <S.Caption></S.Caption>
               </>
             ))}
           </S.Gallery>

@@ -13,9 +13,20 @@ export const Container = styled.section`
 export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
+  text-align: center;
 `
-export const Fields = styled.p`
-  font-size: var(--small);
+export const ListField = styled.div`
+  margin: 1rem 2rem 4rem 0;
+`
+export const FieldWrapper = styled.div`
+  display: flex;
+`
+export const Value = styled.p`
+  font-size: var(--smallest);
+  margin-left: 1rem;
+`
+export const Field = styled.p`
+  font-size: var(--smallest);
   font-weight: bold;
 `
 
