@@ -7,7 +7,6 @@ const SocialLinks = () => {
   return (
     <>
       <S.SocialLinksWrapper>
-          Siga-nos nas redes sociais
         <S.SocialLinksList>
           {links.map((link, i) => {
             const Icon = Icons[link.label]
