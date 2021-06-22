@@ -8,8 +8,8 @@ const GETFORM_FORM_ENDPOINT =
 
 function FormContact() {
   const classes = useStyles()
- 
-  const [formStatus, setFormStatus] = useState(false)
+
+  const [formStatus, setFormStatus] = useState(false) //valor inicial
   const [query, setQuery] = useState({
     name: '',
     email: '',
@@ -17,6 +17,8 @@ function FormContact() {
     message: ''
   })
 
+  const isFormValid = query.name.length === 0 || query.email.length === 0
+  
   const handleFileChange = () => (e: any) => {
     setQuery((prevState) => ({
       ...prevState,
@@ -96,6 +98,8 @@ function FormContact() {
             type="text"
             name="message"
             required
+            multiline
+            rowsMax={10}
             placeholder="mensagem"
             label="mensagem"
             variant="outlined"
@@ -106,7 +110,7 @@ function FormContact() {
             onChange={handleParam()}
           />
         </S.InputWrapper>
-        <S.Button type="submit">Enviar</S.Button>
+        <S.Button type="submit" disabled={isFormValid} >Enviar</S.Button>
       </S.Form>
     </S.FormContactWrapper>
   )
