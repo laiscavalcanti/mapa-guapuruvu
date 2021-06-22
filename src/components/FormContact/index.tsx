@@ -1,8 +1,14 @@
 import { useState } from 'react'
 
-const GETFORM_FORM_ENDPOINT = 'https://getform.io/f/eb07aa98-68ec-4738-8619-a4f065496426'
+import * as S from './style'
+import { useStyles } from './style'
+
+const GETFORM_FORM_ENDPOINT =
+  'https://getform.io/f/eb07aa98-68ec-4738-8619-a4f065496426'
 
 function FormContact() {
+  const classes = useStyles()
+ 
   const [formStatus, setFormStatus] = useState(false)
   const [query, setQuery] = useState({
     name: '',
@@ -53,49 +59,56 @@ function FormContact() {
       })
   }
   return (
-    <div className="App">
-
-      <form onSubmit={formSubmit} encType="multipart/form-data">
-        <div>
-          <label>Name</label>
-          <input
+    <S.FormContactWrapper className={classes.root}>
+      <S.Form onSubmit={formSubmit} encType="multipart/form-data">
+        <S.InputWrapper>
+          <S.CssTextField
             type="text"
             name="name"
             required
-            placeholder="Name"
-            className="form-control"
+            placeholder="Nome"
+            label="Nome"
+            variant="outlined"
+            className="field"
+            inputProps={{ style: { fontSize: 15 } }}
+            InputLabelProps={{ style: { fontSize: 15 } }}
             value={query.name}
             onChange={handleParam()}
           />
-        </div>
-        <div>
-          <label>Email</label>
-          <input
+        </S.InputWrapper>
+        <S.InputWrapper>
+          <S.CssTextField
             type="email"
             name="email"
             required
-            placeholder="Email"
-            className="form-control"
+            placeholder="email"
+            label="Email"
+            variant="outlined"
+            className="field"
+            inputProps={{ style: { fontSize: 15 } }}
+            InputLabelProps={{ style: { fontSize: 15 } }}
             value={query.email}
             onChange={handleParam()}
           />
-        </div>
-      
-        <div>
-          <label>Message</label>
-          <input
+        </S.InputWrapper>
+        <S.InputWrapper>
+          <S.CssTextField
             type="text"
             name="message"
             required
-            placeholder="Message"
-            className="form-control"
+            placeholder="mensagem"
+            label="mensagem"
+            variant="outlined"
+            className="field message"
+            inputProps={{ style: { fontSize: 15, height: 100 } }}
+            InputLabelProps={{ style: { fontSize: 15 } }}
             value={query.message}
             onChange={handleParam()}
           />
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+        </S.InputWrapper>
+        <S.Button type="submit">Enviar</S.Button>
+      </S.Form>
+    </S.FormContactWrapper>
   )
 }
 
