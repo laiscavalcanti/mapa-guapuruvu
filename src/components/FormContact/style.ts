@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
+import Button from '@material-ui/core/Button'
 import { withStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme) => ({
@@ -8,8 +9,13 @@ export const useStyles = makeStyles((theme) => ({
     '& > *': {
       margin: theme.spacing(1),
       width: '25ch'
+    },
+    "& .Mui-disabled": {
+      background: "#e4d901",
+      opacity: '.5'
     }
-  }
+  },
+  disabled: {}
 }))
 
 export const CssTextField = withStyles({
@@ -50,7 +56,11 @@ export const InputWrapper = styled.div`
 `
 export const Label = styled.label``
 export const Input = styled.input``
-export const Button = styled.button`
-  border: none;
-  background-color: lightcoral;
-`
+
+export const CSSButton = withStyles({
+  disabled:{
+    "& .MuiInputBase-root.Mui-disabled": {
+      backgroundColor: "black"
+    }
+  }
+})(Button)
