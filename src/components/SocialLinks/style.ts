@@ -33,8 +33,9 @@ export const SocialLinksLink = styled.a`
 `
 export const IconWrapper = styled.div<PropsIcons>`
   color: ${(props) => props.color || '#222'};
-  width: ${(props) => props.height || '15px'};
-  height: ${(props) => props.width || '15px'};
+  width: ${(props) => props.height || '18px'};
+  height: ${(props) => props.width || '18px'};
+  margin: ${(props) => props.margin || '0.5rem'};
   /*${media.lessThan('large')`
     width: 21px;
     height: 21px;

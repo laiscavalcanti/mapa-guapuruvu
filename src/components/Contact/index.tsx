@@ -6,13 +6,13 @@ const Contact = () => {
   return (
     <S.ContactWrapper>
       <S.ContainerSocialLinks>
-        <S.Text>Nosso contato</S.Text>
+        <S.TextLink></S.TextLink>
         <S.SocialLinkColumn>
-          <SocialLinks color="#ffffff" height='30px' width='30px'  />
+          <SocialLinks color="#ffffff" height="30px" width="30px" margin="1rem" />
         </S.SocialLinkColumn>
       </S.ContainerSocialLinks>
       <S.ContainerContact>
-        <S.Text>Nos mande uma mensagem</S.Text>
+        <S.Text></S.Text>
         <FormContact />
       </S.ContainerContact>
     </S.ContactWrapper>

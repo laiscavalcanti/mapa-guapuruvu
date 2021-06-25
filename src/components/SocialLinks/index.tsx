@@ -6,10 +6,11 @@ import * as S from './style'
 export type PropsIcons = {
   color: string,
   height: string,
-  width: string
+  width: string,
+  margin: string
 }
 
-const SocialLinks = ({color, height, width}: PropsIcons) => {
+const SocialLinks = ({color, height, width, margin}: PropsIcons) => {
   return (
     <>
       <S.SocialLinksWrapper>
@@ -24,7 +25,7 @@ const SocialLinks = ({color, height, width}: PropsIcons) => {
                   target="_blank"
                   rel="noopener noreferrer" 
                 >
-                  <S.IconWrapper height={height} width={width} color={color}>
+                  <S.IconWrapper height={height} width={width} color={color} margin={margin}>
                     <Icon />
                   </S.IconWrapper>
                 </S.SocialLinksLink>

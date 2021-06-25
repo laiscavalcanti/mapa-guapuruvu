@@ -1,6 +1,6 @@
 const links = [
     {
-      label: "Instagram",
+      label: "Github",
       url: "cicero.n.marra@gmail.com",
     },
     {
@@ -9,6 +9,10 @@ const links = [
     },
     {
       label: "Twitter",
+      url: "http://whats.link/ciceromarra",
+    },
+    {
+      label: "Email",
       url: "http://whats.link/ciceromarra",
     },
   ]
