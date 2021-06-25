@@ -17,7 +17,10 @@ function FormContact() {
     message: ''
   })
 
-  const isFormValid = query.name.length === 0 || query.email.length === 0 || query.message.length === 0
+  const isFormValid =
+    query.name.length === 0 ||
+    query.email.length === 0 ||
+    query.message.length === 0
 
   const handleFileChange = () => (e: any) => {
     setQuery((prevState) => ({
@@ -68,8 +71,8 @@ function FormContact() {
             type="text"
             name="name"
             required
-            placeholder="Nome"
-            label="Nome"
+            placeholder="nome"
+            label="nome"
             variant="outlined"
             className="field"
             inputProps={{ style: { fontSize: 15 } }}
@@ -84,7 +87,7 @@ function FormContact() {
             name="email"
             required
             placeholder="email"
-            label="Email"
+            label="email"
             variant="outlined"
             className="field"
             inputProps={{ style: { fontSize: 15 } }}
@@ -112,18 +115,19 @@ function FormContact() {
         </S.InputWrapper>
         <S.CSSButton
           style={{
-            backgroundColor:'#e4d901',
+            backgroundColor: '#e4d901',
             borderRadius: 2,
             padding: '5px 5px',
             fontSize: '15px',
-            marginLeft: '10px',
-            color:'#222',
-            textTransform:"lowercase"
+            
+            color: '#222',
+            textTransform: 'lowercase',
+            marginTop: '2rem'
           }}
           variant="contained"
           type="submit"
           disabled={isFormValid}
-          classes={{  disabled: classes.disabled }}
+          classes={{ disabled: classes.disabled }}
         >
           enviar
         </S.CSSButton>

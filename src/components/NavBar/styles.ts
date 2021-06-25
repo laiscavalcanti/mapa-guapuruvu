@@ -1,10 +1,9 @@
 import styled from 'styled-components'
-import {typeisOpen} from './index'
-
+import { typeisOpen } from './index'
 
 export const NavWrapper = styled.nav`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   position: absolute;
   text-align: right;
   padding: var(--medium);
@@ -17,7 +16,8 @@ export const NavWrapper = styled.nav`
   font-weight: bold;
   transition: 0.3s all ease;
   border-radius: 5px;
-  transform: ${({ isOpen }: typeisOpen) => isOpen ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${({ isOpen }: typeisOpen) =>
+    isOpen ? 'translateX(0)' : 'translateX(100%)'};
 `
 export const ListLink = styled.li`
   display: flex;
@@ -25,8 +25,8 @@ export const ListLink = styled.li`
   margin: 4rem 1.5rem 2rem 1.5rem;
 `
 export const Link = styled.a`
-position: relative;
-color: var(--black);
+  position: relative;
+  color: var(--black);
   &::after {
     position: absolute;
     content: '';
@@ -42,7 +42,7 @@ color: var(--black);
 
   &:hover {
     color: var(--black);
-    opacity: .9;
+    opacity: 0.9;
   }
 
   &:hover::after {

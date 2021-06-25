@@ -2,21 +2,27 @@ import { Icons, iconsProps } from './Icons'
 import links from './content'
 
 import * as S from './style'
+import { PropsWithChildren } from 'react'
 
-const SocialLinks = () => {
+export type PropsColorLink = {
+  colorlink: string
+}
+
+const SocialLinks = ({colorlink}: PropsColorLink) => {
   return (
     <>
       <S.SocialLinksWrapper>
-        <S.SocialLinksList>
+        <S.SocialLinksList >
           {links.map((link, i) => {
             const Icon = Icons[link.label]
             return (
-              <S.SocialLinksItem key={i}>
+              <S.SocialLinksItem key={i} >
                 <S.SocialLinksLink
                   href={link.url}
                   title={link.label}
                   target="_blank"
                   rel="noopener noreferrer"
+                  colorlink={colorlink}
                 >
                   <S.IconWrapper>
                     <Icon />
