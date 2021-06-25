@@ -8,7 +8,7 @@ const Contact = () => {
       <S.ContainerSocialLinks>
         <S.Text>Nosso contato</S.Text>
         <S.SocialLinkColumn>
-          <SocialLinks colorlink="#ffffff" />
+          <SocialLinks color="#ffffff" height='30px' width='30px'  />
         </S.SocialLinkColumn>
       </S.ContainerSocialLinks>
       <S.ContainerContact>

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
-import { PropsColorLink } from './index'
+import { PropsIcons } from './index'
 //import media from "styled-media-query"
-
-
 
 export const SocialLinksWrapper = styled.div`
   display: flex;
@@ -25,8 +23,7 @@ export const SocialLinksItem = styled.li`
     margin: 0.7rem;
   `}*/
 `
-export const SocialLinksLink = styled.a<PropsColorLink>`
-  color: ${(props) => props.colorlink || '#222'};
+export const SocialLinksLink = styled.a`
   transition: color 0.5s;
   transition: transform 0.2s;
 
@@ -34,10 +31,10 @@ export const SocialLinksLink = styled.a<PropsColorLink>`
     color: #228b22;
   }
 `
-export const IconWrapper = styled.div`
-  fill: #bbb;
-  width: 30px;
-  height: 30px;
+export const IconWrapper = styled.div<PropsIcons>`
+  color: ${(props) => props.color || '#222'};
+  width: ${(props) => props.height || '15px'};
+  height: ${(props) => props.width || '15px'};
   /*${media.lessThan('large')`
     width: 21px;
     height: 21px;

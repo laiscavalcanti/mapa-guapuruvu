@@ -1,14 +1,15 @@
-import { Icons, iconsProps } from './Icons'
+import { Icons } from './Icons'
 import links from './content'
 
 import * as S from './style'
-import { PropsWithChildren } from 'react'
 
-export type PropsColorLink = {
-  colorlink: string
+export type PropsIcons = {
+  color: string,
+  height: string,
+  width: string
 }
 
-const SocialLinks = ({colorlink}: PropsColorLink) => {
+const SocialLinks = ({color, height, width}: PropsIcons) => {
   return (
     <>
       <S.SocialLinksWrapper>
@@ -21,10 +22,9 @@ const SocialLinks = ({colorlink}: PropsColorLink) => {
                   href={link.url}
                   title={link.label}
                   target="_blank"
-                  rel="noopener noreferrer"
-                  colorlink={colorlink}
+                  rel="noopener noreferrer" 
                 >
-                  <S.IconWrapper>
+                  <S.IconWrapper height={height} width={width} color={color}>
                     <Icon />
                   </S.IconWrapper>
                 </S.SocialLinksLink>
