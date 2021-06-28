@@ -7,7 +7,6 @@ export const StepsWrapper = styled.div`
   justify-content: center;
   background-color: var(--background);
   padding: 4rem;
-  border: 1px solid white;
 `
 export const Line = styled.span`
   margin: .5rem 0 .5rem 0;

@@ -31,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
     html, body, #__next{
         height: 100%;
         list-style: none;
-        background: var(--background);
+        background: var(--white);
         font-family: 'Cairo', sans-serif;
         overflow-x: hidden;
     }

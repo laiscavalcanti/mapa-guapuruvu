@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+  background-color: var(--black);
+`
 export const ContactWrapper = styled.div`
   width: 80%;
   height: auto;
@@ -28,8 +31,8 @@ export const ContainerSocialLinks = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--black);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px ;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px ;
 `
 export const ContainerContact = styled.div`
   width: 60%;
@@ -39,4 +42,6 @@ export const ContainerContact = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--white);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px ;
 `

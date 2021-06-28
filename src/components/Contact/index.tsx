@@ -4,6 +4,7 @@ import * as S from './style'
 
 const Contact = () => {
   return (
+    <S.Container>
     <S.ContactWrapper>
       <S.ContainerSocialLinks>
         <S.TextLink></S.TextLink>
@@ -16,6 +17,7 @@ const Contact = () => {
         <FormContact />
       </S.ContainerContact>
     </S.ContactWrapper>
+    </S.Container>
   )
 }
 
