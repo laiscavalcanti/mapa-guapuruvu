@@ -3,10 +3,12 @@ import { Lottie } from '@crello/react-lottie'
 import mapView from './animations/mapView.json'
 import photo from './animations/photo.json'
 import email from './animations/email.json'
-import takePhoto from './animations/take-photo.json'
 
 const Steps = () => {
   return (
+    <>
+    <S.Container>
+    <S.H2>como colaborar</S.H2>
     <S.StepsWrapper>
       <S.Number>1</S.Number>
       <S.TextArea>
@@ -17,8 +19,8 @@ const Steps = () => {
       </S.TextArea>
       <S.Icon>
         <Lottie
-          width="150px"
-          height="150px"
+          width="120px"
+          height="120px"
           className="lottie-container basic"
           config={{ animationData: mapView, loop: true, autoplay: true }}
         />
@@ -34,8 +36,8 @@ const Steps = () => {
       </S.TextArea>
       <S.Icon>
         <Lottie
-          width="170px"
-          height="170px"
+          width="140px"
+          height="140px"
           className="lottie-container basic"
           config={{ animationData: photo, loop: true, autoplay: true }}
         />
@@ -53,13 +55,15 @@ const Steps = () => {
 
       <S.Icon>
         <Lottie
-          width="150px"
-          height="150px"
+          width="120px"
+          height="120px"
           className="lottie-container basic"
           config={{ animationData: email, loop: true, autoplay: true }}
         />
       </S.Icon>
     </S.StepsWrapper>
+    </S.Container>
+    </>
   )
 }
 

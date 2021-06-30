@@ -1,24 +1,27 @@
 import styled from 'styled-components'
 
 export const ContainerText = styled.div`
-  background-color: var(--black);
-  width: 100%;
   display: flex;
-  height: 40rem;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
   padding: 3rem;
+  font-size: 1.5rem;
 `
 export const Text = styled.p`
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-decoration: none;
   color: inherit;
-  max-width: 500px;
+  max-width: 800px;
   position: relative;
   padding: 2rem;
-  box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #ccc;
-  background-color: var(--background);
-
+  box-shadow: inset 0 0 0 4px var(--black), inset -4px -4px 0 6px var(--background);
+  background-color: var(--white);
+  font-size: 1.6rem;
   &:before {
     position: absolute;
     left: 0;
@@ -70,7 +73,14 @@ export const Highlight = styled.span`
   }
 `
 export const Highlight2 = styled.span`
- background-image: linear-gradient(to right top, #e4d901, #e6d505, #e8d109, #eace0e, #ebca12);
+  background-image: linear-gradient(
+    to right top,
+    #e4d901,
+    #e6d505,
+    #e8d109,
+    #eace0e,
+    #ebca12
+  );
   background-size: 200% 200%;
   background-clip: text;
   animation: rainbow 2s ease-in-out infinite;

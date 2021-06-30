@@ -1,15 +1,17 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: var(--large) var(--medium);
 `
-
 export const Container = styled.section`
   max-width: 60%;
   padding: var(--small) var(--large) var(--small) var(--large);
   margin: auto;
 `
-
 export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
@@ -29,7 +31,6 @@ export const Field = styled.p`
   font-size: var(--smallest);
   font-weight: bold;
 `
-
 export const Body = styled.div`
   margin-bottom: var(--large);
  
@@ -38,7 +39,6 @@ export const Body = styled.div`
     font-size: var(--small);
   }
 `
-
 export const Gallery = styled.div`
   display: grid;
   margin-top: var(--medium);
@@ -63,7 +63,6 @@ export const Gallery = styled.div`
     }
   }
 `
-
 export const Caption = styled.p`
   font-size: var(--small);
   color: var(--grey);
