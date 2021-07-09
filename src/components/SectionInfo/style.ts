@@ -1,55 +1,68 @@
 import styled from 'styled-components'
 
-export const ContainerText = styled.div`
+export const SectionInfoWrapper = styled.div`
+  position: relative;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   width: 80%;
-  margin: 0 auto;
+  height: auto;
+  padding: var(--medium);
+  margin-bottom: 2rem;
+`
+export const ContainerText = styled.div`
+  position: absolute;
+  width: 50%;
   height: auto;
   padding: 3rem;
-  font-size: 1.5rem;
+  background-color: var(--white);
+  bottom: 8px;
+  right: -10rem;
+  border: 2px solid var(--background);
+  border-radius: 5px;
+  box-shadow:4px -1px 15px 7px rgba(0,0,0,0.1);
+`
+export const ReadMore = styled.a`
+  align-self: flex-start;
+  margin: 0 0rem 0 2rem;
+  text-decoration: none;
+  font-size: var(--smallest);
+  color: var(--black);
+  opacity: 0.9;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+    color: var(--background);
+    border-bottom: 2px solid var(--background);
+  }
+`
+export const Title = styled.p`
+  text-align: center;
+  font-size: var(--medium);
+  padding: var(--small);
+  &::selection {
+    color: var(--background);
+  }
 `
 export const Text = styled.p`
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  font-size: var(--smallest);
+  padding: var(--small);
+  &::selection {
+    color: var(--background);
+  }
+`
+export const Link = styled.a`
   text-decoration: none;
-  color: inherit;
-  max-width: 800px;
-  position: relative;
-  padding: 2rem;
-  box-shadow: inset 0 0 0 4px var(--black), inset -4px -4px 0 6px var(--background);
-  background-color: var(--white);
-  font-size: 1.6rem;
-  &:before {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    transform-origin: 0 bottom 0;
-    transform: scaleY(0);
-    transition: 0.4s ease-out;
+  font-style: italic;
+  cursor: pointer;
+  color: var(--background);
+  &:hover{
+    color: var(--highlight);
   }
-
-  &:hover {
-    .post-text {
-      color: #fff;
-    }
-    &:before {
-      transform: scaleY(1);
-    }
-  }
-
-  .post-text {
-    position: relative;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.333;
-    transition: 0.4s ease-out;
+  &::selection{
+    background-color: var(--highliht);
+    color: var(--black);
   }
 `
 export const SectionInfo = styled.div`
@@ -68,7 +81,7 @@ export const Highlight = styled.span`
     color: #222;
   }
   &::selection {
-    color: #228b22;
+    color: var(--background);
     background-color: var(--black);
   }
 `
@@ -133,7 +146,7 @@ export const ItalicBold = styled.span`
   font-weight: 600;
   font-style: italic;
   &::selection {
-    color: #228b22;
+    color: var(--background);
     background-color: var(--black);
   }
 `

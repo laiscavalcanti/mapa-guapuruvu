@@ -29,7 +29,7 @@ function App({ Component, pageProps }: AppProps) {
       <DefaultSeo {...SEO} />
       <GlobalStyles />
       <NextNProgress 
-        color="#228b22"
+        color="#ffbf00"
         startPosition={0.3}
         stopDelayMs={200}
         height={4}

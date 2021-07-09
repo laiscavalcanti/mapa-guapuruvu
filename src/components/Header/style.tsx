@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
     justify-content:space-between;
     height: 11rem;
     padding: 1rem;
-    background-color: #222;
+    background-color: var(--background);
     color: #e4d901;
 `
 export const LogoWrapper = styled.div`

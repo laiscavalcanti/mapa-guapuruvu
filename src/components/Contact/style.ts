@@ -2,6 +2,16 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background-color: var(--black);
+  padding: var(--medium);
+`
+export const Title = styled.p`
+  text-align: center;
+  color: var(--white);
+  font-size: var(--medium);
+  padding: var(--small);
+  &::selection{
+      color: var(--white);
+    }
 `
 export const ContactWrapper = styled.div`
   width: 80%;
@@ -31,8 +41,7 @@ export const ContainerSocialLinks = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--black);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px ;
+  border-radius: 10px;
 `
 export const ContainerContact = styled.div`
   width: 60%;
@@ -42,6 +51,5 @@ export const ContainerContact = styled.div`
   justify-content: center;
   align-items: center;
   background-color: var(--white);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px ;
+  border-radius: 10px;
 `

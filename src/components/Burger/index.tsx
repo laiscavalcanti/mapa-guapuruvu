@@ -12,8 +12,7 @@ const Radius = styled.div`
   top: 15%;
   right: 2rem;
   margin: 2rem 2rem 0 1rem;
-  background-color: var(--background);
- 
+  background-color: var(--white);
 `
 const StyledBurger = styled.button`
   display: flex;
@@ -37,7 +36,7 @@ const StyledBurger = styled.button`
     width: 2rem;
     height: 0.25rem;
     background: ${({ isOpen }: { isOpen: boolean }) =>
-      isOpen ? '#0D0C1D' : '#222'};
+      isOpen ? '#222' : '#222'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

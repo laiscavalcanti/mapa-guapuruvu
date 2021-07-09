@@ -11,7 +11,7 @@ export const NavWrapper = styled.nav`
   z-index: 2000;
   top: 0;
   right: 0;
-  background: var(--background);
+  background: var(--white);
   font-size: var(--small);
   font-weight: bold;
   transition: 0.3s all ease;

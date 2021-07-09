@@ -20,13 +20,12 @@ export const ContainerFirst = styled.div`
   border-bottom: 1px solid var(--black);
 `
 export const ContainerSecond = styled.div`
-   width: 80%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   margin: 0 auto;
-
 `
 export const Line = styled.span`
   border-bottom: 1px solid var(--black);
@@ -51,7 +50,6 @@ export const ListLinks = styled.li`
   align-items: center;
   font-size: var(--smallest);
   padding-bottom: 1rem;
-  text-transform: lowercase;
 `
 export const Link = styled.a`
   color: var(--black);
@@ -60,7 +58,7 @@ export const Link = styled.a`
 `
 export const LinksExtrasWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 `
 export const Text = styled.p`
   margin: 0.5rem 0.5rem 0 0.5rem;
