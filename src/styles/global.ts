@@ -45,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a{
-        color: #228b22;
+        color: var(---black);
         text-decoration: none;
     }
 `

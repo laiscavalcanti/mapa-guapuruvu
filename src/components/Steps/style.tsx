@@ -63,3 +63,20 @@ export const Text = styled.p`
       color: var(--white);
     }
 `
+export const Link = styled.p`
+width: 8.5rem;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid var(--black);
+  color: var(--black);
+  &:hover{
+    color: var(--highlight);
+    border-bottom: 1px solid transparent;
+  }
+  &::selection{
+    background-color: var(--highliht);
+    color: var(--black);
+  }
+`

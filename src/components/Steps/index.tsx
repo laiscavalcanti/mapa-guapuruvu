@@ -3,6 +3,7 @@ import { Lottie } from '@crello/react-lottie'
 import mapView from './animations/mapView.json'
 import photo from './animations/photo.json'
 import email from './animations/email.json'
+import LinkWrapper from 'components/LinkWrapper'
 
 const Steps = () => {
   return (
@@ -50,7 +51,10 @@ const Steps = () => {
             <S.Title>Nos envie as informações</S.Title>
             <S.Text>
               Tamanho, coloração, idade - essas informações serão enviadas
-              através desse formulário
+              através desse{' '}
+              <S.Link>
+                <LinkWrapper href="/formulario">formulário</LinkWrapper>
+              </S.Link>
             </S.Text>
           </S.TextArea>
 
