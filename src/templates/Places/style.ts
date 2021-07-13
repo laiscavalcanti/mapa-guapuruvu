@@ -2,20 +2,36 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   display: flex;
-  width: 90%;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding: var(--large) var(--medium);
+  width: 90%;
+  padding: 8rem;
 `
 export const Container = styled.section`
-  max-width: 60%;
-  padding: var(--small) var(--large) var(--small) var(--large);
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 75%;
+  background-color: rgba(139, 174, 99, 0.37);
+  padding: 4rem 8rem 4rem 8rem;
+
 `
+export const ButtonShareWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 90rem;
+  top: 10rem;
+`
+export const IconShare = styled.li`
+
+`
+
 export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
   text-align: center;
+  font-weight: bold;
 `
 export const ListField = styled.div`
   margin: 1rem 2rem 4rem 0;
@@ -33,7 +49,7 @@ export const Field = styled.p`
 `
 export const Body = styled.div`
   margin-bottom: var(--large);
- 
+
   p {
     margin-bottom: var(--medium);
     font-size: var(--small);

@@ -7,6 +7,17 @@ import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import * as S from './style'
 import { useRouter } from 'next/dist/client/router'
 
+import {
+  TelegramShareButton,
+  TelegramIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  FacebookShareButton,
+  FacebookIcon,
+  WhatsappShareButton,
+  WhatsappIcon
+} from 'next-share'
+
 type ImageProps = {
   url: string
   height: number
@@ -62,11 +73,30 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
         }}
       />
       <LinkWrapper href="/">
-        <CloseOutline size={32} aria-label="Go back to map" />
+        <CloseOutline
+          size={32}
+          aria-label="Go back to map"
+          color="rgba(139,174,99,0.51)"
+        />
       </LinkWrapper>
-
+     
       <S.Wrapper>
+      <S.ButtonShareWrapper>
+        <TelegramShareButton url={place.slug} title={place.name}>
+          <TelegramIcon size={30} round margin={'40px'}/>
+        </TelegramShareButton>
+        <TwitterShareButton url={place.slug} title={place.name}>
+          <TwitterIcon size={32} round />
+        </TwitterShareButton>
+        <FacebookShareButton url={place.slug} quote={place.name}>
+          <FacebookIcon size={32} round />
+        </FacebookShareButton>
+        <WhatsappShareButton url={place.slug} title={place.name}>
+          <WhatsappIcon size={32} round />
+        </WhatsappShareButton>
+      </S.ButtonShareWrapper>
         <S.Container>
+        
           <S.Heading>{place.name}</S.Heading>
           <S.ListField>
             <S.FieldWrapper>
