@@ -1,0 +1,16 @@
+import { useRouter } from 'next/router'
+import Link from 'next/link'
+import * as S from './style'
+
+const ButtonBack = () => {
+    const router = useRouter()
+
+    return(
+        <S.ButtonWrapper>
+            <S.Button onClick={() => router.back()}> Voltar para home </S.Button>
+                <S.Link href="/"></S.Link>
+        </S.ButtonWrapper>
+    )
+}
+
+export default ButtonBack

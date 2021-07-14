@@ -63,8 +63,8 @@ export const Text = styled.p`
       color: var(--white);
     }
 `
-export const Link = styled.p`
-width: 8.5rem;
+export const LinkA = styled.a`
+  width: 8.5rem;
   text-decoration: none;
   font-style: italic;
   font-weight: 600;

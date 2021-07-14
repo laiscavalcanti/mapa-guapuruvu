@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'Ubuntu', sans-serif;
+        font-family: 'Cairo', sans-serif;
     }
 
     p{
