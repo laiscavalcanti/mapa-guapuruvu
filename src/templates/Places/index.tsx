@@ -83,7 +83,7 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
       <S.Wrapper>
         <S.ButtonShareWrapper>
           <TelegramShareButton url={place.slug} title={place.name}>
-            <TelegramIcon size={30} round margin={'40px'} />
+            <TelegramIcon size={30} round />
           </TelegramShareButton>
           <TwitterShareButton url={place.slug} title={place.name}>
             <TwitterIcon size={32} round />
