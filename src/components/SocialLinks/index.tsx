@@ -1,4 +1,5 @@
-import { Icons } from './Icons'
+import { Icons, iconsProps } from './Icons'
+
 import links from './content'
 
 import * as S from './style'
@@ -16,7 +17,7 @@ const SocialLinks = ({ color, height, width, margin }: PropsIcons) => {
       <S.SocialLinksWrapper>
         <S.SocialLinksList>
           {links.map((link, i) => {
-            const Icon = Icons[link.label]
+            const Icon = Icons[link.label as keyof iconsProps]
             return (
               <S.SocialLinksItem key={i}>
                 <S.SocialLinksLink

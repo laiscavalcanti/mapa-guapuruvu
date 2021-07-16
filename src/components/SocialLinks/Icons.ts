@@ -3,11 +3,13 @@ import { Youtube } from '@styled-icons/boxicons-logos/Youtube'
 import { Twitter } from '@styled-icons/boxicons-logos/Twitter'
 import { Email } from '@styled-icons/entypo/Email'
 
+import { StyledIcon } from 'styled-icons/types'
+
 export type iconsProps = {
-  Github: any
-  Twitter: any
-  Youtube: any
-  Email: any
+  Github: StyledIcon
+  Twitter: StyledIcon
+  Youtube: StyledIcon
+  Email: StyledIcon
 }
 
 export const Icons: iconsProps = {
