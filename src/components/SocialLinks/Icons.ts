@@ -4,16 +4,15 @@ import { Twitter } from '@styled-icons/boxicons-logos/Twitter'
 import { Email } from '@styled-icons/entypo/Email'
 
 export type iconsProps = {
-  Github: any,
-  Twitter: any,
-  Youtube: any,
+  Github: any
+  Twitter: any
+  Youtube: any
   Email: any
-
 }
 
 export const Icons: iconsProps = {
   Github,
   Twitter,
-  Youtube, 
+  Youtube,
   Email
 }

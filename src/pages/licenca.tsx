@@ -1,12 +1,12 @@
-import About from 'components/About'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
+import License from 'components/License'
 
-export default function PageSobre() {
+export default function Licenca() {
   return (
     <>
       <Header />
-      <About />
+      <License />
       <Footer />
     </>
   )

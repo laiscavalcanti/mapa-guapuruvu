@@ -1,4 +1,4 @@
-import { typeisOpen } from '../NavBar'
+//import { typeisOpen } from '../NavBar'
 import styled from 'styled-components'
 
 const Radius = styled.div`
@@ -14,7 +14,7 @@ const Radius = styled.div`
   margin: 2rem 2rem 0 1rem;
   background-color: var(--white);
 `
-const StyledBurger = styled.button`
+const StyledBurger = styled.button<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -43,32 +43,33 @@ const StyledBurger = styled.button`
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ isOpen }: typeisOpen) =>
-        isOpen ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
     }
 
     :nth-child(2) {
-      opacity: ${({ isOpen }: typeisOpen) => (isOpen ? '0' : '1')};
-      transform: ${({ isOpen }: typeisOpen) =>
+      opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
+      transform: ${({ isOpen }) =>
         isOpen ? 'translateX(20px)' : 'translateX(0)'};
     }
 
     :nth-child(3) {
-      transform: ${({ isOpen }: typeisOpen) =>
-        isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
 `
 
-const Burger = ({ isOpen, setOpen }: typeisOpen) => {
+type Props = {
+  isOpen: boolean
+  setOpen: (v: boolean) => void
+}
+
+const Burger = (props: Props) => {
   return (
     <>
       <Radius>
         <StyledBurger
-          isOpen={isOpen}
-          onClick={() => {
-            setOpen(!isOpen)
-          }}
+          isOpen={props.isOpen}
+          onClick={() => props.setOpen(!props.isOpen)}
         >
           <span />
           <span />

@@ -9,9 +9,9 @@ export const Title = styled.p`
   color: var(--white);
   font-size: var(--medium);
   padding: var(--small);
-  &::selection{
-      color: var(--white);
-    }
+  &::selection {
+    color: var(--white);
+  }
 `
 export const ContactWrapper = styled.div`
   width: 80%;

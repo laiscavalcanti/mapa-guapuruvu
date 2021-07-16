@@ -119,7 +119,7 @@ function FormContact() {
             borderRadius: 2,
             padding: '5px 5px',
             fontSize: '15px',
-            
+
             color: '#222',
             textTransform: 'lowercase',
             marginTop: '2rem'

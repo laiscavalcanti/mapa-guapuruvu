@@ -11,18 +11,15 @@ import Contact from 'components/Contact'
 
 const Map = dynamic(() => import('components/Map'), { ssr: false })
 
-export default function HomeTemplate({places}: MapProps) {
- 
-  
+export default function HomeTemplate({ places }: MapProps) {
   return (
     <>
-      <Header/>
+      <Header />
       <Map places={places} />
       <SectionInfo />
       <Steps />
       <Contact />
       <Footer />
     </>
-
   )
 }

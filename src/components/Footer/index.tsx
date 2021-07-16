@@ -1,4 +1,3 @@
-import LinkWrapper from 'components/LinkWrapper'
 import SocialLinks from 'components/SocialLinks'
 import { links } from '../NavBar/content'
 import * as S from './style'
@@ -10,9 +9,9 @@ const Footer = () => {
         <S.ContainerFirst>
           <S.ListOrganizations>
             <S.Title>Colaboradores:</S.Title>
-            <p>UFRGS</p>
-            <p>Aldir Blac</p>
-            <p>Prefeitura de Porto Alegre</p>
+            <p>FAC Digital SEDAC-RS</p>
+            <p>Lei Aldir Blac</p>
+            <p>Sec. da Cultura da Prefeitura de Porto Alegre</p>
           </S.ListOrganizations>
 
           <S.ListLinks>
@@ -33,8 +32,7 @@ const Footer = () => {
               </S.Link>
             </S.Text>
             <S.ListLinksExtras>
-              <S.Link href={'termos'}>Termos de uso</S.Link>
-              <S.Link href={'privacidade'}>Política de privacidade</S.Link>
+              <S.Link href={'/licenca'}>Licença</S.Link>
             </S.ListLinksExtras>
           </S.LinksExtrasWrapper>
           <SocialLinks

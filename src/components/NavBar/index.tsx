@@ -1,16 +1,11 @@
 import * as S from './styles'
 import { links } from './content'
 
-export type typeisOpen = {
-  isOpen: boolean,
-  setOpen: any
-}
-
-const NavBar = ({ isOpen }: typeisOpen) => {
+const NavBar = () => {
   // props para abrir e fechar o menu
 
   return (
-    <S.NavWrapper isOpen={isOpen}>
+    <S.NavWrapper>
       {links.map((link, i) => (
         <S.ListLink key={i}>
           <S.Link href={link.link}>{link.label}</S.Link>

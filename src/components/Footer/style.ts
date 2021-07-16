@@ -12,12 +12,13 @@ export const Title = styled.p`
   font-size: 2rem;
 `
 export const ContainerFirst = styled.div`
+  border-top: 1px solid rgba(34, 34, 34, 0.53);
   width: 80%;
   display: flex;
   justify-content: space-between;
   padding: 2rem;
   margin: 0 auto;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid rgba(34, 34, 34, 0.53);
 `
 export const ContainerSecond = styled.div`
   width: 80%;
@@ -27,10 +28,7 @@ export const ContainerSecond = styled.div`
   padding: 1rem;
   margin: 0 auto;
 `
-export const Line = styled.span`
-  border-bottom: 1px solid var(--black);
-  width: 100%;
-`
+
 export const ListOrganizations = styled.li`
   display: flex;
   flex-direction: column;
@@ -64,5 +62,5 @@ export const Text = styled.p`
   margin: 0.5rem 0.5rem 0 0.5rem;
 `
 export const ListLinksExtras = styled.li`
-  padding-top: 1.5rem;
+  padding-top: 1.4rem;
 `

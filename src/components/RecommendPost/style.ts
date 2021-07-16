@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const RecommendedWrapper = styled.section`
   display: flex;
@@ -27,11 +27,11 @@ export const RecommendedLink = styled.a`
     margin-right: 3rem;
   }
   &.previous:before {
-    content: "\\2190";
+    content: '\\2190';
     margin-right: 0.5rem;
   }
   &.next:after {
-    content: "\\2192";
+    content: '\\2192';
     margin-left: 0.5rem;
   }
 `

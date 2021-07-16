@@ -19,9 +19,11 @@ const SectionInfo = () => {
             colaborativo da localização das árvores Guapuruvu (Sch izolobium
             parahyba) <S.ItalicBold>na cidade de Porto Alegre</S.ItalicBold> e
             região metropolitana. Realizado por{' '}
-            <Link href="https://cristinaribas.org/escritos/">
-              <S.Link>Cristina Ribas</S.Link>
-            </Link>
+            <S.Link>
+              <Link href="https://cristinaribas.org/escritos/">
+                Cristina Ribas
+              </Link>
+            </S.Link>
             , artista e pesquisadora. Os Guapuruvus se espalham pela floresta da
             Mata Atlântica e tem floração entre novembro e janeiro. Suas
             sementes se dispersam pelo ar de forma anemocoria em uma

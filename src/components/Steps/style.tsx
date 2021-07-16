@@ -14,9 +14,9 @@ export const H2 = styled.h2`
   font-size: var(--medium);
   font-weight: 100;
   padding: 1rem;
-  &::selection{
-      color: var(--white);
-    }
+  &::selection {
+    color: var(--white);
+  }
 `
 export const StepsWrapper = styled.div`
   width: 80%;
@@ -44,24 +44,24 @@ export const TextArea = styled.div`
 `
 export const Number = styled.p`
   font-size: var(--smallest);
-  &::selection{
-      color: var(--white);
-    }
+  &::selection {
+    color: var(--white);
+  }
 `
 export const Title = styled.h2`
   font-size: var(--smallest);
   padding-top: var(--medium);
   margin-bottom: var(--minimal);
-  &::selection{
-      color: var(--white);
-    }
+  &::selection {
+    color: var(--white);
+  }
 `
 export const Text = styled.p`
   font-size: 1.4rem;
   max-width: 90%;
-  &::selection{
-      color: var(--white);
-    }
+  &::selection {
+    color: var(--white);
+  }
 `
 export const LinkA = styled.a`
   width: 8.5rem;
@@ -71,11 +71,11 @@ export const LinkA = styled.a`
   cursor: pointer;
   border-bottom: 1px solid var(--black);
   color: var(--black);
-  &:hover{
+  &:hover {
     color: var(--highlight);
     border-bottom: 1px solid transparent;
   }
-  &::selection{
+  &::selection {
     background-color: var(--highliht);
     color: var(--black);
   }

@@ -20,7 +20,7 @@ export const ContainerText = styled.div`
   right: -10rem;
   border: 2px solid var(--background);
   border-radius: 5px;
-  box-shadow:4px -1px 15px 7px rgba(0,0,0,0.1);
+  box-shadow: 4px -1px 15px 7px rgba(0, 0, 0, 0.1);
 `
 export const ReadMore = styled.a`
   align-self: flex-start;
@@ -57,10 +57,10 @@ export const Link = styled.a`
   font-style: italic;
   cursor: pointer;
   color: var(--background);
-  &:hover{
+  &:hover {
     color: var(--highlight);
   }
-  &::selection{
+  &::selection {
     background-color: var(--highliht);
     color: var(--black);
   }

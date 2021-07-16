@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { typeisOpen } from './index'
+//mport { typeisOpen } from './index'
 
 export const NavWrapper = styled.nav`
   display: flex;
@@ -16,8 +16,6 @@ export const NavWrapper = styled.nav`
   font-weight: bold;
   transition: 0.3s all ease;
   border-radius: 5px;
-  transform: ${({ isOpen }: typeisOpen) =>
-    isOpen ? 'translateX(0)' : 'translateX(100%)'};
 `
 export const ListLink = styled.li`
   display: flex;

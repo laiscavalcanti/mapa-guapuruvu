@@ -4,12 +4,13 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  width: 80%;
   padding: 8rem;
+  margin: var(--medium);
 `
 export const Container = styled.section`
-  align-self: flex-end;
-  max-width: 60%;
+  align-self: flex-start;
+  max-width: 70%;
   background-color: rgba(139, 174, 99, 0.37);
   padding: var(--medium);
   margin: var(--medium);
@@ -19,18 +20,24 @@ export const Heading = styled.h1`
   margin-bottom: var(--medium);
   text-align: center;
   font-weight: 300;
+  &::selection {
+    color: var(--background);
+  }
 `
-
 export const Body = styled.div`
   margin-bottom: var(--large);
-  font-size: var(--small);
-  line-height: 1.5538461538;
-  font-family:  'Cairo',sans-serif;
+  font-size: 20px;
+  line-height: 1.7538461538;
+  font-family: 'Cairo', sans-serif;
   font-weight: 300;
-
+  width: 90%;
   p {
     margin-bottom: var(--medium);
     font-size: var(--small);
+  }
+  &::selection {
+    color: var(--background);
+    background-color: var(--black);
   }
 `
 export const Image = styled.div`
@@ -42,17 +49,26 @@ export const H2 = styled.h2`
   font-size: var(--small);
   padding: var(--medium) 0 var(--medium) 0;
 `
+
+export const Italic = styled.span`
+  font-style: italic;
+  font-weight: 600;
+  &::selection {
+    color: var(--background);
+    background-color: var(--black);
+  }
+`
 export const Link = styled.a`
   text-decoration: none;
   font-style: italic;
   cursor: pointer;
   color: var(--black);
   border-bottom: 1px solid var(--black);
-  &:hover{
+  &:hover {
     color: var(--highlight);
     border-bottom: 1px solid transparent;
   }
-  &::selection{
+  &::selection {
     background-color: var(--highliht);
     color: var(--black);
   }

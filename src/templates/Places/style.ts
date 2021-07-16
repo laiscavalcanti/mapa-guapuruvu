@@ -14,7 +14,6 @@ export const Container = styled.section`
   width: 75%;
   background-color: rgba(139, 174, 99, 0.37);
   padding: 4rem 8rem 4rem 8rem;
-
 `
 export const ButtonShareWrapper = styled.div`
   display: flex;
@@ -23,9 +22,7 @@ export const ButtonShareWrapper = styled.div`
   left: 90rem;
   top: 10rem;
 `
-export const IconShare = styled.li`
-
-`
+export const IconShare = styled.li``
 
 export const Heading = styled.h1`
   font-size: var(--medium);

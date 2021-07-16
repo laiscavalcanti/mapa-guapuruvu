@@ -15,7 +15,10 @@ const Steps = () => {
             <S.Number>1</S.Number>
             <S.Title>Encontre um Guapuruvu</S.Title>
             <S.Text>
-              Anote o endereço ou a localização do Guapuruvu que você encontrou
+              Anote o endereço ou a localização do Guapuruvu que você encontrou.
+              <Link href="/sobre">
+                <S.LinkA> Saiba identificar</S.LinkA>
+              </Link>
             </S.Text>
           </S.TextArea>
           <S.Icon>
@@ -51,7 +54,10 @@ const Steps = () => {
             <S.Title>Nos envie as informações</S.Title>
             <S.Text>
               Tamanho, coloração, idade - essas informações serão enviadas
-              através desse <Link href="/formulario"><S.LinkA> formulário</S.LinkA></Link>
+              através desse{' '}
+              <Link href="/formulario" scroll={false}>
+                <S.LinkA> formulário</S.LinkA>
+              </Link>
             </S.Text>
           </S.TextArea>
 

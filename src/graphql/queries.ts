@@ -51,29 +51,29 @@ export const GET_PLACES = gql`
   }
 `
 export const GET_PLACE_BY_SLUG = gql`
-query getPlaceBySlug($slug: String){
-  place(where: { slug: $slug}){
-    id
-    slug
-    name
-    location_numeric
-    adress
-    tag
-    state
-    age
-    period
-    location{
-      longitude
-      latitude
+  query getPlaceBySlug($slug: String) {
+    place(where: { slug: $slug }) {
+      id
+      slug
+      name
+      location_numeric
+      adress
+      tag
+      state
+      age
+      period
+      location {
+        longitude
+        latitude
+      }
+      description {
+        html
+      }
+      gallery {
+        url
+        height
+        width
+      }
     }
-    description{
-      html
-    }
-    gallery{
-      url
-      height
-      width
-    } 
   }
-}
 `

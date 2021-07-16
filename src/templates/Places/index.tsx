@@ -79,24 +79,23 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
           color="rgba(139,174,99,0.51)"
         />
       </LinkWrapper>
-     
+
       <S.Wrapper>
-      <S.ButtonShareWrapper>
-        <TelegramShareButton url={place.slug} title={place.name}>
-          <TelegramIcon size={30} round margin={'40px'}/>
-        </TelegramShareButton>
-        <TwitterShareButton url={place.slug} title={place.name}>
-          <TwitterIcon size={32} round />
-        </TwitterShareButton>
-        <FacebookShareButton url={place.slug} quote={place.name}>
-          <FacebookIcon size={32} round />
-        </FacebookShareButton>
-        <WhatsappShareButton url={place.slug} title={place.name}>
-          <WhatsappIcon size={32} round />
-        </WhatsappShareButton>
-      </S.ButtonShareWrapper>
+        <S.ButtonShareWrapper>
+          <TelegramShareButton url={place.slug} title={place.name}>
+            <TelegramIcon size={30} round margin={'40px'} />
+          </TelegramShareButton>
+          <TwitterShareButton url={place.slug} title={place.name}>
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <FacebookShareButton url={place.slug} quote={place.name}>
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <WhatsappShareButton url={place.slug} title={place.name}>
+            <WhatsappIcon size={32} round />
+          </WhatsappShareButton>
+        </S.ButtonShareWrapper>
         <S.Container>
-        
           <S.Heading>{place.name}</S.Heading>
           <S.ListField>
             <S.FieldWrapper>

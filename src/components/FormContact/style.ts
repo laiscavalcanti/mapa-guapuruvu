@@ -6,9 +6,7 @@ import { withStyles } from '@material-ui/core/styles'
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    '& > *': {
- 
-    },
+    '& > *': {},
     '& .Mui-disabled': {
       background: '#e4d901',
       opacity: '.7'
@@ -56,7 +54,7 @@ export const Form = styled.form`
   margin: 0 auto;
 `
 export const InputWrapper = styled.div`
-  margin: .5rem 0 .5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
   font-size: 4rem;
   .field {
     width: 35rem;
