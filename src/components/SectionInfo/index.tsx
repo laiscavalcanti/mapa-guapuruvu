@@ -30,7 +30,7 @@ const SectionInfo = () => {
             cápsula-asa. A Guapuruvu vive em média 60 anos e nos anos iniciais
             cresce 3m por ano.
           </S.Text>
-          <Link href="/sobre">
+          <Link scroll={false} href="/sobre">
             <S.ReadMore> Leia mais</S.ReadMore>
           </Link>
         </S.ContainerText>

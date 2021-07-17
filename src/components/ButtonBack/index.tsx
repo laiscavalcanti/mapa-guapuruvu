@@ -7,7 +7,7 @@ const ButtonBack = () => {
 
   return (
     <S.ButtonWrapper>
-      <S.Button onClick={() => router.back()}> ← Voltar para home </S.Button>
+      <S.Button onClick={() => router.push('/')}> ← Voltar para home </S.Button>
       <S.Link href="/"></S.Link>
     </S.ButtonWrapper>
   )

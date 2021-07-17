@@ -2,6 +2,8 @@ import client from 'graphql/Client'
 import { GetPageBySlugQuery, GetPagesQuery } from 'graphql/generated/graphql'
 import PageTemplate, { PageTemplateProps } from 'templates/Pages'
 import { GET_PAGES, GET_PAGE_BY_SLUG } from 'graphql/queries'
+import { GetPlacesQuery, GetPlaceBySlugQuery } from 'graphql/generated/graphql'
+import { GET_PLACES, GET_PLACE_BY_SLUG } from 'graphql/queries'
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/dist/client/router'
 

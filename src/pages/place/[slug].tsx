@@ -20,7 +20,7 @@ export async function getStaticPaths() {
   // criando o caminho das páginas
   const { places } = await client.request<GetPlacesQuery>(GET_PLACES, {
     first: 3
-  }) //fazendo a requisição para as 3 primeiras pages
+  }) //fazendo a requisição para as 3 primeiras places
 
   const paths = places.map(({ slug }) => ({
     // o map para buscar as páginas
@@ -33,8 +33,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { place } = await client.request<GetPlaceBySlugQuery>(
     GET_PLACE_BY_SLUG,
     {
-      slug: `${params?.slug}`,
-      id: `${params?.id}`
+      slug: `${params?.slug}`
     }
   )
 

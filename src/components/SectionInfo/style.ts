@@ -41,13 +41,15 @@ export const Title = styled.p`
   text-align: center;
   font-size: var(--medium);
   padding: var(--small);
+  font-weight: 600;
   &::selection {
     color: var(--background);
   }
 `
 export const Text = styled.p`
-  font-size: var(--smallest);
+  font-size: var(--small);
   padding: var(--small);
+  line-height: 1.6538461538;
   &::selection {
     color: var(--background);
   }
@@ -143,7 +145,7 @@ export const Highlight3 = styled.span`
   }
 `
 export const ItalicBold = styled.span`
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
   &::selection {
     color: var(--background);

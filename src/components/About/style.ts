@@ -19,7 +19,7 @@ export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
   text-align: center;
-  font-weight: 300;
+  font-weight: 600;
   &::selection {
     color: var(--background);
   }
@@ -29,7 +29,7 @@ export const Body = styled.div`
   font-size: 20px;
   line-height: 1.7538461538;
   font-family: 'Cairo', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   width: 90%;
   p {
     margin-bottom: var(--medium);
@@ -47,12 +47,16 @@ export const Image = styled.div`
 export const H2 = styled.h2`
   font-weight: bold;
   font-size: var(--small);
-  padding: var(--medium) 0 var(--medium) 0;
+  padding: var(--small) 0 var(--small) 0;
+  &::selection{
+    color: var(--white);
+    background-color: var(--black);
+  }
 `
 
 export const Italic = styled.span`
   font-style: italic;
-  font-weight: 600;
+  font-weight: 700;
   &::selection {
     color: var(--background);
     background-color: var(--black);
@@ -65,11 +69,14 @@ export const Link = styled.a`
   color: var(--black);
   border-bottom: 1px solid var(--black);
   &:hover {
-    color: var(--highlight);
+    font-weight: 700;
     border-bottom: 1px solid transparent;
   }
   &::selection {
     background-color: var(--highliht);
     color: var(--black);
   }
+`
+export const Space = styled.br`
+  overflow-wrap: break-word;
 `

@@ -14,14 +14,13 @@ export const SocialLinksItem = styled.li`
 export const SocialLinksLink = styled.a`
   transition: color 0.5s;
   transition: transform 0.2s;
-
-  &:hover {
-    color: #228b22;
-  }
 `
 export const IconWrapper = styled.div<PropsIcons>`
   color: ${(props) => props.color || '#222'};
   width: ${(props) => props.height || '18px'};
   height: ${(props) => props.width || '18px'};
   margin: ${(props) => props.margin || '0.5rem'};
+  &:hover {
+    color: var(--background);
+  }
 `

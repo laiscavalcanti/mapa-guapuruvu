@@ -12,7 +12,7 @@ export const H2 = styled.h2`
   text-align: center;
   margin: 0 auto;
   font-size: var(--medium);
-  font-weight: 100;
+  font-weight: 600;
   padding: 1rem;
   &::selection {
     color: var(--white);
@@ -49,7 +49,7 @@ export const Number = styled.p`
   }
 `
 export const Title = styled.h2`
-  font-size: var(--smallest);
+  font-size: var(--small);
   padding-top: var(--medium);
   margin-bottom: var(--minimal);
   &::selection {
@@ -57,7 +57,7 @@ export const Title = styled.h2`
   }
 `
 export const Text = styled.p`
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   max-width: 90%;
   &::selection {
     color: var(--white);

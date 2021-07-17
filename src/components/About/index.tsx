@@ -25,8 +25,9 @@ const About = () => {
             relação de proximidade entre as árvores e sua distribuição na
             cidade. Com o mapa podemos conhecer e imaginar a relação entre a
             cobertura vegetal das copas e das raízes, e como a cidade se
-            relaciona com as árvores, ou se tem refutado ela. O projeto quer
-            sensibilizar a relação entre as pessoas e as árvores, assim como com
+            relaciona com as árvores, ou se tem refutado ela.
+          <S.H2></S.H2>
+            O projeto quer sensibilizar a relação entre as pessoas e as árvores, assim como com
             vida vegetal e animal na cidade. Mapear compreende o envio da
             localização da árvore, uma foto da árvore ou um desenho, e um relato
             textual. O mapa vai sendo atualizado à medida que chegam novas
@@ -36,6 +37,7 @@ const About = () => {
             também nos permite pensar como a cidade tem sido acolhida pela vida
             vegetal, ou se a cidade tem refutado estas formas de vida, e quais
             são as consequências que a retirada de árvores traz para a cidade.
+            <S.H2></S.H2>
             As árvores também marcam o tempo em relação às transformações
             urbanas e à vida, os momentos de nossas vidas em comum na cidade, e
             como a cidade pode se tornar um lugar que reconhece a importância da

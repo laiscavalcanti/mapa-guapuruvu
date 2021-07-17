@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 
-type Place = {
+export type Place = {
   id: string
   name: string
   slug: string
