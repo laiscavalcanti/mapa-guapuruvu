@@ -48,10 +48,10 @@ export const H2 = styled.h2`
   font-weight: bold;
   font-size: var(--small);
   padding: var(--small) 0 var(--small) 0;
-  &::selection{
+  /* &::selection{
     color: var(--white);
     background-color: var(--black);
-  }
+  } */
 `
 
 export const Italic = styled.span`

@@ -1,17 +1,19 @@
+import ImageWrapper from 'components/ImageWrapper'
 import * as S from './style'
 
 const Form = () => {
   return (
     <>
       <S.FormWrapper>
+        {/* <ImageWrapper src="" alt=""/> */}
         <S.Title></S.Title>
         <S.Body>
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfysY5zFwQM6hyUfI_Q1E9lbi5uYdcahPKHWjY9BoihMo9eRQ/viewform"
-            width="1000"
-            height="1403"
+            width="800"
+            height="1103"
             frameBorder="0"
-            style={{ backgroundColor: 'lightblue' }}
+                       
           >
             Carregando…
           </iframe>

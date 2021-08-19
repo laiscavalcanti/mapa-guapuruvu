@@ -18,25 +18,23 @@ const About = () => {
         </S.Image>
 
         <S.Container>
-          <S.Body>
-            <S.Italic>Mapa de Guapuruvus</S.Italic> é um mapa colaborativo da
-            espécie de árvores Guapuruvu (Schizolobium parahyba) na cidade de
-            Porto Alegre e região metropolitana. O mapa gera uma visualização da
+        <S.Body>
+            <S.Italic>Mapa de Guapuruvus</S.Italic> é um mapa colaborativo da espécie de árvores Guapuruvu (Schizolobium parahyba) na cidade de Porto Alegre e região metropolitana. O mapa gera uma visualização da
             relação de proximidade entre as árvores e sua distribuição na
             cidade. Com o mapa podemos conhecer e imaginar a relação entre a
             cobertura vegetal das copas e das raízes, e como a cidade se
             relaciona com as árvores, ou se tem refutado ela.
-          <S.H2></S.H2>
-            O projeto quer sensibilizar a relação entre as pessoas e as árvores, assim como com
-            vida vegetal e animal na cidade. Mapear compreende o envio da
-            localização da árvore, uma foto da árvore ou um desenho, e um relato
-            textual. O mapa vai sendo atualizado à medida que chegam novas
-            árvores e relatos. Pensando na saúde coletiva, e na segurança de
-            todos na movimentação pela cidade no contexto da sindemia do corona
-            vírus, o projeto proporciona a percepção ambiental da cidade e
-            também nos permite pensar como a cidade tem sido acolhida pela vida
-            vegetal, ou se a cidade tem refutado estas formas de vida, e quais
-            são as consequências que a retirada de árvores traz para a cidade.
+            <S.H2></S.H2>O projeto quer sensibilizar a relação entre as pessoas
+            e as árvores, assim como com vida vegetal e animal na cidade. Mapear
+            compreende o envio da localização da árvore, uma foto da árvore ou
+            um desenho, e um relato textual. O mapa vai sendo atualizado à
+            medida que chegam novas árvores e relatos. Pensando na saúde
+            coletiva, e na segurança de todos na movimentação pela cidade no
+            contexto da sindemia do corona vírus, o projeto proporciona a
+            percepção ambiental da cidade e também nos permite pensar como a
+            cidade tem sido acolhida pela vida vegetal, ou se a cidade tem
+            refutado estas formas de vida, e quais são as consequências que a
+            retirada de árvores traz para a cidade.
             <S.H2></S.H2>
             As árvores também marcam o tempo em relação às transformações
             urbanas e à vida, os momentos de nossas vidas em comum na cidade, e

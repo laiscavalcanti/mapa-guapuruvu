@@ -30,14 +30,15 @@
     "graphql-request": "^3.4.0",
     "init": "^0.1.2",
     "leaflet": "^1.7.1",
-    "next": "10.0.7",
+    "next": "^11.1.0",
     "next-pwa": "^5.0.5",
     "next-seo": "^4.24.0",
     "next-share": "^0.7.0",
-    "nextjs-progressbar": "^0.0.9",
+    "nextjs-progressbar": "^0.0.11",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-leaflet": "^3.1.0",
+    "sharp": "^0.28.3",
     "styled-components": "5.2.1",
     "styled-icons": "^10.33.0",
     "webpack": "4"
@@ -67,6 +68,6 @@
     "jest-styled-components": "^7.0.4",
     "lint-staged": "^10.5.4",
     "prettier": "2.2.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.5"
   }
 }

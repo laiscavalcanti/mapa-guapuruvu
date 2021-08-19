@@ -70,7 +70,7 @@ export const Text = styled.p`
   margin: 0.5rem 0.5rem 0 0.5rem;
 `
 export const ListLinksExtras = styled.li`
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   &:hover {
     color: var(--background);
   }

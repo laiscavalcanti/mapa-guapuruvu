@@ -30,6 +30,7 @@ const CustomTileLayer = () => {
 const Map = ({ places }: MapProps) => {
   const router = useRouter()
   return (
+    <>
     <MapContainer
       center={{ lat: -30.03306, lng: -51.23 }}
       zoom={10}
@@ -53,7 +54,14 @@ const Map = ({ places }: MapProps) => {
           />
         )
       })}
+   
     </MapContainer>
+      <div>
+            {places?.slice(0, 2).map((place) =>{
+            {place.name}
+          } )}
+      </div>
+      </>
   )
 }
 

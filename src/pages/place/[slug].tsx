@@ -11,7 +11,7 @@ export default function Place({ place }: PlacesTemplateProps) {
   // para gerar as demais páginas que não são as 3 primeiras definidas no
   //getStaticPaths
 
-  if (router.isFallback) return null //podendo terorna um loading, por ex, enquanto carrega a página
+  if (router.isFallback) return null //podendo retornar um loading, por ex, enquanto carrega a página
 
   return <PlacesTemplate place={place} />
 }
@@ -36,8 +36,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       slug: `${params?.slug}`
     }
   )
-
-  if (!place) return { notFound: true }
 
   return {
     props: {

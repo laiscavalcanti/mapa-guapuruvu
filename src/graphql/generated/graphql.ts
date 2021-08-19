@@ -670,6 +670,11 @@ export type BatchPayload = {
   count: Scalars['Long'];
 };
 
+export enum Category {
+  Privado = 'Privado',
+  Publico = 'Publico'
+}
+
 /** Representing a color value comprising of HEX, RGBA and css color values */
 export type Color = {
   __typename?: 'Color';
@@ -1739,6 +1744,12 @@ export type Place = Node & {
   publishedBy?: Maybe<User>;
   name: Scalars['String'];
   slug: Scalars['String'];
+  location_numeric?: Maybe<Scalars['String']>;
+  adress?: Maybe<Scalars['String']>;
+  tag: Array<Category>;
+  state?: Maybe<Scalars['String']>;
+  age?: Maybe<Scalars['String']>;
+  period?: Maybe<Scalars['String']>;
   location: Location;
   description?: Maybe<RichText>;
   gallery: Array<Asset>;
@@ -1809,6 +1820,12 @@ export type PlaceCreateInput = {
   updatedAt?: Maybe<Scalars['DateTime']>;
   name: Scalars['String'];
   slug: Scalars['String'];
+  location_numeric?: Maybe<Scalars['String']>;
+  adress?: Maybe<Scalars['String']>;
+  tag?: Maybe<Array<Category>>;
+  state?: Maybe<Scalars['String']>;
+  age?: Maybe<Scalars['String']>;
+  period?: Maybe<Scalars['String']>;
   location: LocationInput;
   description?: Maybe<Scalars['RichTextAST']>;
   gallery: AssetCreateManyInlineInput;
@@ -1952,6 +1969,111 @@ export type PlaceManyWhereInput = {
   slug_ends_with?: Maybe<Scalars['String']>;
   /** All values not ending with the given string */
   slug_not_ends_with?: Maybe<Scalars['String']>;
+  location_numeric?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  location_numeric_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  location_numeric_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  location_numeric_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  location_numeric_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  location_numeric_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  location_numeric_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  location_numeric_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  location_numeric_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  location_numeric_not_ends_with?: Maybe<Scalars['String']>;
+  adress?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  adress_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  adress_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  adress_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  adress_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  adress_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  adress_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  adress_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  adress_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  adress_not_ends_with?: Maybe<Scalars['String']>;
+  /** Matches if the field array contains *all* items provided to the filter and order does match */
+  tag?: Maybe<Array<Category>>;
+  /** Matches if the field array does not contains *all* items provided to the filter or order does not match */
+  tag_not?: Maybe<Array<Category>>;
+  /** Matches if the field array contains *all* items provided to the filter */
+  tag_contains_all?: Maybe<Array<Category>>;
+  /** Matches if the field array contains at least one item provided to the filter */
+  tag_contains_some?: Maybe<Array<Category>>;
+  /** Matches if the field array does not contain any of the items provided to the filter */
+  tag_contains_none?: Maybe<Array<Category>>;
+  state?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  state_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  state_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  state_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  state_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  state_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  state_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  state_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  state_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  state_not_ends_with?: Maybe<Scalars['String']>;
+  age?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  age_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  age_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  age_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  age_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  age_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  age_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  age_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  age_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  age_not_ends_with?: Maybe<Scalars['String']>;
+  period?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  period_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  period_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  period_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  period_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  period_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  period_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  period_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  period_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  period_not_ends_with?: Maybe<Scalars['String']>;
   gallery_every?: Maybe<AssetWhereInput>;
   gallery_some?: Maybe<AssetWhereInput>;
   gallery_none?: Maybe<AssetWhereInput>;
@@ -1969,12 +2091,30 @@ export enum PlaceOrderByInput {
   NameAsc = 'name_ASC',
   NameDesc = 'name_DESC',
   SlugAsc = 'slug_ASC',
-  SlugDesc = 'slug_DESC'
+  SlugDesc = 'slug_DESC',
+  LocationNumericAsc = 'location_numeric_ASC',
+  LocationNumericDesc = 'location_numeric_DESC',
+  AdressAsc = 'adress_ASC',
+  AdressDesc = 'adress_DESC',
+  TagAsc = 'tag_ASC',
+  TagDesc = 'tag_DESC',
+  StateAsc = 'state_ASC',
+  StateDesc = 'state_DESC',
+  AgeAsc = 'age_ASC',
+  AgeDesc = 'age_DESC',
+  PeriodAsc = 'period_ASC',
+  PeriodDesc = 'period_DESC'
 }
 
 export type PlaceUpdateInput = {
   name?: Maybe<Scalars['String']>;
   slug?: Maybe<Scalars['String']>;
+  location_numeric?: Maybe<Scalars['String']>;
+  adress?: Maybe<Scalars['String']>;
+  tag?: Maybe<Array<Category>>;
+  state?: Maybe<Scalars['String']>;
+  age?: Maybe<Scalars['String']>;
+  period?: Maybe<Scalars['String']>;
   location?: Maybe<LocationInput>;
   description?: Maybe<Scalars['RichTextAST']>;
   gallery?: Maybe<AssetUpdateManyInlineInput>;
@@ -1999,6 +2139,7 @@ export type PlaceUpdateManyInlineInput = {
 
 export type PlaceUpdateManyInput = {
   name?: Maybe<Scalars['String']>;
+  tag?: Maybe<Array<Category>>;
   description?: Maybe<Scalars['RichTextAST']>;
 };
 
@@ -2160,6 +2301,111 @@ export type PlaceWhereInput = {
   slug_ends_with?: Maybe<Scalars['String']>;
   /** All values not ending with the given string */
   slug_not_ends_with?: Maybe<Scalars['String']>;
+  location_numeric?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  location_numeric_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  location_numeric_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  location_numeric_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  location_numeric_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  location_numeric_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  location_numeric_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  location_numeric_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  location_numeric_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  location_numeric_not_ends_with?: Maybe<Scalars['String']>;
+  adress?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  adress_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  adress_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  adress_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  adress_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  adress_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  adress_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  adress_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  adress_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  adress_not_ends_with?: Maybe<Scalars['String']>;
+  /** Matches if the field array contains *all* items provided to the filter and order does match */
+  tag?: Maybe<Array<Category>>;
+  /** Matches if the field array does not contains *all* items provided to the filter or order does not match */
+  tag_not?: Maybe<Array<Category>>;
+  /** Matches if the field array contains *all* items provided to the filter */
+  tag_contains_all?: Maybe<Array<Category>>;
+  /** Matches if the field array contains at least one item provided to the filter */
+  tag_contains_some?: Maybe<Array<Category>>;
+  /** Matches if the field array does not contain any of the items provided to the filter */
+  tag_contains_none?: Maybe<Array<Category>>;
+  state?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  state_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  state_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  state_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  state_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  state_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  state_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  state_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  state_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  state_not_ends_with?: Maybe<Scalars['String']>;
+  age?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  age_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  age_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  age_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  age_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  age_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  age_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  age_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  age_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  age_not_ends_with?: Maybe<Scalars['String']>;
+  period?: Maybe<Scalars['String']>;
+  /** All values that are not equal to given value. */
+  period_not?: Maybe<Scalars['String']>;
+  /** All values that are contained in given list. */
+  period_in?: Maybe<Array<Scalars['String']>>;
+  /** All values that are not contained in given list. */
+  period_not_in?: Maybe<Array<Scalars['String']>>;
+  /** All values containing the given string. */
+  period_contains?: Maybe<Scalars['String']>;
+  /** All values not containing the given string. */
+  period_not_contains?: Maybe<Scalars['String']>;
+  /** All values starting with the given string. */
+  period_starts_with?: Maybe<Scalars['String']>;
+  /** All values not starting with the given string. */
+  period_not_starts_with?: Maybe<Scalars['String']>;
+  /** All values ending with the given string. */
+  period_ends_with?: Maybe<Scalars['String']>;
+  /** All values not ending with the given string */
+  period_not_ends_with?: Maybe<Scalars['String']>;
   gallery_every?: Maybe<AssetWhereInput>;
   gallery_some?: Maybe<AssetWhereInput>;
   gallery_none?: Maybe<AssetWhereInput>;
@@ -2169,6 +2415,11 @@ export type PlaceWhereInput = {
 export type PlaceWhereUniqueInput = {
   id?: Maybe<Scalars['ID']>;
   slug?: Maybe<Scalars['String']>;
+  location_numeric?: Maybe<Scalars['String']>;
+  adress?: Maybe<Scalars['String']>;
+  state?: Maybe<Scalars['String']>;
+  age?: Maybe<Scalars['String']>;
+  period?: Maybe<Scalars['String']>;
 };
 
 export type PublishLocaleInput = {
@@ -2888,7 +3139,7 @@ export type GetPlacesQuery = (
   { __typename?: 'Query' }
   & { places: Array<(
     { __typename?: 'Place' }
-    & Pick<Place, 'id' | 'slug' | 'name'>
+    & Pick<Place, 'id' | 'slug' | 'name' | 'location_numeric' | 'adress' | 'tag' | 'state' | 'age' | 'period'>
     & { location: (
       { __typename?: 'Location' }
       & Pick<Location, 'longitude' | 'latitude'>
@@ -2911,7 +3162,28 @@ export type GetPlaceBySlugQuery = (
   { __typename?: 'Query' }
   & { place?: Maybe<(
     { __typename?: 'Place' }
-    & Pick<Place, 'id' | 'slug' | 'name'>
+    & Pick<Place, 'id' | 'slug' | 'name' | 'location_numeric' | 'adress' | 'tag' | 'state' | 'age' | 'period'>
+    & { location: (
+      { __typename?: 'Location' }
+      & Pick<Location, 'longitude' | 'latitude'>
+    ), description?: Maybe<(
+      { __typename?: 'RichText' }
+      & Pick<RichText, 'html'>
+    )>, gallery: Array<(
+      { __typename?: 'Asset' }
+      & Pick<Asset, 'url' | 'height' | 'width'>
+    )> }
+  )> }
+);
+
+export type GetPlacesFirst2QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetPlacesFirst2Query = (
+  { __typename?: 'Query' }
+  & { places: Array<(
+    { __typename?: 'Place' }
+    & Pick<Place, 'id' | 'slug' | 'name' | 'tag'>
     & { location: (
       { __typename?: 'Location' }
       & Pick<Location, 'longitude' | 'latitude'>

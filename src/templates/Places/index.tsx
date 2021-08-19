@@ -42,6 +42,10 @@ export type PlacesTemplateProps = {
   }
 }
 
+export type PlacesTemplatePropsFirts = {
+ 
+}
+
 export default function PlacesTemplate({ place }: PlacesTemplateProps) {
   const router = useRouter()
 
@@ -145,6 +149,7 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
           </S.Gallery>
         </S.Container>
       </S.Wrapper>
+     
     </>
   )
 }
