@@ -12,9 +12,6 @@ export const LogoWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
 `
-//
-
-//mport { typeisOpen } from './index'
 
 export const NavWrapper = styled.nav<{ isOpen: boolean }>`
   display: flex;
@@ -32,6 +29,7 @@ export const NavWrapper = styled.nav<{ isOpen: boolean }>`
   transition: 0.3s all ease;
   border-radius: 5px;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
+  box-shadow: -7px -6px 15px 2px rgba(0, 0, 0, 0.18);
 `
 export const ListLink = styled.li`
   display: flex;

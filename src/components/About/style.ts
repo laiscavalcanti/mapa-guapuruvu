@@ -43,7 +43,6 @@ export const Body = styled.div`
 export const Image = styled.div`
   padding: var(--small);
 `
-
 export const H2 = styled.h2`
   font-weight: bold;
   font-size: var(--small);

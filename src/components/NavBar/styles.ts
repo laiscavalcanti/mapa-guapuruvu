@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-//mport { typeisOpen } from './index'
 
 export const NavWrapper = styled.nav`
   display: flex;
@@ -16,6 +15,7 @@ export const NavWrapper = styled.nav`
   font-weight: bold;
   transition: 0.3s all ease;
   border-radius: 5px;
+  box-shadow: -7px -6px 15px 2px rgba(0, 0, 0, 0.18);
 `
 export const ListLink = styled.li`
   display: flex;
