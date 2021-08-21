@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <S.HeaderWrapper>
       <S.LogoWrapper>
-        <ImageWrapper src="/logo.png" alt="Logo" width={350} height={75} />
+        {/* <ImageWrapper src="/logo.png" alt="Logo" width={350} height={75} /> */}
       </S.LogoWrapper>
       <Burger isOpen={isOpen} setOpen={setOpen} />
       <S.NavWrapper isOpen={isOpen}>

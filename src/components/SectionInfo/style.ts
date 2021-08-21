@@ -5,7 +5,7 @@ export const SectionInfoWrapper = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 90%;
   height: auto;
   padding: var(--medium);
   margin-bottom: 2rem;
@@ -74,6 +74,7 @@ export const SectionInfo = styled.div`
   justify-content: flex-start;
   padding: 2rem;
   width: 100%;
+  
 `
 export const Highlight = styled.span`
   box-shadow: inset 0 -0.07em 0 #228b22;

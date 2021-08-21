@@ -10,8 +10,8 @@ const SectionInfo = () => {
         <ImageWrapper
           src="/img/gua02.jpg"
           alt="imagem guapuruvu verde"
-          width={600}
-          height={500}
+          width={1000}
+          height={650}
         />
         <S.ContainerText>
           <S.Text>
