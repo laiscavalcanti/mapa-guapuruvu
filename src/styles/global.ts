@@ -17,13 +17,11 @@ const GlobalStyles = createGlobalStyle`
         --large: 5rem;
     }
 
-
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    
 
     html{
         font-size: 62.5%;
@@ -35,9 +33,11 @@ const GlobalStyles = createGlobalStyle`
         background: var(--white);
         font-family: 'Cairo', sans-serif;
         overflow-x: hidden;
-        @media(max-width: 360px){
+        @media(max-width: 1000px){
+           html, body, #__next{
             overflow-x: hidden;
-    }
+            }
+        }
     }
 
     body {

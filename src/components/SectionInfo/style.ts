@@ -10,9 +10,6 @@ export const SectionInfoWrapper = styled.div`
   height: auto;
   padding: var(--medium);
   margin-bottom: 2rem;
-  ${media.lessThan('small')`
-  overflow-x: hidden;
-`}
 `
 export const ContainerText = styled.div`
   position: absolute;

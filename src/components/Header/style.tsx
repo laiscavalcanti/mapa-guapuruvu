@@ -62,7 +62,6 @@ export const Link = styled.a`
     transform-origin: left;
   }
 `
-
 export const Logo = styled.img`
   display: block;
   background-color: #222;

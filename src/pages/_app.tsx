@@ -35,6 +35,7 @@ function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Um site mapa dos Guapuruvus da cidade de Ponto Alegre - Brasil"
         />
+        <meta name="viewport" content="width=1100, initial-scale=1"></meta>
       </Head>
       <DefaultSeo {...SEO} />
       <GlobalStyles />
