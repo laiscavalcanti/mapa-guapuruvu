@@ -15,7 +15,7 @@ export const List = styled.li`
   padding: var(--small);
   border-bottom: 1px solid var(--black);
   background-color: var(--background);
-  &:hover{
+  &:hover {
     background-color: rgba(139, 174, 99, 0.77);
   }
 `
@@ -25,8 +25,8 @@ export const Infos = styled.div`
   margin: var(--small);
 `
 export const LinkA = styled.a`
-    font-size: 1.1rem;
-    cursor: pointer;
+  font-size: 1.1rem;
+  cursor: pointer;
 `
 export const Image = styled.img``
 

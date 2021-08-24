@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import media from 'styled-media-query'
 
 const GlobalStyles = createGlobalStyle`
     :root{
@@ -34,6 +35,9 @@ const GlobalStyles = createGlobalStyle`
         background: var(--white);
         font-family: 'Cairo', sans-serif;
         overflow-x: hidden;
+        ${media.lessThan('small')`
+            overflow-x: hidden;
+      `}
     }
 
     body {

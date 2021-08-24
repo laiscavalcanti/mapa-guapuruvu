@@ -18,8 +18,10 @@ const About = () => {
         </S.Image>
 
         <S.Container>
-        <S.Body>
-            <S.Italic>Mapa de Guapuruvus</S.Italic> é um mapa colaborativo da espécie de árvores Guapuruvu (Schizolobium parahyba) na cidade de Porto Alegre e região metropolitana. O mapa gera uma visualização da
+          <S.Body>
+            <S.Italic>Mapa de Guapuruvus</S.Italic> é um mapa colaborativo da
+            espécie de árvores Guapuruvu (Schizolobium parahyba) na cidade de
+            Porto Alegre e região metropolitana. O mapa gera uma visualização da
             relação de proximidade entre as árvores e sua distribuição na
             cidade. Com o mapa podemos conhecer e imaginar a relação entre a
             cobertura vegetal das copas e das raízes, e como a cidade se

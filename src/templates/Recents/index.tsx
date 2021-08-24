@@ -15,8 +15,8 @@ export type MapPropsplc = {
 const RecentsMaps = ({ plc }: MapPropsplc) => {
   return (
     <div>
-      {plc?.slice(0, 2).map(( place ) => {
-        <div>{place.name}</div>
+      {plc?.slice(0, 2).map((place) => {
+        ;<div>{place.name}</div>
       })}
     </div>
   )

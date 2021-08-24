@@ -32,6 +32,15 @@
         "react-hooks"
     ],
     "rules": {
+        "@typescript-eslint/ban-types": [
+            "error",
+            {
+              "extendDefaults": true,
+              "types": {
+                "{}": false
+              }
+            }
+          ],
         "react-hooks/rules/of/hooks": "off",
         "react-hooks/exhaustive-deps": "off",
         "react/prop-types": "off",

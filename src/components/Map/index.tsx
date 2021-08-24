@@ -31,37 +31,38 @@ const Map = ({ places }: MapProps) => {
   const router = useRouter()
   return (
     <>
-    <MapContainer
-      center={{ lat: -30.03306, lng: -51.23 }}
-      zoom={10}
-      style={{ height: '100%', width: '100%' }}
-    >
-      <CustomTileLayer />
+      <MapContainer
+        center={{ lat: -30.03306, lng: -51.23 }}
+        zoom={10}
+        style={{ height: '100%', width: '100%' }}
+      >
+        <CustomTileLayer />
 
-      {places?.map(({ id, slug, name, location }) => {
-        const { latitude, longitude } = location
+        {places?.map(({ id, slug, name, location }) => {
+          const { latitude, longitude } = location
 
-        return (
-          <Marker
-            key={`place-${id}`}
-            position={[latitude, longitude]}
-            title={name}
-            eventHandlers={{
-              click: () => {
-                router.push(`place/${slug}`)
-              }
-            }}
-          />
-        )
-      })}
-   
-    </MapContainer>
+          return (
+            <Marker
+              key={`place-${id}`}
+              position={[latitude, longitude]}
+              title={name}
+              eventHandlers={{
+                click: () => {
+                  router.push(`place/${slug}`)
+                }
+              }}
+            />
+          )
+        })}
+      </MapContainer>
       <div>
-            {places?.slice(0, 2).map((place) =>{
-            {place.name}
-          } )}
+        {places?.slice(0, 2).map((place) => {
+          {
+            place.name
+          }
+        })}
       </div>
-      </>
+    </>
   )
 }
 

@@ -79,13 +79,11 @@ export const GET_PLACE_BY_SLUG = gql`
 `
 
 export const GET_PLACES_BY_FIRST = gql`
-query getPlacesFirst2 {
-  places(first: 2) {
-    id
-    slug
-    name
+  query getPlacesFirst2 {
+    places(first: 2) {
+      id
+      slug
+      name
+    }
   }
-}
-
-
 `
