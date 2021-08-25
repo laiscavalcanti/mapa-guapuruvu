@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Container = styled.div`
   width: 100%;
@@ -26,6 +27,12 @@ export const StepsWrapper = styled.div`
   justify-content: center;
   background-color: var(--background);
   padding: var(--large);
+  ${media.lessThan('medium')`
+    /* screen width is less than 768px (medium) */
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  `}
 `
 export const Line = styled.span`
   margin: var(--minimal);
