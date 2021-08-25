@@ -16,7 +16,6 @@ export const SectionInfoWrapper = styled.div`
    width: 100%;
    flex-direction: column;
   `}
-  
 `
 export const ContainerText = styled.div`
   position: absolute;
@@ -62,7 +61,6 @@ export const Title = styled.p`
   &::selection {
     color: var(--background);
   }
-
 `
 export const Text = styled.p`
   font-size: var(--small);
