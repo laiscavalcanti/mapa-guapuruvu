@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -7,6 +8,10 @@ export const HeaderWrapper = styled.header`
   padding: 1rem;
   background-color: var(--background);
   color: #e4d901;
+  ${media.lessThan("medium")`
+    /* screen width is less than 768px (medium) */
+    height: 6rem;
+  `}
 `
 export const LogoWrapper = styled.div`
   display: flex;

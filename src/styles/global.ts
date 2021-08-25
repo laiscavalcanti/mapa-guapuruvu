@@ -33,9 +33,9 @@ const GlobalStyles = createGlobalStyle`
         background: var(--white);
         font-family: 'Cairo', sans-serif;
         overflow-x: hidden;
-        @media(max-width: 1000px){
-           html, body, #__next{
-            overflow-x: hidden;
+        @media(max-width: 800px) {
+            html, body, #__next{
+                overflow-x: hidden;
             }
         }
     }
