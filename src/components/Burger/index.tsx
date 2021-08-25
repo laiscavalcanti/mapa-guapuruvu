@@ -1,5 +1,6 @@
 //import { typeisOpen } from '../NavBar'
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 const Radius = styled.div`
   display: flex;
@@ -9,10 +10,13 @@ const Radius = styled.div`
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  top: 15%;
   right: 2rem;
   margin: 2rem 2rem 0 1rem;
   background-color: var(--white);
+  ${media.lessThan('medium')`
+    /* screen width is less than 768px (medium) */
+    margin-top: -0.5rem;
+  `}
 `
 const StyledBurger = styled.button<{ isOpen: boolean }>`
   display: flex;

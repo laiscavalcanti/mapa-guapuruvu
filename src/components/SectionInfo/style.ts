@@ -10,6 +10,13 @@ export const SectionInfoWrapper = styled.div`
   height: auto;
   padding: var(--medium);
   margin-bottom: 2rem;
+  ${media.lessThan('medium')`
+    /* screen width is less than 768px (medium) */
+   position: static;
+   width: 100%;
+   flex-direction: column;
+  `}
+  
 `
 export const ContainerText = styled.div`
   position: absolute;
@@ -22,6 +29,15 @@ export const ContainerText = styled.div`
   border: 2px solid var(--background);
   border-radius: 5px;
   box-shadow: 4px -1px 15px 7px rgba(0, 0, 0, 0.1);
+  ${media.lessThan('medium')`
+    /* screen width is less than 768px (medium) */
+   height: auto;
+   right: 0;
+   padding: var(--smallest);
+   width: 100%;
+   position: static;
+   margin-top: var(--smallest);
+  `}
 `
 export const ReadMore = styled.a`
   align-self: flex-start;
@@ -46,6 +62,7 @@ export const Title = styled.p`
   &::selection {
     color: var(--background);
   }
+
 `
 export const Text = styled.p`
   font-size: var(--small);
@@ -54,6 +71,10 @@ export const Text = styled.p`
   &::selection {
     color: var(--background);
   }
+  ${media.lessThan('medium')`
+    /* screen width is less than 768px (medium) */
+    font-size: var(--smallest);
+  `}
 `
 export const Link = styled.a`
   text-decoration: none;
