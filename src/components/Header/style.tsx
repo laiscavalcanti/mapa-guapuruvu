@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
   padding: 1rem;
   background-color: var(--background);
   color: #e4d901;
+  overflow-x: hidden;
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
     height: 6rem;
