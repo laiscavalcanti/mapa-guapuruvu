@@ -8,7 +8,7 @@ const NavBar = () => {
     <S.NavWrapper>
       {links.map((link, i) => (
         <S.ListLink key={i}>
-          <S.Link href={link.link}>{link.label}</S.Link>
+          <S.LinkA href={link.link}>{link.label}</S.LinkA>
         </S.ListLink>
       ))}
     </S.NavWrapper>

@@ -32,9 +32,9 @@ const GlobalStyles = createGlobalStyle`
         list-style: none;
         background: var(--white);
         font-family: 'Cairo', sans-serif;
-        overflow-x: hidden;
-        
+    
     }
+
 
     body {
         font-family: 'Cairo', sans-serif;

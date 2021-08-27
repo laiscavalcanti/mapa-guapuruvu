@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const FooterWrapper = styled.section`
   display: flex;
@@ -7,11 +8,17 @@ export const FooterWrapper = styled.section`
   padding: 4rem 2rem 2rem 2rem;
   color: var(--black);
   background-color: var(--white);
+  ${media.lessThan('medium')`
+    padding: 0.5rem;
+  `}
 `
 export const Title = styled.p`
   font-size: var(--small);
   margin-bottom: var(--smallest);
   font-weight: 600;
+  ${media.lessThan('medium')`
+  font-size: var(--smallest);
+  `}
 `
 export const ContainerFirst = styled.div`
   border-top: 1px solid rgba(34, 34, 34, 0.53);

@@ -2,7 +2,6 @@ import React from 'react'
 import dynamic from 'next/dynamic'
 
 import { MapProps } from 'components/Map'
-import { MapPropsplc } from 'templates/Recents'
 
 import Header from 'components/Header'
 import SectionInfo from 'components/SectionInfo'

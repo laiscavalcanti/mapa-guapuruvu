@@ -8,18 +8,106 @@ export const HeaderWrapper = styled.header`
   padding: 1rem;
   background-color: var(--background);
   color: #e4d901;
-  overflow-x: hidden;
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
     height: 6rem;
+  `}
+`
+export const SideBarWrapper = styled.ul`
+  display: flex;
+  padding-left: 16rem;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  height: 4.7rem;
+ 
+  background-color: white;
+  ${media.lessThan("large")`
+   height: 5rem;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   right: 0;
+   left: 0;
   `}
 `
 export const LogoWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
 `
+export const Toggle = styled.div<{ navbarOpen: boolean}>`
+  height: 100%;
+  cursor: pointer;
+  padding: 0 8vw;
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`
+export const NavBox = styled.div<{ open: boolean }>`
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  color: red;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    position: fixed;
+    width: 50%;
+    justify-content: flex-start;
+    background-color: blue;
+    transition: all 0.3s ease-in;
+    top: 1.3vh;
+    padding-top: 0vh;
+   
+    right: ${(props) => (props.open ? '-100%' : '0')};
+  }
+`
+export const Hamburger = styled.div<{ open: boolean }>`
+  background-color: tomato;
+  width: 30px;
+  height: 3px;
+  transition: all 0.3s linear;
+  align-self: center;
+  position: relative;
+  border-radius: 2px;
+  margin-left: 3rem;
+  transform: ${(props) => (props.open ? 'rotate(-45deg)' : 'inherit')};
+  ::before,
+  ::after {
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: tomato;
+    content: '';
+    position: absolute;
+    transition: all 0.3s linear;
+  }
+  ::before {
+    transform: ${(props) =>
+      props.open ? 'rotate(-90deg) translate(-10px, 0px)' : 'rotate(0deg)'};
+    top: -10px;
+  }
+  ::after {
+    opacity: ${(props) => (props.open ? '0' : '1')};
+    transform: ${(props) => (props.open ? 'rotate(90deg) ' : 'rotate(0deg)')};
+    top: 10px;
+  }
+`
+export const NavWrapper = styled.nav`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  position: relative;
+  z-index: 2500;
+`
 
-export const NavWrapper = styled.nav<{ isOpen: boolean }>`
+{
+  /*export const NavWrapper = styled.nav<{ isOpen: boolean }>`
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -36,6 +124,7 @@ export const NavWrapper = styled.nav<{ isOpen: boolean }>`
   border-radius: 5px;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
   box-shadow: -7px -6px 15px 2px rgba(0, 0, 0, 0.18);
+  overflow-x: hidden;
 `
 export const ListLink = styled.li`
   display: flex;
@@ -73,4 +162,5 @@ export const Logo = styled.img`
   background-color: #222;
   width: 350px;
   height: 100px;
-`
+` */
+}
