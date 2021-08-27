@@ -14,7 +14,7 @@ const Map = dynamic(() => import('components/Map'), { ssr: false })
 export default function HomeTemplate({ places }: MapProps) {
   return (
     <>
-      <Header />
+      <Header open />
       <Map places={places} />
       <SectionInfo />
       <Steps />

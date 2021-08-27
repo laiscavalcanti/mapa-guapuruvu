@@ -57,7 +57,7 @@ export const NavBox = styled.div<{ open: boolean }>`
     position: fixed;
     width: 50%;
     justify-content: flex-start;
-    background-color: blue;
+    background-color: var(--background);
     transition: all 0.3s ease-in;
     top: 1.3vh;
     padding-top: 0vh;
@@ -104,6 +104,9 @@ export const NavWrapper = styled.nav`
   width: 100%;
   position: relative;
   z-index: 2500;
+  top: 0;
+  right: 0;
+  transition: 0.3s all ease;
 `
 
 {

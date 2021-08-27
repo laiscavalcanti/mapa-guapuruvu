@@ -9,13 +9,11 @@ type propsMenu = {
   open: boolean
 }
 
-const Header = ({open}: propsMenu) => {
+const Header = ({ open }: propsMenu) => {
   const [navbarOpen, setNavbarOpen] = React.useState<boolean>(false)
   return (
-   
     <S.SideBarWrapper>
       <S.NavWrapper>
-        
         <S.Toggle
           navbarOpen={navbarOpen}
           onClick={() => setNavbarOpen(!navbarOpen)}
@@ -24,16 +22,15 @@ const Header = ({open}: propsMenu) => {
         </S.Toggle>
         {navbarOpen ? (
           <S.NavBox open={false}>
-            <a href="#">opa</a>
+            <NavBar />
           </S.NavBox>
         ) : (
           <S.NavBox open>
-              <a href="#">opa</a>
+            <NavBar />
           </S.NavBox>
         )}
       </S.NavWrapper>
     </S.SideBarWrapper>
-
   )
 }
 export default Header

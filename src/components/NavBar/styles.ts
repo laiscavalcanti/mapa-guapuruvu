@@ -4,19 +4,29 @@ import Link from "next/link"
 
 export const NavWrapper = styled.nav`
   display: flex;
-  height: auto;
-  margin: 1rem;
-  padding: 1rem;
-  color: var(--samecolorWhite);
+  flex-direction: column;
+  position: absolute;
+  text-align: right;
+  padding: var(--medium);
+  margin: 0rem 0 0 2rem;
+  z-index: 2000;
+  top: 0;
+  right: 0;
+  background: var(--white);
+  font-size: var(--small);
+  font-weight: bold;
+  transition: 0.3s all ease;
+  border-radius: 5px;
   ${media.lessThan("large")`
    display: flex;
    flex-direction: column;
   `}
 `
 export const ListLink = styled.li`
-  margin: 0.7rem;
-  padding-top: 0rem;
-  z-index: 2500;
+display: flex;
+  justify-content: space-around;
+  margin: 4rem 1.5rem 2rem 1.5rem;
+
   .active {
     color: var(--sameColorWhite);
     opacity: 0.6;
@@ -26,41 +36,29 @@ export const ListLink = styled.li`
    flex-direction: column;
   `}
 `
-export const LinkA = styled(Link)`
-  color: var(--sameColorWhite);
-  letter-spacing: 1px;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Libre Baskerville", sans-serif;
-  display: block;
-  position: relative;
-  &:after,
-  &:before {
-    transition: all 0.5s;
-  }
-  &:hover {
-    color: var(--sameColorWhite);
-    box-shadow: yellow;
-  }
-  &:after {
+export const LinkA = styled.a`
+   position: relative;
+  color: var(--black);
+  &::after {
     position: absolute;
-    bottom: 0;
+    content: '';
+    top: 100%;
     left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: ".";
-    color: transparent;
-    background: var(--sameColorWhite);
-    opacity: 0.8;
-    height: 2px;
-    top: 20px;
-  }
-  &:hover:after {
     width: 100%;
+    height: 3px;
+    background: var(--highlight);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
   }
-  &::selection {
-    color: var(--white);
-    background: var(--backgroundHoverPostItem);
+
+  &:hover {
+    color: var(--black);
+    opacity: 0.9;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 `
