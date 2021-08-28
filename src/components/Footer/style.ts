@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Link from 'next/link'
 import media from 'styled-media-query'
 
 export const FooterWrapper = styled.section`
@@ -78,7 +77,7 @@ export const ListLinks = styled.li`
     color: var(--background);
   }
 `
-export const LinkA = styled(Link)`
+export const LinkA = styled.a`
   color: var(--black);
   padding: 0.5rem;
   &:hover {

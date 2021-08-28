@@ -14,4 +14,4 @@ export const Button = styled.button`
     color: var(--highlight);
   }
 `
-export const LinkA = styled(Link)``
+export const LinkA = styled.a``
