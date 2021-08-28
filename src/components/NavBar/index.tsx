@@ -9,7 +9,7 @@ const NavBar = () => {
     <S.NavWrapper>
       {links.map((link, i) => (
         <S.ListLink key={i} >
-          <S.LinkA className={router.asPath == link.link ? "active" : " "}>{link.label}</S.LinkA>
+          <S.LinkA className={router.asPath == link.link ? "active" : " "} href={link.link}>{link.label}</S.LinkA>
         </S.ListLink>
       ))}
     </S.NavWrapper>

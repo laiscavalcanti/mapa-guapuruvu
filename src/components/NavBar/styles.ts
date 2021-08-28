@@ -36,6 +36,7 @@ export const ListLink = styled.li`
 export const LinkA = styled.a`
   position: relative;
   color: var(--black);
+  cursor: pointer;
   &::after {
     position: absolute;
     content: '';
