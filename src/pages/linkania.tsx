@@ -6,7 +6,7 @@ import Linkania from 'components/Linkania'
 export default function Linkana() {
   return (
     <>
-      <Header />
+      <Header open />
       <Linkania />
       <Footer />
     </>

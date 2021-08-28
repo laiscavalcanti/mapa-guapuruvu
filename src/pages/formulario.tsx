@@ -5,7 +5,7 @@ import Footer from 'components/Footer'
 export default function PageForm() {
   return (
     <>
-      <Header />
+      <Header open />
       <Form />
       <Footer />
     </>
