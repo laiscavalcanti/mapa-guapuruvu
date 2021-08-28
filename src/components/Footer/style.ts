@@ -63,7 +63,7 @@ export const ListLink = styled.ul`
   font-size: var(--smallest);
   font-weight: 600;
   color: var(--black);
-  &:hover{
+  &:hover {
     color: var(--background);
   }
 `
@@ -74,7 +74,7 @@ export const ListLinks = styled.li`
   align-items: center;
   font-size: var(--smallest);
   padding-bottom: 1rem;
-  &:hover{
+  &:hover {
     color: var(--background);
   }
 `

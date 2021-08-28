@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { PropsIcons } from './index'
-import media from "styled-media-query"
+import media from 'styled-media-query'
 
 export const SocialLinksWrapper = styled.div`
   display: flex;
@@ -30,6 +30,4 @@ export const IconWrapper = styled.div<PropsIcons>`
   &:hover {
     color: var(--background);
   }
-
-  
 `
