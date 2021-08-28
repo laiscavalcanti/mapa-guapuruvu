@@ -7,14 +7,13 @@ export const NavWrapper = styled.nav`
   flex-direction: row;
   position: absolute;
   text-align: right;
-  margin: 0rem 0 0 2rem;
+  margin: var(--medium);
   z-index: 2000;
   right: 0;
   background: transparent;
   font-size: var(--small);
   font-weight: bold;
   transition: 0.3s all ease;
-  border-radius: 5px;
   ${media.lessThan('medium')`
    display: flex;
    flex-direction: column;
@@ -24,9 +23,9 @@ export const ListLink = styled.li`
   display: flex;
   justify-content: space-around;
   margin: 4rem 1.5rem 2rem 1.5rem;
-
+  color: var(--black);
   .active {
-    color: var(--sameColorWhite);
+    color: var(--black);
     opacity: 0.6;
   }
   ${media.lessThan('large')`

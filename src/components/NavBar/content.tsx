@@ -9,7 +9,7 @@ export const links = [
   },
   {
     label: 'Linkania',
-    link: '/sobre'
+    link: '/linkania'
   },
   {
     label: 'Pesquisas',

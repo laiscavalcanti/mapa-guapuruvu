@@ -15,16 +15,14 @@ export const HeaderWrapper = styled.header`
 `
 export const SideBarWrapper = styled.ul`
   display: flex;
-  padding-left: 16rem;
   left: 0;
   top: 0;
   right: 0;
-  z-index: 2;
   width: 100%;
-  height: 7rem;
+  height: 8rem;
   background-color: var(--white);
   ${media.lessThan('large')`
-   height: 7rem;
+   height: 8rem;
    margin: 0;
    padding: 0;
    top: 0;
@@ -100,7 +98,7 @@ export const NavWrapper = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
   width: 100%;
   position: relative;
   z-index: 2500;
