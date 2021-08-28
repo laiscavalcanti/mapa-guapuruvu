@@ -22,8 +22,8 @@ export const SideBarWrapper = styled.ul`
   z-index: 2;
   width: 100%;
   height: 7rem;
-  background-color:var(--white);
-  ${media.lessThan("large")`
+  background-color: var(--white);
+  ${media.lessThan('large')`
    height: 7rem;
    margin: 0;
    padding: 0;
@@ -36,7 +36,7 @@ export const LogoWrapper = styled.div`
   display: flex;
   justify-content: flex-start;
 `
-export const Toggle = styled.div<{ navbarOpen: boolean}>`
+export const Toggle = styled.div<{ navbarOpen: boolean }>`
   height: 100%;
   cursor: pointer;
   padding: 0 8vw;
@@ -61,7 +61,7 @@ export const NavBox = styled.div<{ open: boolean }>`
     transition: all 0.3s ease-in;
     top: 9.5vh;
     padding-top: 2vh;
-   
+
     right: ${(props) => (props.open ? '-100%' : '0')};
   }
 `
