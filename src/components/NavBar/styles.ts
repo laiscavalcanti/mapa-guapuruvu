@@ -50,11 +50,6 @@ export const LinkA = styled.a`
     transition: transform 0.5s;
   }
 
-  &:hover {
-    color: var(--black);
-    opacity: 0.9;
-  }
-
   &:hover::after {
     transform: scaleX(1);
     transform-origin: left;

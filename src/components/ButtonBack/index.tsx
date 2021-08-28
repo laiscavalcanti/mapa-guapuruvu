@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import * as S from './style'
 
 const ButtonBack = () => {
@@ -8,7 +7,7 @@ const ButtonBack = () => {
   return (
     <S.ButtonWrapper>
       <S.Button onClick={() => router.push('/')}> ← Voltar para home </S.Button>
-      <S.Link href="/"></S.Link>
+      <S.LinkA href="/"></S.LinkA>
     </S.ButtonWrapper>
   )
 }

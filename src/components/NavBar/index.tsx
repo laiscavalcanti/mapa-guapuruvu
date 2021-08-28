@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 import { links } from './content'
 
 const NavBar = () => {
-  // props para abrir e fechar o menu
   const router = useRouter()
   return (
     <S.NavWrapper>

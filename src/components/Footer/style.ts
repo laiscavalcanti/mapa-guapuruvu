@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 import media from 'styled-media-query'
 
 export const FooterWrapper = styled.section`
@@ -28,19 +29,29 @@ export const ContainerFirst = styled.div`
   padding: var(--small);
   margin: 0 auto;
   border-bottom: 1px solid rgba(34, 34, 34, 0.53);
+  ${media.lessThan('medium')`
+  width: 90%;
+  `}
 `
 export const ContainerSecond = styled.div`
   width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: var(--minimal);
   margin: 0 auto;
+  ${media.lessThan('medium')`
+  width: 90%;
+  padding: var(--minimal) 0 var(--minimal) 0;
+  `}
 `
 export const ListOrganizations = styled.li`
   display: flex;
   flex-direction: column;
   font-size: var(--smallest);
+  ${media.lessThan('medium')`
+    max-width: 70%;
+  `}
 `
 export const ListSection = styled.section`
   display: flex;
@@ -50,7 +61,11 @@ export const ListLink = styled.ul`
   display: flex;
   flex-direction: column;
   font-size: var(--smallest);
-  font-weight: 700;
+  font-weight: 600;
+  color: var(--black);
+  &:hover{
+    color: var(--background);
+  }
 `
 export const ListLinks = styled.li`
   display: flex;
@@ -59,19 +74,27 @@ export const ListLinks = styled.li`
   align-items: center;
   font-size: var(--smallest);
   padding-bottom: 1rem;
+  &:hover{
+    color: var(--background);
+  }
 `
-export const Link = styled.a`
+export const LinkA = styled(Link)`
   color: var(--black);
   padding: 0.5rem;
-  font-weight: 600;
   &:hover {
     color: var(--background);
   }
 `
 export const LinksExtrasWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 80%;
   font-size: var(--smallest);
+  ${media.lessThan('medium')`
+    max-width: 70%;
+    flex-direction: column;
+    font-size: 1.3rem;
+  `}
 `
 export const Text = styled.p`
   margin: 0.5rem 0.5rem 0 0.5rem;

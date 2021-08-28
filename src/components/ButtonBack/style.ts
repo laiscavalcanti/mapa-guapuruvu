@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 
 export const ButtonWrapper = styled.div`
   display: flex;
@@ -13,4 +14,4 @@ export const Button = styled.button`
     color: var(--highlight);
   }
 `
-export const Link = styled.a``
+export const LinkA = styled(Link)``

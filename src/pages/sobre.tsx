@@ -5,7 +5,7 @@ import Footer from 'components/Footer'
 export default function PageSobre() {
   return (
     <>
-      <Header open />
+      <Header />
       <About />
       <Footer />
     </>

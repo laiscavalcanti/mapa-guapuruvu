@@ -15,6 +15,7 @@ export const HeaderWrapper = styled.header`
 `
 export const SideBarWrapper = styled.ul`
   display: flex;
+  z-index: 2;
   left: 0;
   top: 0;
   right: 0;
@@ -49,7 +50,6 @@ export const NavBox = styled.div<{ open: boolean }>`
   height: 100%;
   justify-content: flex-start;
   align-items: center;
-  color: red;
   @media (max-width: 768px) {
     flex-direction: column;
     position: fixed;
@@ -59,7 +59,6 @@ export const NavBox = styled.div<{ open: boolean }>`
     transition: all 0.3s ease-in;
     top: 9.5vh;
     padding-top: 2vh;
-
     right: ${(props) => (props.open ? '-100%' : '0')};
   }
 `

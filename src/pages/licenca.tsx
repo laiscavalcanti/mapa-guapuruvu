@@ -5,7 +5,7 @@ import License from 'components/License'
 export default function Licenca() {
   return (
     <>
-      <Header open />
+      <Header />
       <License />
       <Footer />
     </>
