@@ -4,7 +4,7 @@ import media from 'styled-media-query'
 export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  height: 11rem;
+  height: 15rem;
   padding: 1rem;
   background-color: var(--background);
   color: #e4d901;
@@ -21,11 +21,10 @@ export const SideBarWrapper = styled.ul`
   right: 0;
   z-index: 2;
   width: 100%;
-  height: 4.7rem;
- 
-  background-color: white;
+  height: 7rem;
+  background-color:var(--white);
   ${media.lessThan("large")`
-   height: 5rem;
+   height: 7rem;
    margin: 0;
    padding: 0;
    top: 0;
@@ -44,6 +43,7 @@ export const Toggle = styled.div<{ navbarOpen: boolean}>`
   display: none;
   @media (max-width: 768px) {
     display: flex;
+    justify-content: flex-end;
   }
 `
 export const NavBox = styled.div<{ open: boolean }>`
@@ -57,16 +57,16 @@ export const NavBox = styled.div<{ open: boolean }>`
     position: fixed;
     width: 50%;
     justify-content: flex-start;
-    background-color: var(--background);
+    background-color: var(--white);
     transition: all 0.3s ease-in;
-    top: 1.3vh;
-    padding-top: 0vh;
+    top: 9.5vh;
+    padding-top: 2vh;
    
     right: ${(props) => (props.open ? '-100%' : '0')};
   }
 `
 export const Hamburger = styled.div<{ open: boolean }>`
-  background-color: tomato;
+  background-color: var(--black);
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
@@ -80,7 +80,7 @@ export const Hamburger = styled.div<{ open: boolean }>`
     width: 30px;
     height: 3px;
     border-radius: 2px;
-    background-color: tomato;
+    background-color: var(--black);
     content: '';
     position: absolute;
     transition: all 0.3s linear;

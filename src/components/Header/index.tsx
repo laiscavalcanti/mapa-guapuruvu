@@ -14,6 +14,7 @@ const Header = ({ open }: propsMenu) => {
   return (
     <S.SideBarWrapper>
       <S.NavWrapper>
+     <p>aqui vai ficar a logo</p>
         <S.Toggle
           navbarOpen={navbarOpen}
           onClick={() => setNavbarOpen(!navbarOpen)}
