@@ -111,7 +111,7 @@ export const NavWrapper = styled.nav`
   display: flex;
   flex-direction: column;
   position: absolute;
-  text-align: right;
+  text-align: right;'
   padding: var(--medium);
   margin: 0rem 0 0 2rem;
   z-index: 2000;

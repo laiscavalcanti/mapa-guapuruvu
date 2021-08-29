@@ -1,0 +1,11 @@
+.responsive{
+  height: 80%;
+  width: 100%;
+}
+
+@media(max-width: 760px) {
+  .responsive {
+    height: 60%;
+  }
+}
+

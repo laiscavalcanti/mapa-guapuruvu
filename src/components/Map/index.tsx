@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 
+//import './styles.css'
+
 export type Place = {
   id: string
   name: string
@@ -29,12 +31,13 @@ const CustomTileLayer = () => {
 }
 const Map = ({ places }: MapProps) => {
   const router = useRouter()
+
   return (
     <>
       <MapContainer
         center={{ lat: -30.03306, lng: -51.23 }}
         zoom={10}
-        style={{ height: '100%', width: '100%' }}
+        className={'responsive'}
       >
         <CustomTileLayer />
 
@@ -55,6 +58,7 @@ const Map = ({ places }: MapProps) => {
           )
         })}
       </MapContainer>
+
       <div>
         {places?.slice(0, 2).map((place) => {
           {

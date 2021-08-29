@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import media from 'styled-media-query'
 
 const GlobalStyles = createGlobalStyle`
     :root{
@@ -47,6 +46,12 @@ const GlobalStyles = createGlobalStyle`
     a{
         color: var(---black);
         text-decoration: none;
+    }
+
+    :global{
+        .responsive {
+  display: none;
+}
     }
 `
 

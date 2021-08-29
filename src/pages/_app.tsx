@@ -6,6 +6,8 @@ import NextNProgress from 'nextjs-progressbar'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../../next-seo-config'
 
+import './styles.css'
+
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
