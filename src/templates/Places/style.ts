@@ -6,9 +6,11 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
   width: 80%;
   padding: 8rem;
-  ${media.lessThan('medium')`
+  overflow-x: hidden;
+  ${media.lessThan('small')`
     padding:3rem;
     width: 95%;
+    overflow-x: hidden;
   `}
 `
 export const Container = styled.section`
@@ -33,6 +35,9 @@ export const ButtonShareWrapper = styled.div`
   ${media.lessThan('medium')`
     left: 36rem;
   `}
+  @media(max-width: 360px) {
+    left: 30rem;
+  }
 `
 export const IconShare = styled.li``
 

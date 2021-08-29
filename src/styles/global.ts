@@ -48,11 +48,6 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
 
-    :global{
-        .responsive {
-  display: none;
-}
-    }
 `
 
 export default GlobalStyles
