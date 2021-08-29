@@ -59,10 +59,16 @@ export const FieldWrapper = styled.div`
 export const Value = styled.p`
   font-size: var(--smallest);
   margin-left: 1rem;
+  @media(max-width: 360px) {
+    font-size: 1.2rem;
+  }
 `
 export const Field = styled.p`
   font-size: var(--smallest);
   font-weight: bold;
+  @media(max-width: 360px) {
+    font-size: 1.3rem;
+  }
 `
 export const Body = styled.div`
   margin-bottom: var(--large);
