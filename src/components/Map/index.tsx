@@ -1,8 +1,6 @@
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 
-//import './styles.css'
-
 export type Place = {
   id: string
   name: string
@@ -58,14 +56,6 @@ const Map = ({ places }: MapProps) => {
           )
         })}
       </MapContainer>
-
-      <div>
-        {places?.slice(0, 2).map((place) => {
-          {
-            place.name
-          }
-        })}
-      </div>
     </>
   )
 }

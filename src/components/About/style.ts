@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
   display: flex;
@@ -7,6 +8,11 @@ export const Wrapper = styled.div`
   width: 80%;
   padding: 8rem;
   margin: var(--medium);
+  ${media.lessThan('small')`
+    padding: 1rem;
+    width: 95%;
+    overflow-x: hidden;
+  `}
 `
 export const Container = styled.section`
   align-self: flex-start;
@@ -14,6 +20,11 @@ export const Container = styled.section`
   background-color: rgba(139, 174, 99, 0.77);
   padding: var(--medium);
   margin: var(--medium);
+  ${media.lessThan('small')`
+    width: 90%;
+    padding: var(--small);
+  margin: var(--small);
+  `}
 `
 export const Heading = styled.h1`
   font-size: var(--medium);
@@ -39,6 +50,9 @@ export const Body = styled.div`
     color: var(--background);
     background-color: var(--black);
   }
+  ${media.lessThan('small')`
+    width: 100%;
+  `}
 `
 export const Image = styled.div`
   padding: var(--small);
