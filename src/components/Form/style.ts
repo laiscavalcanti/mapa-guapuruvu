@@ -33,3 +33,6 @@ export const ContainerForm = styled.div`
   padding: 8rem;
   margin: var(--medium);
 `
+export const Name = styled.h2`
+  
+`

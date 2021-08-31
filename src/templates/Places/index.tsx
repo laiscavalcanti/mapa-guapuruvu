@@ -17,6 +17,7 @@ import {
   WhatsappShareButton,
   WhatsappIcon
 } from 'next-share'
+import ButtonBack from 'components/ButtonBack'
 
 type ImageProps = {
   url: string
@@ -145,8 +146,12 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
               </>
             ))}
           </S.Gallery>
+         
         </S.Container>
       </S.Wrapper>
+      <S.WrapperButton>
+      <ButtonBack />
+      </S.WrapperButton>
     </>
   )
 }

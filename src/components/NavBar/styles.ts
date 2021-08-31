@@ -54,4 +54,7 @@ export const LinkA = styled.a`
     transform: scaleX(1);
     transform-origin: left;
   }
+  &::selection{
+    color: var(--background);
+  }
 `

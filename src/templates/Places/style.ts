@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
   width: 80%;
   padding: 8rem;
-  overflow-x: hidden;
+
   ${media.lessThan('small')`
     padding:3rem;
     width: 95%;
@@ -116,4 +116,9 @@ export const Caption = styled.p`
   a {
     font-size: var(--small);
   }
+`
+export const WrapperButton = styled.div`
+    display: flex;
+    width: 75%;
+    margin: var(--large);
 `

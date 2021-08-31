@@ -14,5 +14,9 @@ export const links = [
   {
     label: 'Pesquisas',
     link: '/sobre'
+  },
+  {
+    label: 'Guapuruvus',
+    link: '/guapuruvus'
   }
 ]
