@@ -24,26 +24,25 @@ const Guapuruvus = ({ places}: MapPropsPlace) => {
 
   return (
     <>
-      <S.Title>Guapuruvus</S.Title>
+      <S.Title>Os últimos Guapuruvus adicionados</S.Title>
       <S.GuapuruvuWrapper>
-        {places?.map(({ id, slug, name, gallery }) => {
+        {places?.slice(0, 3).map(({ id, slug, name, gallery }) => {
           return (
             <S.Container>
               <S.ContainerItem key={`place-${id}`}>
                 <S.Button onClick={() => router.push(`place/${slug}`)}>
-                  <S.Name>{name}</S.Name>
-
                   <S.Image>
                     {gallery.slice(0, 1).map((image, index) => (
                       <ImageWrapper
                         key={index}
                         src={image.url}
-                        width={300}
-                        height={250}
+                        width={200}
+                        height={200}
                         alt={''}
                       />
                     ))}
                   </S.Image>
+                  <S.Name>{name}</S.Name>
                 </S.Button>
               </S.ContainerItem>
             </S.Container>

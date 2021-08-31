@@ -6,24 +6,27 @@ export const Title = styled.h1`
   margin-bottom: var(--medium);
   text-align: center;
   font-weight: 600;
+ 
   &::selection {
     color: var(--background);
   }
 `
 export const GuapuruvuWrapper = styled.div`
-  display: grid;
-  width: 80%;
-  grid-template-columns: 2fr 2fr 2fr;
+  display: flex;
+  width: 100%;
   padding: var(--large);
   margin: 0 auto;
+  background-color: var(--black);
 `
 export const Container = styled.div`
   display: flex;
 `
-
-export const ContainerItem = styled.section``
+export const ContainerItem = styled.ul`
+  display: flex;
+`
 
 export const Button = styled.button`
+  display: flex;
   border: none;
   cursor: pointer;
 `
@@ -55,6 +58,7 @@ export const Name = styled.h2`
   padding: var(--small);
   font-size: var(--smallest);
   font-weight: 500;
+  color: var(--background);
   :hover {
     opacity: 0.6;
   }

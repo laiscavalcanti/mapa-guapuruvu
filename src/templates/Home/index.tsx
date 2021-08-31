@@ -7,7 +7,7 @@ import Header from 'components/Header'
 import SectionInfo from 'components/SectionInfo'
 import Footer from 'components/Footer'
 import Steps from 'components/Steps'
-import Contact from 'components/Contact'
+import Recents from 'components/Recents'
 
 const Map = dynamic(() => import('components/Map'), { ssr: false })
 
@@ -18,7 +18,7 @@ export default function HomeTemplate({ places }: MapProps) {
       <Map places={places} />
       <SectionInfo />
       <Steps />
-      <Contact />
+      <Recents places={places}/>
       <Footer />
     </>
   )

@@ -1,6 +1,12 @@
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 
+type ImageProps = {
+  url: string
+  height: number
+  width: number
+}
+
 export type Place = {
   id: string
   name: string
@@ -9,6 +15,7 @@ export type Place = {
     latitude: number
     longitude: number
   }
+  gallery: ImageProps[]
 }
 
 export type MapProps = {

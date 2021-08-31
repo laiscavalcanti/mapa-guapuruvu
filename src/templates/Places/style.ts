@@ -59,14 +59,14 @@ export const FieldWrapper = styled.div`
 export const Value = styled.p`
   font-size: var(--smallest);
   margin-left: 1rem;
-  @media(max-width: 360px) {
+  @media (max-width: 360px) {
     font-size: 1.2rem;
   }
 `
 export const Field = styled.p`
   font-size: var(--smallest);
   font-weight: bold;
-  @media(max-width: 360px) {
+  @media (max-width: 360px) {
     font-size: 1.3rem;
   }
 `
@@ -118,7 +118,7 @@ export const Caption = styled.p`
   }
 `
 export const WrapperButton = styled.div`
-    display: flex;
-    width: 75%;
-    margin: var(--large);
+  display: flex;
+  width: 75%;
+  margin: var(--large);
 `
