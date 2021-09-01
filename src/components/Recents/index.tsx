@@ -36,13 +36,13 @@ const Guapuruvus = ({ places}: MapPropsPlace) => {
                       <ImageWrapper
                         key={index}
                         src={image.url}
-                        width={200}
-                        height={200}
+                        width={300}
+                        height={250}
                         alt={''}
                       />
                     ))}
                   </S.Image>
-                  <S.Name>{name}</S.Name>
+                 <S.Name>{name}</S.Name>
                 </S.Button>
               </S.ContainerItem>
             </S.Container>

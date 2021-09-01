@@ -14,7 +14,7 @@ export const H2 = styled.h2`
   margin: 0 auto;
   font-size: var(--medium);
   font-weight: 600;
-  padding: 1rem;
+
   &::selection {
     color: var(--white);
   }
