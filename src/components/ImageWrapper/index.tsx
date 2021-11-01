@@ -5,10 +5,11 @@ export type imageWrapperProps = {
   alt: string
   width: number
   height: number
+
 }
 
-const ImageWrapper = ({ src, alt, width, height }: imageWrapperProps) => {
-  return <Image src={src} alt={alt} width={width} height={height} />
+const ImageWrapper = ({ src, alt, width, height}: imageWrapperProps) => {
+  return <Image src={src} alt={alt} width={width} height={height}  />
 }
 
 export default ImageWrapper

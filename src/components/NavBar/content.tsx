@@ -12,10 +12,6 @@ export const links = [
     link: '/linkania'
   },
   {
-    label: 'Pesquisas',
-    link: '/sobre'
-  },
-  {
     label: 'Guapuruvus',
     link: '/guapuruvus'
   }

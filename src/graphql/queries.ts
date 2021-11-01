@@ -25,7 +25,7 @@ export const GET_PAGE_BY_SLUG = gql`
 `
 export const GET_PLACES = gql`
   query getPlaces($first: Int) {
-    places(first: $first) {
+    places(first: $first, orderBy:id_DESC) {
       id
       slug
       name

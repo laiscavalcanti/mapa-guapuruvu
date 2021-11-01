@@ -7,25 +7,14 @@ export const Wrapper = styled.div`
   justify-content: center;
   width: 80%;
   padding: 8rem;
-  margin: var(--medium);
-  ${media.lessThan('small')`
-    padding: 1rem;
-    width: 95%;
+  margin: 0 auto;
+  ${media.lessThan('medium')`
+    padding: var(--small) 0 var(--medium) 0;
+    width: 100%;
     overflow-x: hidden;
   `}
 `
-export const Container = styled.section`
-  align-self: flex-start;
-  max-width: 70%;
-  background-color: rgba(139, 174, 99, 0.77);
-  padding: var(--medium);
-  margin: var(--medium);
-  ${media.lessThan('small')`
-    width: 90%;
-    padding: var(--small);
-  margin: var(--small);
-  `}
-`
+
 export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
@@ -34,16 +23,33 @@ export const Heading = styled.h1`
   &::selection {
     color: var(--background);
   }
+  ${media.lessThan('small')`
+    margin-top: var(--medium);
+  `}
+`
+export const Container = styled.section`
+  align-self: flex-start;
+  max-width: 70%;
+  background-color: rgba(139,174,99,0.37);
+  padding: var(--medium);
+  margin: var(--medium);
+  border-radius: 10px;
+  ${media.lessThan('medium')`
+    max-width: 100%;
+    align-self: center;
+    padding: var(--smallest);
+    margin: var(--small);
+  `}
 `
 export const Body = styled.div`
+  width: 90%;
   margin-bottom: var(--large);
   font-size: 20px;
   line-height: 1.7538461538;
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  width: 90%;
   p {
-    margin-bottom: var(--medium);
+    margin-bottom: var(--small);
     font-size: var(--small);
   }
   &::selection {

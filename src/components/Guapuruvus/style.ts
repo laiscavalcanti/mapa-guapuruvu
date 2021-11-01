@@ -20,12 +20,23 @@ export const GuapuruvuWrapper = styled.div`
 export const Container = styled.div`
   display: flex;
 `
-
-export const ContainerItem = styled.section``
-
+export const ContainerItem = styled.section`
+  padding-bottom: var(--large);
+`
 export const Button = styled.button`
-  border: none;
+ width: 100px;
+  border: 2px solid var(--background);
+  border-radius: 10px;
+  margin: 0.7rem 0 0.5rem 0;
+  padding: 0.5rem;
   cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  :hover{
+    border: 2px solid var(--highlight);
+    color: var(--highlight);
+    background-color: transparent;
+  }
 `
 export const Image = styled.div`
   :hover {
@@ -52,7 +63,7 @@ export const Image = styled.div`
 `
 
 export const Name = styled.h2`
-  padding: var(--small);
+  padding: var(--small) 0;
   font-size: var(--smallest);
   font-weight: 500;
   :hover {

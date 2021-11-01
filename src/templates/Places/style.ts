@@ -6,10 +6,9 @@ export const Wrapper = styled.div`
   justify-content: flex-start;
   width: 80%;
   padding: 8rem;
-
   ${media.lessThan('small')`
     padding:3rem;
-    width: 95%;
+    width: 100%;
     overflow-x: hidden;
   `}
 `
@@ -21,6 +20,7 @@ export const Container = styled.section`
   width: 75%;
   background-color: rgba(139, 174, 99, 0.37);
   padding: 4rem 8rem 4rem 8rem;
+  border-radius: 10px;
   ${media.lessThan('medium')`
     padding: 2rem 1rem 2rem 1rem;
     width: 90%;
@@ -34,13 +34,12 @@ export const ButtonShareWrapper = styled.div`
   top: 10rem;
   ${media.lessThan('medium')`
     left: 36rem;
+    margin-right: var(--medium);
   `}
   @media(max-width: 360px) {
     left: 30rem;
   }
 `
-export const IconShare = styled.li``
-
 export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
@@ -52,6 +51,10 @@ export const Heading = styled.h1`
 `
 export const ListField = styled.div`
   margin: 1rem 2rem 4rem 0;
+  &::selection {
+    color: var(--background);
+    background-color: var(--black);
+  }
 `
 export const FieldWrapper = styled.div`
   display: flex;
@@ -72,16 +75,21 @@ export const Field = styled.p`
 `
 export const Body = styled.div`
   margin-bottom: var(--large);
-
+  
   p {
     margin-bottom: var(--medium);
-    font-size: var(--small);
+    font-size: var(--medium);
+    line-height: 1.7538461538;
+    &::selection {
+      color: var(--background);
+      background-color: var(--black);
+    }
   }
 
   ${media.lessThan('medium')`
   p {
     margin-bottom: var(--medium);
-    font-size: var(--smallest);
+    font-size: var(--small);
   }
   `}
 `

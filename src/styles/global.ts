@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         list-style: none;
         background: var(--white);
-        font-family: 'Cairo', sans-serif;
+        font-family: 'Fira Sans', sans-serif;
         overflow-x: hidden;
     }
 
@@ -47,7 +47,9 @@ const GlobalStyles = createGlobalStyle`
         color: var(---black);
         text-decoration: none;
     }
-
+    img{
+        border-radius: 7px;
+    }
 `
 
 export default GlobalStyles

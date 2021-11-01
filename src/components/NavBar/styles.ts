@@ -7,7 +7,7 @@ export const NavWrapper = styled.nav`
   flex-direction: row;
   position: absolute;
   text-align: right;
-  margin: var(--medium);
+ 
   z-index: 2000;
   right: 0;
   background: transparent;
@@ -22,7 +22,7 @@ export const NavWrapper = styled.nav`
 export const ListLink = styled.li`
   display: flex;
   justify-content: space-around;
-  margin: 4rem 1.5rem 2rem 1.5rem;
+  margin: 2rem 1.5rem 2rem 1.5rem;
   color: var(--black);
   .active {
     color: var(--black);

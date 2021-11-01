@@ -78,11 +78,10 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
       <LinkWrapper href="/">
         <CloseOutline
           size={32}
-          aria-label="Go back to map"
+          aria-label="Volte para o mapa"
           color="rgba(139,174,99,0.51)"
         />
       </LinkWrapper>
-
       <S.Wrapper>
         <S.ButtonShareWrapper>
           <TelegramShareButton url={place.slug} title={place.name}>
@@ -126,11 +125,9 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
               <S.Value> {place.age}</S.Value>
             </S.FieldWrapper>
           </S.ListField>
-
           <S.Body
             dangerouslySetInnerHTML={{ __html: place.description?.html || '' }}
           />
-
           <S.Gallery>
             {place.gallery.map((image, index) => (
               <>

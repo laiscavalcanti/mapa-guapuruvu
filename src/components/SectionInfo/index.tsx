@@ -10,7 +10,7 @@ const SectionInfo = () => {
         <ImageWrapper
           src="/img/gua02.jpg"
           alt="imagem guapuruvu verde"
-          width={1000}
+          width={800}
           height={650}
         />
         <S.ContainerText>
@@ -20,9 +20,9 @@ const SectionInfo = () => {
             parahyba) <S.ItalicBold>na cidade de Porto Alegre</S.ItalicBold> e
             região metropolitana. Realizado por{' '}
             <S.Link>
-              <Link href="https://cristinaribas.org/escritos/">
+              <a href="https://cristinaribas.org/escritos/" target="_blank" >
                 Cristina Ribas
-              </Link>
+              </a>
             </S.Link>
             , artista e pesquisadora. Os Guapuruvus se espalham pela floresta da
             Mata Atlântica e tem floração entre novembro e janeiro. Suas

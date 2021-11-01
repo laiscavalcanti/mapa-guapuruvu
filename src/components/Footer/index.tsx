@@ -9,9 +9,9 @@ const Footer = () => {
         <S.ContainerFirst>
           <S.ListOrganizations>
             <S.Title>Colaboradores:</S.Title>
-            <p>FAC Digital SEDAC-RS</p>
-            <p>Lei Aldir Blac</p>
-            <p>Sec. da Cultura da Prefeitura de Porto Alegre</p>
+            <S.ListItem>FAC Digital SEDAC-RS</S.ListItem>
+            <S.ListItem>Lei Aldir Blac</S.ListItem>
+            <S.ListItem>Sec. da Cultura da Prefeitura de Porto Alegre</S.ListItem>
           </S.ListOrganizations>
 
           <S.ListLinks>

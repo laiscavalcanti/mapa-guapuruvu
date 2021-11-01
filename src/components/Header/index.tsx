@@ -1,13 +1,18 @@
 import React from 'react'
 import * as S from './style'
 import NavBar from 'components/NavBar'
+import ImageWrapper from 'components/ImageWrapper'
+import Link from 'next/link'
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = React.useState<boolean>(false)
   return (
+    <>
     <S.SideBarWrapper>
       <S.NavWrapper>
-        <p>aqui vai ficar a logo</p>
+        <a href="/" > 
+        <ImageWrapper  src="/img/logo2.png" alt={"logo"} width={361} height={146} />
+        </a>
         <S.Toggle
           navbarOpen={navbarOpen}
           onClick={() => setNavbarOpen(!navbarOpen)}
@@ -25,6 +30,7 @@ const Header = () => {
         )}
       </S.NavWrapper>
     </S.SideBarWrapper>
+    </>
   )
 }
 export default Header

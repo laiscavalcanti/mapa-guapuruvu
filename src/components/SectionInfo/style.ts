@@ -6,7 +6,7 @@ export const SectionInfoWrapper = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
-  width: 90%;
+  width: 85%;
   height: auto;
   padding: var(--medium);
   margin-bottom: 2rem;
@@ -19,7 +19,7 @@ export const SectionInfoWrapper = styled.div`
 `
 export const ContainerText = styled.div`
   position: absolute;
-  width: 50%;
+  width: 30%;
   height: auto;
   padding: 3rem;
   background-color: var(--white);
@@ -54,10 +54,12 @@ export const ReadMore = styled.a`
   }
 `
 export const Title = styled.p`
-  text-align: center;
   font-size: var(--medium);
-  padding: var(--small);
+  text-align: center;
   font-weight: 600;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 10rem 0 var(--large) 0;
   &::selection {
     color: var(--background);
   }

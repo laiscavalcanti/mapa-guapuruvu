@@ -16,9 +16,17 @@ export const Title = styled.p`
   font-size: var(--small);
   margin-bottom: var(--smallest);
   font-weight: 600;
+  &::selection {
+    color: var(--background);
+  }
   ${media.lessThan('medium')`
   font-size: var(--smallest);
   `}
+`
+export const ListItem = styled.p`
+   &::selection {
+    color: var(--background);
+  }
 `
 export const ContainerFirst = styled.div`
   border-top: 1px solid rgba(34, 34, 34, 0.53);
@@ -31,6 +39,9 @@ export const ContainerFirst = styled.div`
   ${media.lessThan('medium')`
   width: 90%;
   `}
+  &::selection {
+    color: var(--background);
+  }
 `
 export const ContainerSecond = styled.div`
   width: 80%;
@@ -51,6 +62,9 @@ export const ListOrganizations = styled.li`
   ${media.lessThan('medium')`
     max-width: 70%;
   `}
+  &::selection {
+    color: var(--background);
+  }
 `
 export const ListSection = styled.section`
   display: flex;
@@ -83,6 +97,9 @@ export const LinkA = styled.a`
   &:hover {
     color: var(--background);
   }
+  &::selection {
+    color: var(--background);
+  }
 `
 export const LinksExtrasWrapper = styled.div`
   display: flex;
@@ -97,10 +114,16 @@ export const LinksExtrasWrapper = styled.div`
 `
 export const Text = styled.p`
   margin: 0.5rem 0.5rem 0 0.5rem;
+  &::selection {
+    color: var(--background);
+  }
 `
 export const ListLinksExtras = styled.li`
   padding-top: 0.5rem;
   &:hover {
+    color: var(--background);  
+  }
+  &::selection {
     color: var(--background);
   }
 `
