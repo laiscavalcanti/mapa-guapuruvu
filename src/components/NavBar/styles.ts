@@ -7,7 +7,7 @@ export const NavWrapper = styled.nav`
   flex-direction: row;
   position: absolute;
   text-align: right;
- 
+
   z-index: 2000;
   right: 0;
   background: transparent;
@@ -54,7 +54,7 @@ export const LinkA = styled.a`
     transform: scaleX(1);
     transform-origin: left;
   }
-  &::selection{
+  &::selection {
     color: var(--background);
   }
 `

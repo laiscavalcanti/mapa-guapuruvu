@@ -11,7 +11,9 @@ const Footer = () => {
             <S.Title>Colaboradores:</S.Title>
             <S.ListItem>FAC Digital SEDAC-RS</S.ListItem>
             <S.ListItem>Lei Aldir Blac</S.ListItem>
-            <S.ListItem>Sec. da Cultura da Prefeitura de Porto Alegre</S.ListItem>
+            <S.ListItem>
+              Sec. da Cultura da Prefeitura de Porto Alegre
+            </S.ListItem>
           </S.ListOrganizations>
 
           <S.ListLinks>

@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding: var(--medium);
 `
 export const H2 = styled.h2`
- font-size: var(--medium);
+  font-size: var(--medium);
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;

@@ -20,7 +20,7 @@ export const FormWrapper = styled.div`
   justify-content: flex-start;
   margin: 3rem;
   padding-top: 2rem;
- 
+
   ${media.lessThan('medium')`
     margin: 0 auto;
     padding-bottom: var(--large);
@@ -31,7 +31,6 @@ export const FormWrapper = styled.div`
 `
 export const Body = styled.div`
   padding-top: 2rem;
-  
 `
 export const Title = styled.h1`
   font-size: var(--medium);
@@ -43,6 +42,4 @@ export const Title = styled.h1`
   }
 `
 
-export const Name = styled.h2`
-  
-`
+export const Name = styled.h2``

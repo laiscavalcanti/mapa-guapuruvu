@@ -20,7 +20,7 @@ const SectionInfo = () => {
             parahyba) <S.ItalicBold>na cidade de Porto Alegre</S.ItalicBold> e
             região metropolitana. Realizado por{' '}
             <S.Link>
-              <a href="https://cristinaribas.org/escritos/" target="_blank" >
+              <a href="https://cristinaribas.org/escritos/" target="_blank">
                 Cristina Ribas
               </a>
             </S.Link>

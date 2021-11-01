@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   height: 5rem;
-  
+
   background-color: var(--background);
   color: #e4d901;
   ${media.lessThan('medium')`

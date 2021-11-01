@@ -24,7 +24,7 @@ export const Title = styled.p`
   `}
 `
 export const ListItem = styled.p`
-   &::selection {
+  &::selection {
     color: var(--background);
   }
 `
@@ -121,7 +121,7 @@ export const Text = styled.p`
 export const ListLinksExtras = styled.li`
   padding-top: 0.5rem;
   &:hover {
-    color: var(--background);  
+    color: var(--background);
   }
   &::selection {
     color: var(--background);

@@ -14,7 +14,6 @@ export const Wrapper = styled.div`
     overflow-x: hidden;
   `}
 `
-
 export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
@@ -30,7 +29,7 @@ export const Heading = styled.h1`
 export const Container = styled.section`
   align-self: flex-start;
   max-width: 70%;
-  background-color: rgba(139,174,99,0.37);
+  background-color: rgba(139, 174, 99, 0.37);
   padding: var(--medium);
   margin: var(--medium);
   border-radius: 10px;

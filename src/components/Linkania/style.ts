@@ -22,7 +22,7 @@ export const List = styled.li`
   padding: var(--medium) var(--large) var(--small) var(--large);
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--black);
-  background-color: rgba(139,174,99,0.37);
+  background-color: rgba(139, 174, 99, 0.37);
   &:hover {
     opacity: 0.9;
   }
@@ -74,7 +74,7 @@ export const Name = styled.h1`
 export const Body = styled.p`
   width: 100%;
   padding: var(--small);
-  
+
   font-size: 20px;
   line-height: 1.7538461538;
   font-family: 'Poppins', sans-serif;
@@ -82,7 +82,8 @@ export const Body = styled.p`
   p {
     margin-bottom: var(--medium);
     font-size: var(--small);
-  }`
+  }
+`
 
 export const Title = styled.p`
   font-size: var(--small);

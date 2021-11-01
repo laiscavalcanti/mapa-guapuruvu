@@ -54,7 +54,7 @@ export const ContainerItem = styled.ul`
   `}
 `
 export const Button = styled.button`
- width: 100px;
+  width: 100px;
   border: 2px solid var(--background);
   border-radius: 10px;
   margin: 0.5rem 0 0.5rem 0;
@@ -62,12 +62,11 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: 500;
   text-align: center;
-  :hover{
+  :hover {
     border: 2px solid var(--highlight);
     color: var(--highlight);
     background-color: transparent;
   }
- 
 `
 export const SectionLink = styled.section`
   background-color: transparent;
