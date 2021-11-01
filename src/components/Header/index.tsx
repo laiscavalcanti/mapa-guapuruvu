@@ -10,14 +10,14 @@ const Header = () => {
     <>
       <S.SideBarWrapper>
         <S.NavWrapper>
-          <a href="/">
+          <S.LinkA href="/">
             <ImageWrapper
-              src="/img/logo2.png"
+              src="/img/logo_preta.png"
               alt={'logo'}
               width={361}
               height={146}
             />
-          </a>
+          </S.LinkA>
           <S.Toggle
             navbarOpen={navbarOpen}
             onClick={() => setNavbarOpen(!navbarOpen)}

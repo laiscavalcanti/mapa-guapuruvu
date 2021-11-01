@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
+import * as S from './styles'
 
 type ImageProps = {
   url: string
@@ -39,30 +40,34 @@ const Map = ({ places }: MapProps) => {
 
   return (
     <>
-      <MapContainer
-        center={{ lat: -30.03306, lng: -51.23 }}
-        zoom={10}
-        className={'responsive'}
-      >
-        <CustomTileLayer />
+      <S.MapWrapper>
+        <MapContainer
+          center={{ lat: -30.03306, lng: -51.23 }}
+          zoom={11}
+          minZoom={10}
+         worldCopyJump={true}
+          className={'responsive'}
+        >
+          <CustomTileLayer />
 
-        {places?.map(({ id, slug, name, location }) => {
-          const { latitude, longitude } = location
+          {places?.map(({ id, slug, name, location }) => {
+            const { latitude, longitude } = location
 
-          return (
-            <Marker
-              key={`place-${id}`}
-              position={[latitude, longitude]}
-              title={name}
-              eventHandlers={{
-                click: () => {
-                  router.push(`place/${slug}`)
-                }
-              }}
-            />
-          )
-        })}
-      </MapContainer>
+            return (
+              <Marker
+                key={`place-${id}`}
+                position={[latitude, longitude]}
+                title={name}
+                eventHandlers={{
+                  click: () => {
+                    router.push(`place/${slug}`)
+                  }
+                }}
+              />
+            )
+          })}
+        </MapContainer>
+      </S.MapWrapper>
     </>
   )
 }

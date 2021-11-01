@@ -4,8 +4,6 @@ import media from 'styled-media-query'
 export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  height: 5rem;
-
   background-color: var(--background);
   color: #e4d901;
   ${media.lessThan('medium')`
@@ -13,11 +11,14 @@ export const HeaderWrapper = styled.header`
     height: 6rem;
   `}
 `
+export const LinkA = styled.a`
+  margin-top: var(--medium);
+`
 export const SideBarWrapper = styled.ul`
   display: flex;
   align-items: center;
   align-content: center;
-  height: 10rem;
+  height: 12rem;
   z-index: 2;
   left: 0;
   top: 0;
@@ -26,8 +27,8 @@ export const SideBarWrapper = styled.ul`
   background-color: var(--white);
   padding: 0 4rem 0 4rem;
   ${media.lessThan('large')`
-   height: 8rem;
-   margin: 0;
+   height: 10rem;
+   margin-left: var(--smallest);
    padding: 0;
    top: 0;
    right: 0;
