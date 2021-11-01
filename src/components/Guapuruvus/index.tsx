@@ -1,3 +1,4 @@
+/* eslint-disable */
 import ImageWrapper from 'components/ImageWrapper'
 import { useRouter } from 'next/router'
 import * as S from './style'
@@ -13,6 +14,7 @@ export type Place = {
   name: string
   slug: string
   gallery: ImageProps[]
+  key: any
 }
 
 export type MapPropsPlace = {

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import ImageWrapper from 'components/ImageWrapper'
 import { useRouter } from 'next/router'
 import * as S from './style'
