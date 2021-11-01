@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import * as S from './styles'
@@ -45,7 +46,7 @@ const Map = ({ places }: MapProps) => {
           center={{ lat: -30.03306, lng: -51.23 }}
           zoom={11}
           minZoom={10}
-         worldCopyJump={true}
+          worldCopyJump={true}
           className={'responsive'}
         >
           <CustomTileLayer />
