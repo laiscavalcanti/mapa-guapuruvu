@@ -1,4 +1,3 @@
-
 /* eslint-disable */
 import { MapPropsPlace } from 'components/Guapuruvus'
 import Client from 'graphql/Client'
