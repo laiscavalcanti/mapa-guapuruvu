@@ -50,7 +50,6 @@ const Map = ({ places }: MapProps) => {
 
   return (
     <>
-  
         <MapContainer
           center={{ lat: -30.03306, lng: -51.23 }}
           zoom={11}
