@@ -34,7 +34,7 @@ const Form = () => {
             . Os dados sobre a(s) árvore(s) da espécie Guapuruvu (Schizolobium
             Parahyba) coletados na região metropolitana de Porto Alegre são
             considerados bem comum, e são disponibilizados pelo site do projeto
-            <S.ItalicBold>http://www.mapadeguapuruvus.art.</S.ItalicBold> Os
+            <S.ItalicBold> http://www.mapadeguapuruvus.art.</S.ItalicBold> Os
             dados pessoais fornecidos por meio deste formulário tem por objetivo
             criar um canal de comunicação entre a artista e organizadora do
             projeto e a pessoa que forneceu os dados, permitindo a comunicação e

@@ -50,34 +50,33 @@ const Map = ({ places }: MapProps) => {
 
   return (
     <>
-        <MapContainer
-          center={{ lat: -30.03306, lng: -51.23 }}
-          zoom={11}
-          minZoom={10}
-          worldCopyJump={true}
-          className={'responsive'}
-        >
-          <CustomTileLayer />
+      <MapContainer
+        center={{ lat: -30.03306, lng: -51.23 }}
+        zoom={11}
+        minZoom={10}
+        worldCopyJump={true}
+        className={'responsive'}
+      >
+        <CustomTileLayer />
 
-          {places?.map(({ id, slug, name, location }) => {
-            const { latitude, longitude } = location
+        {places?.map(({ id, slug, name, location }) => {
+          const { latitude, longitude } = location
 
-            return (
-              <Marker
-                key={`place-${id}`}
-                position={[latitude, longitude]}
-                title={name}
-                icon={markerIcon}
-                eventHandlers={{
-                  click: () => {
-                    router.push(`place/${slug}`)
-                  }
-                }}
-              />
-            )
-          })}
-        </MapContainer>
-     
+          return (
+            <Marker
+              key={`place-${id}`}
+              position={[latitude, longitude]}
+              title={name}
+              icon={markerIcon}
+              eventHandlers={{
+                click: () => {
+                  router.push(`place/${slug}`)
+                }
+              }}
+            />
+          )
+        })}
+      </MapContainer>
     </>
   )
 }

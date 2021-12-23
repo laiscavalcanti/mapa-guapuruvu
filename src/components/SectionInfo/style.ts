@@ -31,8 +31,8 @@ export const Subtitle = styled.p`
 `
 export const ContainerText = styled.div`
   width: 70%;
-  height: 42rem;
-  padding: 3rem 3rem 3rem 3rem;
+  height: auto;
+  padding: 3rem;
   margin-left: 4rem;
   background-color: var(--white);
   bottom: 8px;
@@ -41,9 +41,8 @@ export const ContainerText = styled.div`
   box-shadow: 4px -1px 15px 7px rgba(0, 0, 0, 0.1);
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
-   height: 45rem;
-   padding: var(--minimal);
-   width: 90%;
+   height: auto;
+   width: 95%;
    position: static;
    margin: var(--small) auto;
   `}
@@ -52,7 +51,7 @@ export const ReadMore = styled.a`
   align-self: flex-start;
   margin: 0 0rem 0 2rem;
   background-color: var(--highlight);
-  padding: var(--smallest) var(--small) var(--smallest) var(--small);
+  padding: 1rem;
   border-radius: 15px;
   text-decoration: none;
   font-size: var(--smallest);
@@ -77,7 +76,7 @@ export const Title = styled.p`
   `}
 `
 export const Text = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: var(--small);
   line-height: 1.6538461538;
   &::selection {
@@ -85,7 +84,7 @@ export const Text = styled.p`
   }
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
-    font-size: var(--smallest);
+    font-size: 1.4rem;
   `}
 `
 export const Link = styled.a`

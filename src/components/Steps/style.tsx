@@ -17,6 +17,9 @@ export const H2 = styled.h2`
   &::selection {
     color: var(--background);
   }
+  ${media.lessThan('medium')`
+  font-size: var(--small);
+  `}
 `
 export const StepsWrapper = styled.div`
   width: 80%;
@@ -54,6 +57,9 @@ export const Number = styled.p`
   &::selection {
     color: var(--background);
   }
+  ${media.lessThan('medium')`
+  font-size: var(--smallest);
+  `}
 `
 export const Title = styled.h2`
   font-size: var(--small);
@@ -61,7 +67,11 @@ export const Title = styled.h2`
   margin-bottom: var(--minimal);
   &::selection {
     color: var(--background);
+    font-size: var(--smallest);
   }
+  ${media.lessThan('medium')`
+  font-size: var(--smallest);
+  `}
 `
 export const Text = styled.p`
   font-size: 1.5rem;
@@ -69,6 +79,9 @@ export const Text = styled.p`
   &::selection {
     color: var(--background);
   }
+  ${media.lessThan('medium')`
+  font-size: 1.3rem;
+  `}
 `
 export const LinkA = styled.a`
   width: 8.5rem;

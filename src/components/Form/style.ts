@@ -10,7 +10,7 @@ export const ContainerForm = styled.div`
   margin: 0 auto;
   ${media.lessThan('medium')`
     width: 100%;
-    padding: var(--small);
+    padding: var(--smallest);
     margin: 0 auto;
   `}
 `
@@ -28,10 +28,12 @@ export const FormWrapper = styled.div`
   margin: var(--medium);
   border-radius: 10px;
   ${media.lessThan('medium')`
+    width: 100%;
     margin: 0 auto;
     padding-bottom: var(--large);
     iframe{
-    width: 125%;
+    width: 130%;
+    margin-left: -3.5rem;
   }
   `}
 `

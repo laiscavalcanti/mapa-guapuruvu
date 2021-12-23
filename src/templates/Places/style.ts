@@ -33,7 +33,7 @@ export const ButtonShareWrapper = styled.div`
   left: 90rem;
   top: 10rem;
   ${media.lessThan('medium')`
-    left: 36rem;
+    left: 34rem;
     margin-right: var(--medium);
   `}
   @media(max-width: 360px) {
@@ -78,7 +78,7 @@ export const Body = styled.div`
   
   p {
     margin-bottom: var(--smallest);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.7538461538;
     &::selection {
       color: var(--background);
@@ -89,7 +89,7 @@ export const Body = styled.div`
   ${media.lessThan('medium')`
   p {
     margin-bottom: var(--medium);
-    font-size: var(--small);
+    font-size: 1.4rem;
   }
   `}
 `
