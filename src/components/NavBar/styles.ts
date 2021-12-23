@@ -7,7 +7,6 @@ export const NavWrapper = styled.nav`
   flex-direction: row;
   position: absolute;
   text-align: right;
-
   z-index: 2000;
   right: 0;
   background: transparent;
@@ -17,6 +16,7 @@ export const NavWrapper = styled.nav`
   ${media.lessThan('medium')`
    display: flex;
    flex-direction: column;
+   font-size: 1.7rem;
   `}
 `
 export const ListLink = styled.li`
@@ -57,4 +57,7 @@ export const LinkA = styled.a`
   &::selection {
     color: var(--background);
   }
+  ${media.lessThan('large')`
+  width: 50%;
+  `}
 `

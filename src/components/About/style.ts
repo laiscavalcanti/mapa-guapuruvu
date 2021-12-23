@@ -26,6 +26,7 @@ export const Heading = styled.h1`
   }
   ${media.lessThan('small')`
     margin-top: var(--medium);
+    font-size: var(--small);
   `}
 `
 export const Container = styled.section`
@@ -59,6 +60,7 @@ export const Body = styled.div`
   }
   ${media.lessThan('small')`
     width: 100%;
+    font-size: 14px;
   `}
 `
 export const Image = styled.div`

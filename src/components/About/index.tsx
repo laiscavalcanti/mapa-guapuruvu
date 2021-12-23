@@ -68,7 +68,7 @@ const About = () => {
               <S.Link>formulario</S.Link>
             </Link>
           </S.Body>
-          <S.Body>
+          {/*<S.Body>
             {' '}
             <S.H2>Como reconhecer uma árvore da espécie Guapuruvu? </S.H2>
             Aprender a ler os detalhes e os aspectos de uma planta e de uma
@@ -91,7 +91,7 @@ const About = () => {
             encontra a semente, é uma vagem dura achatada, marrom, de mais ou
             menos 15 cm, que se abre liberando uma semente que se espalha pelo
             vento (anemocoria).
-          </S.Body>
+          </S.Body> */}
         </S.Container>
         <ButtonBack />
       </S.Wrapper>

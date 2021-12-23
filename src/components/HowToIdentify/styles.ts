@@ -11,7 +11,7 @@ export const ContainerForm = styled.div`
   margin: 0 auto;
   ${media.lessThan('medium')`
     width: 100%;
-    padding: var(--small);
+    padding: var(--small) 0 var(--medium) 0;
     margin: 0 auto;
   `}
 `
@@ -29,11 +29,9 @@ export const FormWrapper = styled.div`
   margin: var(--medium);
   border-radius: 10px;
   ${media.lessThan('medium')`
+  width: 90%;
     margin: 0 auto;
     padding-bottom: var(--large);
-    iframe{
-    width: 125%;
-  }
   `}
 `
 export const Body = styled.p`
@@ -61,6 +59,7 @@ export const Title = styled.h1`
   }
   ${media.lessThan('small')`
     margin-top: var(--medium);
+    font-size: var(--small);
   `}
 `
 export const ItalicBold = styled.span`
