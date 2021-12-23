@@ -8,11 +8,11 @@ export const links = [
     link: '/formulario'
   },
   {
-    label: 'Linkania',
-    link: '/linkania'
+    label: 'Como Identificar',
+    link: '/como-identificar'
   },
   {
-    label: 'Guapuruvus',
+    label: 'Galeria',
     link: '/guapuruvus'
   }
 ]

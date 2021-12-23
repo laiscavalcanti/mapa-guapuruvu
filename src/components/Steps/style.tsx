@@ -13,7 +13,7 @@ export const H2 = styled.h2`
   font-weight: 600;
   text-transform: uppercase;
   color: var(--black);
-  margin: var(--small) 0 var(--small) 0;
+  margin: var(--large) 0 var(--small) 0;
   &::selection {
     color: var(--background);
   }

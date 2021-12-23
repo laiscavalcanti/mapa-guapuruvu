@@ -1,3 +1,4 @@
+/* eslint-disable */
 import SocialLinks from 'components/SocialLinks'
 import { links } from '../NavBar/content'
 import * as S from './style'
@@ -7,15 +8,24 @@ const Footer = () => {
     <>
       <S.FooterWrapper>
         <S.ContainerFirst>
-          <S.ListOrganizations>
-            <S.Title>Colaboradores:</S.Title>
-            <S.ListItem>FAC Digital SEDAC-RS</S.ListItem>
-            <S.ListItem>Lei Aldir Blac</S.ListItem>
-            <S.ListItem>
-              Sec. da Cultura da Prefeitura de Porto Alegre
-            </S.ListItem>
-          </S.ListOrganizations>
-
+          <S.ListLeft>
+            <S.ListOrganizations>
+              <S.Title>Colaboradores:</S.Title>
+              <S.ListItem>FAC Digital SEDAC-RS</S.ListItem>
+              <S.ListItem>Lei Aldir Blac</S.ListItem>
+              <S.ListItem>
+                Sec. da Cultura da Prefeitura de Porto Alegre
+              </S.ListItem>
+            </S.ListOrganizations>
+            <S.ListOrganizations>
+              <S.Title>Apoio:</S.Title>
+              <S.ListItem>FAC Digital SEDAC-RS</S.ListItem>
+              <S.ListItem>Lei Aldir Blac</S.ListItem>
+              <S.ListItem>
+                Sec. da Cultura da Prefeitura de Porto Alegre
+              </S.ListItem>
+            </S.ListOrganizations>
+          </S.ListLeft>
           <S.ListLinks>
             {links.map((link, i) => (
               <S.ListLink key={i}>
@@ -38,7 +48,7 @@ const Footer = () => {
             </S.ListLinksExtras>
           </S.LinksExtrasWrapper>
           <SocialLinks
-            color={'#222'}
+            color={'#fffff'}
             height={'24px'}
             width={'24px'}
             margin={'.5px'}

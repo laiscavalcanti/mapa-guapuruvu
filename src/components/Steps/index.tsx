@@ -36,7 +36,8 @@ const Steps = () => {
             <S.Number>2</S.Number>
             <S.Title>Tire uma foto</S.Title>
             <S.Text>
-              Registre através de fotos o Guapuruvu que você encontrou
+              Registre ou desenhe através de fotos o Guapuruvu que você
+              encontrou
             </S.Text>
           </S.TextArea>
           <S.Icon>

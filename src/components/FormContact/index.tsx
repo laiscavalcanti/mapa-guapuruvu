@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from 'react'
 
 import * as S from './style'

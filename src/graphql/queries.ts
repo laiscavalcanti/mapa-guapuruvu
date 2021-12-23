@@ -25,7 +25,7 @@ export const GET_PAGE_BY_SLUG = gql`
 `
 export const GET_PLACES = gql`
   query getPlaces($first: Int) {
-    places(first: $first, orderBy:id_DESC) {
+    places(first: $first, orderBy: id_DESC) {
       id
       slug
       name
@@ -74,16 +74,6 @@ export const GET_PLACE_BY_SLUG = gql`
         height
         width
       }
-    }
-  }
-`
-
-export const GET_PLACES_BY_FIRST = gql`
-  query getPlacesFirst2 {
-    places(first: 2) {
-      id
-      slug
-      name
     }
   }
 `

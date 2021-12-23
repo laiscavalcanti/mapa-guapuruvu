@@ -7,10 +7,13 @@ export const ButtonWrapper = styled.div`
 export const Button = styled.button`
   border: none;
   cursor: pointer;
-  color: var(--background);
+  color: var(--black);
   margin-left: var(--medium);
+  font-weight: 500;
+  font-size: var(--smallest);
   &:hover {
     color: var(--highlight);
+    background-color: transparent;
   }
 `
 export const Link = styled.a``

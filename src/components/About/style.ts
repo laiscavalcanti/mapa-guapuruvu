@@ -1,3 +1,4 @@
+/* eslint-disable */
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
@@ -17,7 +18,8 @@ export const Wrapper = styled.div`
 export const Heading = styled.h1`
   font-size: var(--medium);
   margin-bottom: var(--medium);
-  text-align: center;
+  margin-left: var(--small);
+  text-align: left;
   font-weight: 600;
   &::selection {
     color: var(--background);
@@ -42,14 +44,14 @@ export const Container = styled.section`
 `
 export const Body = styled.div`
   width: 90%;
-  margin-bottom: var(--large);
-  font-size: 20px;
+  margin: 0 auto;
+  font-size: 16px;
   line-height: 1.7538461538;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   p {
     margin-bottom: var(--small);
-    font-size: var(--small);
+    font-size: var(--smallest);
   }
   &::selection {
     color: var(--background);
@@ -61,6 +63,7 @@ export const Body = styled.div`
 `
 export const Image = styled.div`
   padding: var(--small);
+  margin-left: 1.2rem;
 `
 export const H2 = styled.h2`
   font-weight: bold;
@@ -84,10 +87,10 @@ export const Link = styled.a`
   text-decoration: none;
   font-style: italic;
   cursor: pointer;
+  font-weight: 700;
   color: var(--black);
-  border-bottom: 1px solid var(--black);
+  border-bottom: 2px solid var(--highlight);
   &:hover {
-    font-weight: 700;
     border-bottom: 1px solid transparent;
   }
   &::selection {

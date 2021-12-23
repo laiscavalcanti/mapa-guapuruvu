@@ -6,7 +6,7 @@ export default {
       site_name: 'Mapa de Guapuruvus',
     },
     twitter: {
-      handle: '@mapadegyapuruvus',
+      handle: '@mapadeguapuruvus',
       site: '@site',
       cardType: 'summary_large_image',
     },

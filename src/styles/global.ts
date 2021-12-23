@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
     :root{
-        --highlight: #e4d901;
+        --highlight: #ffa500;
         --background: #8bae63;
         --white: #eeeeee;
         --black: #222;
@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         list-style: none;
         background: var(--white);
-        font-family: 'Fira Sans', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         overflow-x: hidden;
     }
 
@@ -49,6 +49,10 @@ const GlobalStyles = createGlobalStyle`
     }
     img{
         border-radius: 7px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        color: #ffa500;
+        width: 10px;
     }
 `
 

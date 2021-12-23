@@ -10,6 +10,9 @@ export const Title = styled.h1`
   &::selection {
     color: var(--background);
   }
+  ${media.lessThan('large')`
+  margin-top: var(--small);
+  `}
 `
 export const GuapuruvuWrapper = styled.div`
   display: grid;
@@ -17,9 +20,17 @@ export const GuapuruvuWrapper = styled.div`
   grid-template-columns: 2fr 2fr 2fr;
   padding: var(--large);
   margin: 0 auto;
+  ${media.lessThan('large')`
+   width: 100%;
+   grid-template-columns: 2fr;
+  `}
 `
 export const Container = styled.div`
   display: flex;
+  ${media.lessThan('large')`
+   width: 100%;
+   grid-template-columns: 2fr;
+  `}
 `
 export const ContainerItem = styled.section`
   padding-bottom: var(--large);
@@ -45,22 +56,7 @@ export const Image = styled.div`
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
   }
-  @-webkit-keyframes flash {
-    0% {
-      opacity: 0.4;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes flash {
-    0% {
-      opacity: 0.4;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+  
 `
 
 export const Name = styled.h2`

@@ -1,6 +1,7 @@
 /* eslint-disable */
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
+import L from 'leaflet'
 import * as S from './styles'
 
 type ImageProps = {
@@ -36,12 +37,20 @@ const CustomTileLayer = () => {
     />
   )
 }
+
+const markerIcon = L.icon({
+  iconUrl: 'img/desenho_semente_0056.png',
+  iconSize: [40, 40],
+  iconAnchor: [20, 20],
+  popupAnchor: [0, -40]
+})
+
 const Map = ({ places }: MapProps) => {
   const router = useRouter()
 
   return (
     <>
-      <S.MapWrapper>
+  
         <MapContainer
           center={{ lat: -30.03306, lng: -51.23 }}
           zoom={11}
@@ -59,6 +68,7 @@ const Map = ({ places }: MapProps) => {
                 key={`place-${id}`}
                 position={[latitude, longitude]}
                 title={name}
+                icon={markerIcon}
                 eventHandlers={{
                   click: () => {
                     router.push(`place/${slug}`)
@@ -68,7 +78,7 @@ const Map = ({ places }: MapProps) => {
             )
           })}
         </MapContainer>
-      </S.MapWrapper>
+     
     </>
   )
 }

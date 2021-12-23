@@ -2,14 +2,11 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 export const SectionInfoWrapper = styled.div`
-  position: relative;
-  box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
-  width: 85%;
+  justify-content: space-between;
+  width: 80%;
   height: auto;
-  padding: var(--medium);
-  margin-bottom: 2rem;
+  margin: 0 auto;
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
    position: static;
@@ -17,41 +14,51 @@ export const SectionInfoWrapper = styled.div`
    flex-direction: column;
   `}
 `
+export const ContainerCarousel = styled.div`
+  width: 60%;
+  height: 40rem;
+
+  ${media.lessThan('medium')`
+   width: 95%;
+   height: 25rem;
+   margin: 0 auto;
+   padding-bottom: var(--medium); 
+     `}
+`
+
+export const Subtitle = styled.p`
+  font-size: 1.3rem;
+`
 export const ContainerText = styled.div`
-  position: absolute;
-  width: 30%;
-  height: auto;
-  padding: 3rem;
+  width: 70%;
+  height: 42rem;
+  padding: 3rem 3rem 3rem 3rem;
+  margin-left: 4rem;
   background-color: var(--white);
   bottom: 8px;
-  right: -10rem;
   border: 2px solid var(--background);
   border-radius: 5px;
   box-shadow: 4px -1px 15px 7px rgba(0, 0, 0, 0.1);
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
-   height: auto;
-   right: 0;
-   padding: var(--smallest);
-   width: 100%;
+   height: 45rem;
+   padding: var(--minimal);
+   width: 90%;
    position: static;
-   margin-top: var(--smallest);
+   margin: var(--small) auto;
   `}
 `
 export const ReadMore = styled.a`
   align-self: flex-start;
   margin: 0 0rem 0 2rem;
+  background-color: var(--highlight);
+  padding: var(--smallest) var(--small) var(--smallest) var(--small);
+  border-radius: 15px;
   text-decoration: none;
   font-size: var(--smallest);
   color: var(--black);
-  opacity: 0.9;
   border-bottom: 1px solid transparent;
   cursor: pointer;
-  &:hover {
-    opacity: 1;
-    color: var(--background);
-    border-bottom: 2px solid var(--background);
-  }
 `
 export const Title = styled.p`
   font-size: var(--medium);
@@ -62,10 +69,15 @@ export const Title = styled.p`
   margin: 10rem 0 var(--large) 0;
   &::selection {
     color: var(--background);
+    margin: var(--minimal);
   }
+  ${media.lessThan('medium')`
+    /* screen width is less than 768px (medium) */
+    font-size: var(--smallest);
+  `}
 `
 export const Text = styled.p`
-  font-size: var(--small);
+  font-size: 1.6rem;
   padding: var(--small);
   line-height: 1.6538461538;
   &::selection {

@@ -74,11 +74,11 @@ export const Field = styled.p`
   }
 `
 export const Body = styled.div`
-  margin-bottom: var(--large);
+  margin-bottom: var(--smallest);
   
   p {
-    margin-bottom: var(--medium);
-    font-size: var(--medium);
+    margin-bottom: var(--smallest);
+    font-size: 1.6rem;
     line-height: 1.7538461538;
     &::selection {
       color: var(--background);
@@ -95,7 +95,7 @@ export const Body = styled.div`
 `
 export const Gallery = styled.div`
   display: grid;
-  margin-top: var(--medium);
+  margin-top: var(--smallest);
   img {
     background: #f6f7f8;
     background-image: linear-gradient(

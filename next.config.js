@@ -10,5 +10,8 @@ module.exports = withPWA({
     },
     images:{
         domains: ['media.graphcms.com']
-    }
+    },
+    experimental: { esmExternals: true }
 })
+
+

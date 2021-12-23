@@ -1,4 +1,5 @@
 import ImageWrapper from 'components/ImageWrapper'
+import CarouselImages from 'components/Carousel'
 import Link from 'next/link'
 import * as S from './style'
 
@@ -7,12 +8,10 @@ const SectionInfo = () => {
     <>
       <S.Title>Mapa de Guapuruvus é colaborativo</S.Title>
       <S.SectionInfoWrapper>
-        <ImageWrapper
-          src="/img/gua02.jpg"
-          alt="imagem guapuruvu verde"
-          width={800}
-          height={650}
-        />
+        <S.ContainerCarousel>
+          <CarouselImages />
+          <S.Subtitle>Fotos de guapuruvus enviado por colaboradores</S.Subtitle>
+        </S.ContainerCarousel>
         <S.ContainerText>
           <S.Text>
             <S.ItalicBold>Mapa de Guapuruvus</S.ItalicBold> é um mapa
