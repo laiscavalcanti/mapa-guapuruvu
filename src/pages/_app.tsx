@@ -32,6 +32,7 @@ function App({ Component, pageProps }: AppProps) {
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
           rel="stylesheet"
         />
+      <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Roboto+Condensed:wght@700&family=Rubik:ital@1&family=Source+Code+Pro&family=Source+Serif+4&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
         <meta name="theme-color" content="#ffbf00" />
         <meta
           name="description"

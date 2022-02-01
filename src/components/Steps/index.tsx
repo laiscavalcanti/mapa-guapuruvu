@@ -9,14 +9,14 @@ const Steps = () => {
   return (
     <>
       <S.Container>
-        <S.H2>Como colaborar</S.H2>
+        <S.H2>Enviando dados de uma ou mais árvores</S.H2>
         <S.StepsWrapper>
           <S.TextArea>
             <S.Number>1</S.Number>
             <S.Title>Encontre um Guapuruvu</S.Title>
             <S.Text>
               Anote o endereço ou a localização do Guapuruvu que você encontrou.
-              <Link href="/sobre">
+              <Link href="/como-identificar">
                 <S.LinkA> Saiba identificar</S.LinkA>
               </Link>
             </S.Text>
@@ -34,10 +34,9 @@ const Steps = () => {
 
           <S.TextArea>
             <S.Number>2</S.Number>
-            <S.Title>Tire uma foto</S.Title>
+            <S.Title>Envie uma imagem</S.Title>
             <S.Text>
-              Registre ou desenhe através de fotos o Guapuruvu que você
-              encontrou
+              Envie uma foto ou desenho do Guapuruvu que você encontrou
             </S.Text>
           </S.TextArea>
           <S.Icon>
@@ -52,10 +51,10 @@ const Steps = () => {
           <S.Line />
           <S.TextArea>
             <S.Number>3</S.Number>
-            <S.Title>Nos envie as informações</S.Title>
+            <S.Title>Preencha o Formulário</S.Title>
             <S.Text>
-              Tamanho, coloração, idade - essas informações serão enviadas
-              através desse{' '}
+              Idade aproximada, período (floração, fruto, etc), área privada ou
+              pública.
               <Link href="/formulario" scroll={false}>
                 <S.LinkA> formulário</S.LinkA>
               </Link>

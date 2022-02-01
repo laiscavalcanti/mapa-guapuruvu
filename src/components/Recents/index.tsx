@@ -25,7 +25,7 @@ const Guapuruvus = ({ places }: MapPropsPlace) => {
 
   return (
     <>
-      <S.Title>Os últimos Guapuruvus adicionados</S.Title>
+      <S.Title>Últimas árvores adicionadas</S.Title>
       <S.GuapuruvuWrapper>
         {places?.slice(0, 3).map(({ id, slug, name, gallery }) => {
           return (

@@ -6,7 +6,7 @@ import * as S from './style'
 const SectionInfo = () => {
   return (
     <>
-      <S.Title>Mapa de Guapuruvus é colaborativo</S.Title>
+      <S.Title>Mapa de Guapuruvus é feito coletivamente</S.Title>
       <S.SectionInfoWrapper>
         <S.ContainerCarousel>
           <CarouselImages />
@@ -14,10 +14,10 @@ const SectionInfo = () => {
         </S.ContainerCarousel>
         <S.ContainerText>
           <S.Text>
-            <S.ItalicBold>Mapa de Guapuruvus</S.ItalicBold> é um mapa
-            colaborativo da localização das árvores Guapuruvu (Sch izolobium
-            parahyba) <S.ItalicBold>na cidade de Porto Alegre</S.ItalicBold> e
-            região metropolitana. Realizado por{' '}
+            <S.ItalicBold>Mapa de Guapuruvus</S.ItalicBold> O Mapa de Guapuruvus
+            é feito coletivamente (Sch izolobium parahyba){' '}
+            <S.ItalicBold>na cidade de Porto Alegre</S.ItalicBold> e região
+            metropolitana. Realizado por{' '}
             <S.Link>
               <a
                 href="https://cristinaribas.org/escritos/"

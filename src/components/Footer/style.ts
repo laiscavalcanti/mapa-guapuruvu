@@ -132,3 +132,11 @@ export const ListLinksExtras = styled.li`
     color: var(--background);
   }
 `
+export const ContainerImg = styled.div`
+  display: flex;
+`
+export const LogoImotiro = styled.img`
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+`
