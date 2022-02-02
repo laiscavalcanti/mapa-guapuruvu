@@ -1,19 +1,15 @@
 const links = [
   {
     label: 'Github',
-    url: 'cicero.n.marra@gmail.com'
+    url: 'github.com/mapadeguapuruvus'
   },
   {
     label: 'Youtube',
-    url: 'https://www.youtube.com/user/wakacicero'
+    url: ''
   },
   {
     label: 'Twitter',
-    url: 'http://whats.link/ciceromarra'
-  },
-  {
-    label: 'Email',
-    url: 'http://whats.link/ciceromarra'
+    url: ''
   }
 ]
 
