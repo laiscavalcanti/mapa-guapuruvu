@@ -3,7 +3,6 @@
   "short_name": "Mapa de Guapuruvus",
   "icons": [
     {
-      "src": "/img/desenho_semente_0056.png",
       "type": "image/png",
       "sizes": "192x192"
     }
