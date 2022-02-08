@@ -51,7 +51,7 @@ export const ContainerSecond = styled.div`
   padding: var(--small) var(--minimal) var(--minimal) var(--minimal);
   margin: 0 auto;
   ${media.lessThan('medium')`
-  width: 90%;
+  width: 80%;
   padding: var(--minimal) 0 var(--minimal) 0;
   `}
 `

@@ -45,20 +45,22 @@ export const Body = styled.p`
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
     font-size: var(--smallest);
+    padding: 0;
   `}
 `
 
 export const Title = styled.h1`
   font-size: var(--medium);
-  margin-bottom: var(--medium);
-  margin-left: var(--small);
+  padding-bottom: var(--medium);
+  padding-left: var(--small);
   text-align: left;
   font-weight: 600;
+  margin: 0 auto;
   &::selection {
     color: var(--background);
   }
   ${media.lessThan('small')`
-    margin-top: var(--medium);
+    padding-top: var(--medium);
     font-size: var(--small);
   `}
 `

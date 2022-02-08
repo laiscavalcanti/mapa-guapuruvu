@@ -84,16 +84,16 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
       </LinkWrapper>
       <S.Wrapper>
         <S.ButtonShareWrapper>
-          <TelegramShareButton url={place.slug} title={place.name}>
+          <TelegramShareButton url={`https://www.arvoresurbanas.net/place.slug`} title={place.name}>
             <TelegramIcon size={30} round />
           </TelegramShareButton>
-          <TwitterShareButton url={place.slug} title={place.name}>
+          <TwitterShareButton url={`https://www.arvoresurbanas.net/place.slug`} title={place.name}>
             <TwitterIcon size={32} round />
           </TwitterShareButton>
-          <FacebookShareButton url={place.slug} quote={place.name}>
+          <FacebookShareButton url={`https://www.arvoresurbanas.net/place.slug`} quote={place.name}>
             <FacebookIcon size={32} round />
           </FacebookShareButton>
-          <WhatsappShareButton url={place.slug} title={place.name}>
+          <WhatsappShareButton url={`https://www.arvoresurbanas.net/place.slug`} title={place.name}>
             <WhatsappIcon size={32} round />
           </WhatsappShareButton>
         </S.ButtonShareWrapper>

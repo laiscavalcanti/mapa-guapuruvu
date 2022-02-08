@@ -21,6 +21,7 @@ export const Container = styled.section`
   background-color: rgba(139, 174, 99, 0.37);
   padding: 4rem 8rem 4rem 8rem;
   border-radius: 10px;
+  border: solid 1px #222222;
   ${media.lessThan('medium')`
     padding: 2rem 1rem 2rem 1rem;
     width: 90%;
@@ -75,6 +76,7 @@ export const Field = styled.p`
 `
 export const Body = styled.div`
   margin-bottom: var(--smallest);
+  
   
   p {
     margin-bottom: var(--smallest);
