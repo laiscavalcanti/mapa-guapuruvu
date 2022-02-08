@@ -1,7 +1,7 @@
 const links = [
   {
     label: 'Github',
-    url: 'github.com/mapadeguapuruvus'
+    url: 'https://github.com/laiscavalcanti/mapa-guapuruvu'
   },
   {
     label: 'Youtube',
