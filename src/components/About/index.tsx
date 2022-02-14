@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <S.Wrapper>
-        <S.Heading>Sobre o Mapa de Guapuruvus</S.Heading>
+        <S.Heading>Sobre o Árvores Urbanas</S.Heading>
         <S.Image>
           <ImageWrapper
             src="/img/guapu03.jpg"
@@ -20,7 +20,7 @@ const About = () => {
 
         <S.Container>
           <S.Body>
-            <S.Italic>Mapa de Guapuruvus</S.Italic> é um mapa colaborativo da
+            <S.Italic>Sobre o Árvores Urbanas</S.Italic> é um mapa colaborativo da
             espécie de árvores Guapuruvu (Schizolobium parahyba) na cidade de
             Porto Alegre e região metropolitana. O mapa gera uma visualização da
             relação de proximidade entre as árvores e sua distribuição na
@@ -65,7 +65,7 @@ const About = () => {
             habitam e constituem a coexistência entre a cidades e o bioma onde
             ela está inserida. <em>Envie a localização de uma árvore</em>{' '}
             <Link href="/formulario">
-              <S.Link>formulario</S.Link>
+              <S.Link>formulário</S.Link>
             </Link>
           </S.Body>
           {/*<S.Body>

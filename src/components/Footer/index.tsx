@@ -60,9 +60,15 @@ const Footer = () => {
               </S.LinkA>
             </S.Text>
             <S.ListLinksExtras>
-              <S.LinkA href={'/licenca'}>Licença</S.LinkA>
+              <S.ContainerImg>
+                <S.LogoCC
+                  src="/img/creative-commons(1).png"
+                />
+                <S.LinkA href={'/licenca'}>Creative Commons 4.0</S.LinkA>
+              </S.ContainerImg>
             </S.ListLinksExtras>
           </S.LinksExtrasWrapper>
+
           <SocialLinks
             color={'#fffff'}
             height={'24px'}

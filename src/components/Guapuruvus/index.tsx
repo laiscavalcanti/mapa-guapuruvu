@@ -26,7 +26,8 @@ const Guapuruvus = ({ places }: MapPropsPlace) => {
 
   return (
     <>
-      <S.Title>Guapuruvus</S.Title>
+    <S.ContainerForm>
+      <S.Title>Árvores Urbanas</S.Title>
       <S.GuapuruvuWrapper>
         {places?.map(({ id, slug, name, gallery }) => {
           return (
@@ -52,6 +53,7 @@ const Guapuruvus = ({ places }: MapPropsPlace) => {
           )
         })}
       </S.GuapuruvuWrapper>
+      </S.ContainerForm>
     </>
   )
 }

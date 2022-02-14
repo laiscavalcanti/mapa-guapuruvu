@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
+import img from '../public/img/unnamed.png'
 
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -11,6 +12,10 @@ export const HeaderWrapper = styled.header`
     height: 6rem;
   `}
 `
+export const BackgroundHeader = styled.div`
+  height: 4rem;
+  width: 100%;
+`
 export const LinkA = styled.a`
   margin-top: var(--medium);
 `
@@ -18,7 +23,7 @@ export const SideBarWrapper = styled.ul`
   display: flex;
   align-items: center;
   align-content: center;
-  height: 12rem;
+  height: 16rem;
   z-index: 2;
   left: 0;
   top: 0;

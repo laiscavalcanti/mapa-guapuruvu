@@ -24,7 +24,6 @@ export const FormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgba(139, 174, 99, 0.37);
   padding: var(--medium);
   margin: var(--medium);
   border-radius: 10px;
@@ -38,6 +37,7 @@ export const Body = styled.p`
   font-size: 1.6rem;
   padding: var(--small);
   line-height: 1.6538461538;
+  text-align: justify;
   &::selection {
     color: var(--background);
     background-color: var(--black);
@@ -48,14 +48,12 @@ export const Body = styled.p`
     padding: 0;
   `}
 `
-
 export const Title = styled.h1`
   font-size: var(--medium);
   padding-bottom: var(--medium);
   padding-left: var(--small);
   text-align: left;
   font-weight: 600;
-  margin: 0 auto;
   &::selection {
     color: var(--background);
   }

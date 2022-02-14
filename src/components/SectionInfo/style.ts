@@ -36,9 +36,7 @@ export const ContainerText = styled.div`
   margin-left: 4rem;
   background-color: var(--white);
   bottom: 8px;
-  border: 2px solid var(--background);
   border-radius: 5px;
-  box-shadow: 4px -1px 15px 7px rgba(0, 0, 0, 0.1);
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
    height: auto;
@@ -52,7 +50,7 @@ export const ReadMore = styled.a`
   margin: 0 0rem 0 2rem;
   background-color: var(--highlight);
   padding: 1rem;
-  border-radius: 15px;
+  border-radius: 4px;
   text-decoration: none;
   font-size: var(--smallest);
   color: var(--black);

@@ -12,10 +12,10 @@ const Header = () => {
         <S.NavWrapper>
           <S.LinkA href="/">
             <ImageWrapper
-              src="/img/logo_preta.png"
+              src="/img/logo4.png"
               alt={'logo'}
-              width={361}
-              height={146}
+              width={400}
+              height={130}
             />
           </S.LinkA>
           <S.Toggle

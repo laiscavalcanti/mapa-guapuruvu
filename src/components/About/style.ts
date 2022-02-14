@@ -32,7 +32,6 @@ export const Heading = styled.h1`
 export const Container = styled.section`
   align-self: flex-start;
   max-width: 70%;
-  background-color: rgba(139, 174, 99, 0.37);
   padding: var(--medium);
   margin: var(--medium);
   border-radius: 10px;
@@ -50,6 +49,7 @@ export const Body = styled.div`
   line-height: 1.7538461538;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+  text-align: justify;
   p {
     margin-bottom: var(--small);
     font-size: var(--smallest);

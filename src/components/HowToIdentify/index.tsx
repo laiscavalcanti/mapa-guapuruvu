@@ -10,7 +10,7 @@ const HowToIdentify = () => {
         <S.Title>Como reconhecer uma árvore da espécie Guapuruvu?</S.Title>
         <S.Image>
           <ImageWrapper
-            src="/img/como-identificar.jpg"
+            src="/img/como-identificar2.jpg"
             alt="imagem de uma arvore e de um céu azul com nuvens"
             width={740}
             height={400}

@@ -140,3 +140,8 @@ export const LogoImotiro = styled.img`
   height: 60px;
   margin-left: 5px;
 `
+export const LogoCC = styled.img`
+  width: 40px;
+  height: 40px;
+  margin-top: -5px;
+`

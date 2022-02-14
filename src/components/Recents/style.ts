@@ -56,15 +56,15 @@ export const ContainerItem = styled.ul`
 `
 export const Button = styled.button`
   width: 100px;
-  border: 2px solid var(--background);
-  border-radius: 10px;
+  border: 1px solid var(--background);
+  border-radius: 3px;
   margin: 0.5rem 0 0.5rem 0;
   padding: 0.5rem;
   cursor: pointer;
   font-weight: 500;
   text-align: center;
   :hover {
-    border: 2px solid var(--highlight);
+    border: 1px solid var(--highlight);
     color: var(--highlight);
     background-color: transparent;
   }

@@ -48,12 +48,13 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
     }
     img{
-        border-radius: 7px;
+        border-radius: 3px;
     }
     .swiper-button-next, .swiper-button-prev{
         color: #ffa500;
         width: 10px;
     }
+
 `
 
 export default GlobalStyles

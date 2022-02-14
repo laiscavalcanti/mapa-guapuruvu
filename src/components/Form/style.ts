@@ -1,3 +1,4 @@
+/* eslint-disable */
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
@@ -14,7 +15,6 @@ export const ContainerForm = styled.div`
     margin: 0 auto;
   `}
 `
-
 export const Image = styled.div`
   padding: var(--small);
   margin-left: 1.2rem;
@@ -24,7 +24,6 @@ export const FormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgba(139, 174, 99, 0.37);
   padding: var(--medium);
   margin: var(--medium);
   border-radius: 10px;
@@ -43,6 +42,7 @@ export const Body = styled.p`
   font-size: 1.6rem;
   padding: var(--small);
   line-height: 1.6538461538;
+  text-align: justify;
   &::selection {
     color: var(--background);
     background-color: var(--black);

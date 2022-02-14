@@ -18,10 +18,9 @@ export const Container = styled.section`
   justify-content: flex-start;
   align-items: flex-start;
   width: 75%;
-  background-color: rgba(139, 174, 99, 0.37);
+
   padding: 4rem 8rem 4rem 8rem;
-  border-radius: 10px;
-  border: solid 1px #222222;
+
   ${media.lessThan('medium')`
     padding: 2rem 1rem 2rem 1rem;
     width: 90%;

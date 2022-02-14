@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
   background-color: var(--white);
+  margin-top: 8rem;
   padding: var(--medium);
 `
 export const H2 = styled.h2`
@@ -13,7 +14,7 @@ export const H2 = styled.h2`
   font-weight: 600;
   text-transform: uppercase;
   color: var(--black);
-  margin: var(--large) 0 var(--small) 0;
+  margin: 4rem var(--large) 0 var(--small) 0;
   &::selection {
     color: var(--background);
   }
