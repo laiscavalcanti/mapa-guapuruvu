@@ -20,12 +20,11 @@ export const Image = styled.div`
   margin-left: 1.2rem;
 `
 export const FormWrapper = styled.div`
-  width: 70%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: var(--medium);
-  margin: var(--medium);
   border-radius: 10px;
   ${media.lessThan('medium')`
   width: 90%;

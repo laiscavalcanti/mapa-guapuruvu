@@ -30,10 +30,9 @@ export const Heading = styled.h1`
   `}
 `
 export const Container = styled.section`
-  align-self: flex-start;
-  max-width: 70%;
+  width: 100%;
   padding: var(--medium);
-  margin: var(--medium);
+  margin: 0 auto;
   border-radius: 10px;
   ${media.lessThan('medium')`
     max-width: 100%;
@@ -43,8 +42,8 @@ export const Container = styled.section`
   `}
 `
 export const Body = styled.div`
-  width: 90%;
-  margin: 0 auto;
+  width: 70%;
+  padding: var(--smallest);
   font-size: 16px;
   line-height: 1.7538461538;
   font-family: 'Poppins', sans-serif;

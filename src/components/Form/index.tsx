@@ -34,20 +34,26 @@ const Form = () => {
             . Os dados sobre a(s) árvore(s) da espécie Guapuruvu (Schizolobium
             Parahyba) coletados na região metropolitana de Porto Alegre são
             considerados bem comum, e são disponibilizados pelo site do projeto
-            <S.ItalicBold> http://www.mapadeguapuruvus.art.</S.ItalicBold> Os
-            dados pessoais fornecidos por meio deste formulário tem por objetivo
-            criar um canal de comunicação entre a artista e organizadora do
-            projeto e a pessoa que forneceu os dados, permitindo a comunicação e
-            a aprovação do uso da imagem e/ou do texto para este projeto.{' '}
+            <S.ItalicBold> http://www.arvoresurbanas.net</S.ItalicBold>
+            <br></br>
+            <br></br>
+            Os dados pessoais fornecidos por meio deste formulário tem por
+            objetivo criar um canal de comunicação entre a artista e
+            organizadora do projeto e a pessoa que forneceu os dados, permitindo
+            a comunicação e a aprovação do uso da imagem e/ou do texto para este
+            projeto.{' '}
             <S.ItalicBold>
               Os dados pessoais não serão sob qualquer circunstância
               compartilhados com outros projetos ou com empresas.
             </S.ItalicBold>
-            Todo o conteúdo do site está sob licença Creative Commons 3.0.
-            (Atribuição - Uso Não Comercial - Partilha nos Mesmos Termos 3.0
-            Brasil). Qualquer dúvida escreva para o email do projeto
-            mapadeguapuruvus (arroba) gmail.com. Agradecemos sua participação!
-            Por uma cidade mais arborizada, e{' '}
+            Todo o conteúdo do site está sob licença Creative Commons 4.0.
+            (Atribuição - Uso Não Comercial - Partilha nos Mesmos Termos 4.0
+            Brasil). 
+            <br></br>
+            <br></br>
+            Qualquer dúvida escreva para o email do projeto
+            mapadeguapuruvus@gmail.com. Agradecemos sua participação! Por uma
+            cidade mais arborizada, e{' '}
             <S.ItalicBold>
               para que a vida vegetal seja respeitada!
             </S.ItalicBold>{' '}

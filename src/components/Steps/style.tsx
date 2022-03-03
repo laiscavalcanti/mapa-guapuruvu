@@ -7,6 +7,9 @@ export const Container = styled.div`
   background-color: var(--white);
   margin-top: 8rem;
   padding: var(--medium);
+  ${media.lessThan('medium')`
+  margin-top: 2rem;
+  `}
 `
 export const H2 = styled.h2`
   font-size: var(--medium);
@@ -19,6 +22,7 @@ export const H2 = styled.h2`
     color: var(--background);
   }
   ${media.lessThan('medium')`
+  margin: 2rem var(--large) 0 var(--small) 0;
   font-size: var(--small);
   `}
 `
@@ -81,7 +85,7 @@ export const Text = styled.p`
     color: var(--background);
   }
   ${media.lessThan('medium')`
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   `}
 `
 export const LinkA = styled.a`

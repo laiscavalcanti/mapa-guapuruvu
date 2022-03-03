@@ -20,19 +20,19 @@ const CarouselImages = () => {
 				className="mySwiper">
 				<SwiperSlide>
 					{' '}
-					<ImageWrapper src="/img/guapu03.jpg" alt="" width={750} height={420} />{' '}  
+					<ImageWrapper src="/img/img-capa/guapu_carlos_gomes_tronco.jpg" alt="" width={750} height={420} />{' '}  
 				</SwiperSlide>
 				<SwiperSlide>
 					{' '}
-					<ImageWrapper src="/img/gua02.jpg" alt="" width={750} height={420} />{' '}  
+					<ImageWrapper src="/img/img-capa/guapu_desconhecido.jpg" alt="" width={750} height={420} />{' '}  
 				</SwiperSlide>
-				<SwiperSlide>Slide 3</SwiperSlide>
-				<SwiperSlide>Slide 4</SwiperSlide>
-				<SwiperSlide>Slide 5</SwiperSlide>
-				<SwiperSlide>Slide 6</SwiperSlide>
-				<SwiperSlide>Slide 7</SwiperSlide>
-				<SwiperSlide>Slide 8</SwiperSlide>
-				<SwiperSlide>Slide 9</SwiperSlide>
+				<SwiperSlide><ImageWrapper src="/img/img-capa/guapu_fabricio_pillar.jpg" alt="" width={750} height={420} />{' '}  </SwiperSlide>
+				<SwiperSlide><ImageWrapper src="/img/img-capa/guapu_germano_petersen_02.jpg" alt="" width={750} height={420} />{' '}  </SwiperSlide>
+				<SwiperSlide><ImageWrapper src="/img/img-capa/guapu_pedro_ivo_01.jpg" alt="" width={750} height={420} />{' '}  </SwiperSlide>
+				<SwiperSlide><ImageWrapper src="/img/img-capa/guapu_praca_bela_vista.jpg" alt="" width={750} height={420} />{' '}  </SwiperSlide>
+				<SwiperSlide><ImageWrapper src="/img/img-capa/guapu_fabricio_pillar.jpg" alt="" width={750} height={420} />{' '}  </SwiperSlide>
+				<SwiperSlide><ImageWrapper src="/img/img-capa/guapu_rua_plinio_tronco_copas.jpg" alt="" width={750} height={420} />{' '}  </SwiperSlide>
+				<SwiperSlide><ImageWrapper src="/img/img-capa/guapu_carlos.jpg" alt="" width={750} height={420} />{' '}  </SwiperSlide>
 			</Swiper>
 		</>
 	);

@@ -30,52 +30,54 @@ export const Subtitle = styled.p`
   font-size: 1.3rem;
 `
 export const ContainerText = styled.div`
-  width: 70%;
+  width: 90%;
   height: auto;
-  padding: 3rem;
   margin-left: 4rem;
   background-color: var(--white);
   bottom: 8px;
   border-radius: 5px;
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
-   height: auto;
-   width: 95%;
+   width: 100%;
    position: static;
-   margin: var(--small) auto;
+   margin: 0 auto;
+   padding: var(--medium);
   `}
 `
-export const ReadMore = styled.a`
-  align-self: flex-start;
-  margin: 0 0rem 0 2rem;
+export const ReadMore = styled.button`
+  margin-top: 1rem;
   background-color: var(--highlight);
   padding: 1rem;
   border-radius: 4px;
   text-decoration: none;
   font-size: var(--smallest);
   color: var(--black);
+  border: none;
   border-bottom: 1px solid transparent;
   cursor: pointer;
 `
+
 export const Title = styled.p`
   font-size: var(--medium);
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--black);
   margin: 10rem 0 var(--large) 0;
   &::selection {
     color: var(--background);
-    margin: var(--minimal);
+    
   }
   ${media.lessThan('medium')`
     /* screen width is less than 768px (medium) */
-    font-size: var(--smallest);
+    width: 80%;
+    margin: 0 auto;
+    padding: var(--medium);
+    font-size: var(--small);
   `}
 `
 export const Text = styled.p`
   font-size: 1.5rem;
-  padding: var(--small);
   line-height: 1.6538461538;
   &::selection {
     color: var(--background);
