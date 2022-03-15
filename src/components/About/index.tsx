@@ -12,7 +12,7 @@ const About = () => {
         <S.Heading>Sobre o Árvores Urbanas</S.Heading>
         <S.Image>
           <ImageWrapper
-            src="/img/guapu03.jpg"
+            src="/img/sobre_site02.jpg"
             alt="imagem de uma arvore e de um céu azul com nuvens"
             width={740}
             height={400}
@@ -27,7 +27,10 @@ const About = () => {
             também <ItalicBold>marcam o tempo</ItalicBold> em relação às transformações urbanas e à vida,
             os momentos de nossas vidas em comum na cidade, e como a cidade pode
             se tornar um lugar que reconhece a importância da vida vegetal para
-            todas as formas de vida. A mudança climática e a pandemia do corona
+            todas as formas de vida. 
+            <br></br>
+            <br></br>
+            A mudança climática e a pandemia do corona
             vírus evidenciam como a vida vegetal produz saúde coletiva. O
             projeto se soma, portanto, às demais ações de sensibilização e luta
             pelo respeito às vidas vegetais, e quer instigar a percepção
@@ -49,7 +52,10 @@ const About = () => {
             do Brasil). As sementes espalhadas pelo chão são geralmente um
             indício de que estamos perto de uma árvore desta espécie, e isso
             gera uma brincadeira interessante, que nos faz atentar também para
-            outras espécies, sementes e folhas. As sementes no solo nos
+            outras espécies, sementes e folhas. 
+            <br></br>
+            <br></br>
+            As sementes no solo nos
             sinalizam a relação com a terra e com a germinação, assim como
             atentam para a existência das raízes e dessas relações vitais que se
             desenrolam literalmente sob nossos pés mas, ao mesmo tempo, sobre
@@ -61,30 +67,6 @@ const About = () => {
               <S.Link> formulário</S.Link>
             </Link>
           </S.Body>
-          {/*<S.Body>
-            {' '}
-            <S.H2>Como reconhecer uma árvore da espécie Guapuruvu? </S.H2>
-            Aprender a ler os detalhes e os aspectos de uma planta e de uma
-            árvore é um espécie de “alfabetização vegetal”. Podemos aprender a
-            “ler” a forma das folhas, a formação dos galhos, a textura, a cor e
-            os desenhos do tronco, a subida do tronco em relação a outras
-            árvores e plantas, a distribuição dos troncos e galhos em relação ao
-            tronco principal, além da floração e semente! São tantos detalhes!
-            Para reconhecer um Guapuruvu você deve observar o tronco, que é
-            geralmente muito longo e sinuoso, de espessura regular. As árvores
-            adultas podem chegar a 20 ou 30 metros. Os troncos são entre o cinza
-            e o verde, tem as marcas do nascimento dos galhos da planta jovem, o
-            que gera um padrão que parece uma cicatriz. Os galhos principais se
-            abrem numa copa bem alta, e podem ser muito espessos. Os folíolos
-            são pequenos (até 3cm), de um verde claro e brilhante, e se
-            organizam na folha-galho de forma ‘pinada’, simétrica e harmônica,
-            que pode ter até 1m de comprimento. A floração é amarela ouro e
-            surgem em cachos fartos. Acontece no final da primavera e começo do
-            verão, entre Novembro a Janeiro (no sul do Brasil). O fruto, onde se
-            encontra a semente, é uma vagem dura achatada, marrom, de mais ou
-            menos 15 cm, que se abre liberando uma semente que se espalha pelo
-            vento (anemocoria).
-          </S.Body> */}
         </S.Container>
         <ButtonBack />
       </S.Wrapper>

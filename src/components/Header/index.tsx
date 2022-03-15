@@ -12,7 +12,7 @@ const Header = () => {
         <S.NavWrapper>
           <S.LinkA href="/">
             <ImageWrapper
-              src="/img/logo4.png"
+              src="/img/arvoresurbanasletteringPNGtransparente.png"
               alt={'logo'}
               width={400}
               height={130}

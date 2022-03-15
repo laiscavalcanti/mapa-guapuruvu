@@ -46,7 +46,6 @@ export const Body = styled.div`
   padding: var(--smallest);
   font-size: 16px;
   line-height: 1.7538461538;
-  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   text-align: justify;
   p {

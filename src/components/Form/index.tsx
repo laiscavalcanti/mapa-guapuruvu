@@ -10,7 +10,7 @@ const Form = () => {
         <S.Title>Enviando dados sobre um Guapuruvu</S.Title>
         <S.Image>
           <ImageWrapper
-            src="/img/guapu03.jpg"
+            src="/img/formulario_sitePNGtransparente.png"
             alt="imagem de uma arvore e de um céu azul com nuvens"
             width={740}
             height={400}
@@ -59,14 +59,20 @@ const Form = () => {
             </S.ItalicBold>{' '}
           </S.Body>
           <S.Body>
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfysY5zFwQM6hyUfI_Q1E9lbi5uYdcahPKHWjY9BoihMo9eRQ/viewform?usp=sf_link"
-              width="640"
-              height="903"
-              frameBorder="0"
-            >
-              Carregando…
-            </iframe>
+            <br></br>
+            <S.ItalicBold>
+              Acesse o Formulário: <span></span> 
+              <S.Link>
+              <a
+                href="https://forms.gle/TqWV7HyxHBdyHorV9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                  Aqui
+              </a>
+            </S.Link>
+            </S.ItalicBold>
+    
           </S.Body>
         </S.FormWrapper>
         <ButtonBack />

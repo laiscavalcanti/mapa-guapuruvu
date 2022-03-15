@@ -42,6 +42,7 @@ export const Body = styled.p`
   padding: var(--small);
   line-height: 1.6538461538;
   text-align: justify;
+  font-weight: 400;
   &::selection {
     color: var(--background);
     background-color: var(--black);

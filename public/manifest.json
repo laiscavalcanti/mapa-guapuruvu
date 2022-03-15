@@ -1,6 +1,6 @@
 {
-  "name": "Mapa de Guapuruvus",
-  "short_name": "Mapa de Guapuruvus",
+  "name": "Árvores Urbanas",
+  "short_name": "Árvores Urbanas",
   "icons": [
     {
       "src": "/img/desenho_semente_0056.png",
@@ -9,7 +9,7 @@
     }
   ],
   "background_color": "#ffbf00",
-  "description": "Site que mapeia as árvores do tipo Guapuruvu da cidade de Porto Alegre",
+  "description": "Site que mapeia as árvores urbanas da cidade de Porto Alegre",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#ffbf00"

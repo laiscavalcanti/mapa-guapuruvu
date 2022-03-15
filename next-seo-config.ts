@@ -2,11 +2,11 @@ export default {
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: 'https://www.mapadegrapuruvus.art/',
-      site_name: 'Mapa de Guapuruvus',
+      url: 'https://www.arvoresurbanas.net/',
+      site_name: 'Arvores Urbanas',
     },
     twitter: {
-      handle: '@mapadeguapuruvus',
+      handle: '@ArvoresUrbanas',
       site: '@site',
       cardType: 'summary_large_image',
     },

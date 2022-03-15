@@ -12,10 +12,6 @@ export const HeaderWrapper = styled.header`
     height: 6rem;
   `}
 `
-export const BackgroundHeader = styled.div`
-  height: 4rem;
-  width: 100%;
-`
 export const LinkA = styled.a`
   margin-top: var(--medium);
 `
@@ -23,7 +19,7 @@ export const SideBarWrapper = styled.ul`
   display: flex;
   align-items: center;
   align-content: center;
-  height: 16rem;
+  height: auto;
   z-index: 2;
   left: 0;
   top: 0;
