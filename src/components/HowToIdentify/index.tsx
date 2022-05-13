@@ -30,8 +30,10 @@ const HowToIdentify = () => {
             árvores e plantas, a distribuição dos troncos e galhos em relação ao
             tronco principal, além da floração e semente! São tantos detalhes!
             Para reconhecer um Guapuruvu você deve observar o tronco, que é
-            geralmente alto e não muito sinuoso, de espessura regular. As
-            árvores adultas podem chegar a{' '}
+            geralmente alto e não muito sinuoso, de espessura regular. 
+            <br></br>
+            <br></br>
+            As árvores adultas podem chegar a{' '}
             <ItalicBold>20 ou 30 metros.</ItalicBold> Os troncos são lisos,
             entre o cinza e o verde, e tem as marcas do nascimento dos galhos da
             planta jovem, o que gera um padrão que parece uma cicatriz. Os
@@ -41,6 +43,8 @@ const HowToIdentify = () => {
             3cm), de um verde claro e brilhante, e se organizam na folha-galho
             de forma ‘pinada’, simétrica e harmônica, que pode ter até 1m de
             comprimento.
+            <br></br>
+            <br></br>
             <ItalicBold>A floração é amarela ouro</ItalicBold> e surgem em
             cachos fartos. Acontece no final da primavera e começo do verão,
             entre Novembro a Janeiro (no sul do Brasil). O fruto, onde se

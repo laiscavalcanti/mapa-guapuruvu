@@ -1,6 +1,6 @@
+/* eslint-disable */
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import img from '../public/img/unnamed.png'
 
 export const HeaderWrapper = styled.header`
   display: flex;
@@ -13,7 +13,7 @@ export const HeaderWrapper = styled.header`
   `}
 `
 export const LinkA = styled.a`
-  margin-top: var(--medium);
+
 `
 export const SideBarWrapper = styled.ul`
   display: flex;
@@ -110,6 +110,12 @@ export const NavWrapper = styled.nav`
   right: 0;
   transition: 0.3s all ease;
 `
+export const ImgHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+
+`
+
 
 {
   /*export const NavWrapper = styled.nav<{ isOpen: boolean }>`

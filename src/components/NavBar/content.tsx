@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const links = [
   {
     label: 'Sobre',
@@ -10,6 +11,10 @@ export const links = [
   {
     label: 'Como Identificar',
     link: '/como-identificar'
+  },
+  {
+    label: 'Como Plantar',
+    link: '/como-plantar'
   },
   {
     label: 'Galeria',

@@ -53,18 +53,18 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
   return (
     <>
       <NextSeo
-        title={`${place.name} - My Trips`}
+        title={`${place.name} - Árvores Urbanas`}
         description={
           place.description?.text ||
-          'A simple project to show in a map the places that I went and show more informations and photos when clicked.'
+          'Um site que conta a histórias de árvores urbanas na cidade de Porto Alegre'
         }
-        canonical="https://mytrips.com"
+        canonical="https://arvoresurbanas.net"
         openGraph={{
-          url: 'https://mytrips.com',
-          title: `${place.name} - My Trips`,
+          url: 'https://arvoresurbanas.net',
+          title: `${place.name} - Árvores Urbanas`,
           description:
             place.description?.text ||
-            'A simple project to show in a map the places that I went and show more informations and photos when clicked.',
+            'Um site que conta a histórias de árvores urbanas na cidade de Porto Alegre',
           images: [
             {
               url: place.gallery[0].url,

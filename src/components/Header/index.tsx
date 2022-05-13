@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import * as S from './style'
 import NavBar from 'components/NavBar'
@@ -8,6 +9,14 @@ const Header = () => {
   const [navbarOpen, setNavbarOpen] = React.useState<boolean>(false)
   return (
     <>
+       <S.ImgHeader>
+          <ImageWrapper
+            src="/img/unnamed.png"
+            alt={'imagem de plantas'}
+            width={2000}
+            height={80}
+          />
+        </S.ImgHeader>
       <S.SideBarWrapper>
         <S.NavWrapper>
           <S.LinkA href="/">
@@ -18,6 +27,7 @@ const Header = () => {
               height={130}
             />
           </S.LinkA>
+
           <S.Toggle
             navbarOpen={navbarOpen}
             onClick={() => setNavbarOpen(!navbarOpen)}

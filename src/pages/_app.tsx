@@ -12,9 +12,9 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Mapa de Guapuruvu</title>
-        <link rel="shortcut icon" href="/img/icon.png" />
-        <link rel="appele-touch-icon" href="/img/icon.png" />
+        <title>Árvores Urbanas</title>
+        <link rel="shortcut icon" href="/img/desenho_semente_0056.png" />
+        <link rel="appele-touch-icon" href="/img/desenho_semente_0056.png" />
         <link rel="manifest" href="/manifest.json" />
         <link
           rel="stylesheet"
@@ -39,7 +39,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffbf00" />
         <meta
           name="description"
-          content="Um site mapa dos Guapuruvus da cidade de Ponto Alegre - Brasil"
+          content="Um site sobre as árvores urbanas de Ponto Alegre - Brasil"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

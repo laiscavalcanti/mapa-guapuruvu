@@ -2,7 +2,6 @@
 import { useRouter } from 'next/router'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import L from 'leaflet'
-import * as S from './styles'
 
 type ImageProps = {
   url: string
@@ -52,7 +51,7 @@ const Map = ({ places }: MapProps) => {
     <>
       <MapContainer
         center={{ lat: -30.03306, lng: -51.23 }}
-        zoom={11}
+        zoom={13}
         minZoom={10}
         worldCopyJump={true}
         className={'responsive'}
