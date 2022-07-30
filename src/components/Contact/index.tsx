@@ -1,4 +1,4 @@
-import FormContact from 'components/FormContact'
+/* eslint-disable */
 import SocialLinks from 'components/SocialLinks'
 import * as S from './style'
 
@@ -18,7 +18,7 @@ const Contact = () => {
           </S.SocialLinkColumn>
         </S.ContainerSocialLinks>
         <S.ContainerContact>
-          <FormContact />
+        
         </S.ContainerContact>
       </S.ContactWrapper>
     </S.Container>

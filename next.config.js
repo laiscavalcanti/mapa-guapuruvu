@@ -9,7 +9,7 @@ module.exports = withPWA({
         disable: !isProd
     },
     images:{
-        domains: ['media.graphcms.com']
+        domains: ['media.graphcms.com', 'media.graphassets.com']
     },
     experimental: { esmExternals: true }
 })

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as S from './styles'
 import { useRouter } from 'next/router'
 import { links } from './content'

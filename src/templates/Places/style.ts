@@ -75,8 +75,7 @@ export const Field = styled.p`
 `
 export const Body = styled.div`
   margin-bottom: var(--smallest);
-  
-  
+
   p {
     margin-bottom: var(--smallest);
     font-size: 1.5rem;

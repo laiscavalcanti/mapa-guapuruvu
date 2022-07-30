@@ -18,7 +18,7 @@ export default function HomeTemplate({ places }: MapProps) {
       <Map places={places} />
       <SectionInfo />
       <Steps />
-      <Recents places={places}/>
+      <Recents places={places} />
       <Footer />
     </>
   )

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import ButtonBack from 'components/ButtonBack'
 import * as S from './style'
 

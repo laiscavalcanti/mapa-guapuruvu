@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 
@@ -84,16 +85,28 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
       </LinkWrapper>
       <S.Wrapper>
         <S.ButtonShareWrapper>
-          <TelegramShareButton url={`https://www.arvoresurbanas.net/place.slug`} title={place.name}>
+          <TelegramShareButton
+            url={`https://www.arvoresurbanas.net/place.slug`}
+            title={place.name}
+          >
             <TelegramIcon size={30} round />
           </TelegramShareButton>
-          <TwitterShareButton url={`https://www.arvoresurbanas.net/place.slug`} title={place.name}>
+          <TwitterShareButton
+            url={`https://www.arvoresurbanas.net/place.slug`}
+            title={place.name}
+          >
             <TwitterIcon size={32} round />
           </TwitterShareButton>
-          <FacebookShareButton url={`https://www.arvoresurbanas.net/place.slug`} quote={place.name}>
+          <FacebookShareButton
+            url={`https://www.arvoresurbanas.net/place.slug`}
+            quote={place.name}
+          >
             <FacebookIcon size={32} round />
           </FacebookShareButton>
-          <WhatsappShareButton url={`https://www.arvoresurbanas.net/place.slug`} title={place.name}>
+          <WhatsappShareButton
+            url={`https://www.arvoresurbanas.net/place.slug`}
+            title={place.name}
+          >
             <WhatsappIcon size={32} round />
           </WhatsappShareButton>
         </S.ButtonShareWrapper>
@@ -137,17 +150,16 @@ export default function PlacesTemplate({ place }: PlacesTemplateProps) {
                   alt={place.name}
                   width={image.width}
                   height={image.height}
-                  quality={75}
+                  
                 />
                 <S.Caption></S.Caption>
               </>
             ))}
           </S.Gallery>
-         
         </S.Container>
       </S.Wrapper>
       <S.WrapperButton>
-      <ButtonBack />
+        <ButtonBack />
       </S.WrapperButton>
     </>
   )
